@@ -27,7 +27,7 @@ const Index = () => {
       <section className="pt-32 pb-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-forest-green to-sage-green bg-clip-text text-transparent mb-6 animate-fade-in">
+            <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-forest-green via-emerald-green to-sage-green bg-clip-text text-transparent mb-6 animate-fade-in">
               Your Blueprint to Financial Success
             </h1>
             <p className="text-xl text-muted-foreground mb-12 leading-relaxed max-w-3xl mx-auto">
