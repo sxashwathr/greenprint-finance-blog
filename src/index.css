@@ -5,83 +5,83 @@
 
 @layer base {
   :root {
-    --background: 253 252 239; /* ivory */
-    --foreground: 44 44 44; /* deep-charcoal */
+    --background: 248 250 252; /* Very light gray-blue */
+    --foreground: 15 23 42; /* Dark slate */
 
-    --card: 253 252 239; /* ivory */
-    --card-foreground: 44 44 44; /* deep-charcoal */
+    --card: 255 255 255; /* Pure white */
+    --card-foreground: 15 23 42; /* Dark slate */
 
-    --popover: 253 252 239; /* ivory */
-    --popover-foreground: 44 44 44; /* deep-charcoal */
+    --popover: 255 255 255; /* Pure white */
+    --popover-foreground: 15 23 42; /* Dark slate */
 
-    --primary: 85 107 47; /* olive-drab */
-    --primary-foreground: 253 252 239; /* ivory */
+    --primary: 22 101 52; /* Forest green */
+    --primary-foreground: 248 250 252; /* Very light gray-blue */
 
-    --secondary: 214 207 196; /* warm-taupe */
-    --secondary-foreground: 44 44 44; /* deep-charcoal */
+    --secondary: 241 245 249; /* Light slate */
+    --secondary-foreground: 15 23 42; /* Dark slate */
 
-    --muted: 214 207 196; /* warm-taupe */
-    --muted-foreground: 85 107 47; /* olive-drab */
+    --muted: 241 245 249; /* Light slate */
+    --muted-foreground: 100 116 139; /* Slate */
 
-    --accent: 163 177 138; /* sage-green */
-    --accent-foreground: 44 44 44; /* deep-charcoal */
+    --accent: 34 197 94; /* Emerald green */
+    --accent-foreground: 15 23 42; /* Dark slate */
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 253 252 239; /* ivory */
+    --destructive-foreground: 248 250 252; /* Very light gray-blue */
 
-    --border: 163 177 138; /* sage-green */
-    --input: 163 177 138; /* sage-green */
-    --ring: 85 107 47; /* olive-drab */
+    --border: 34 197 94; /* Emerald green */
+    --input: 34 197 94; /* Emerald green */
+    --ring: 22 101 52; /* Forest green */
 
     --radius: 0.5rem;
 
-    --sidebar-background: 253 252 239; /* ivory */
-    --sidebar-foreground: 44 44 44; /* deep-charcoal */
-    --sidebar-primary: 85 107 47; /* olive-drab */
-    --sidebar-primary-foreground: 253 252 239; /* ivory */
-    --sidebar-accent: 214 207 196; /* warm-taupe */
-    --sidebar-accent-foreground: 44 44 44; /* deep-charcoal */
-    --sidebar-border: 163 177 138; /* sage-green */
-    --sidebar-ring: 85 107 47; /* olive-drab */
+    --sidebar-background: 248 250 252; /* Very light gray-blue */
+    --sidebar-foreground: 15 23 42; /* Dark slate */
+    --sidebar-primary: 22 101 52; /* Forest green */
+    --sidebar-primary-foreground: 248 250 252; /* Very light gray-blue */
+    --sidebar-accent: 241 245 249; /* Light slate */
+    --sidebar-accent-foreground: 15 23 42; /* Dark slate */
+    --sidebar-border: 34 197 94; /* Emerald green */
+    --sidebar-ring: 22 101 52; /* Forest green */
   }
 
   .dark {
-    --background: 44 44 44; /* deep-charcoal */
-    --foreground: 253 252 239; /* ivory */
+    --background: 2 6 23; /* Very dark blue */
+    --foreground: 248 250 252; /* Very light gray-blue */
 
-    --card: 44 44 44; /* deep-charcoal */
-    --card-foreground: 253 252 239; /* ivory */
+    --card: 15 23 42; /* Dark slate */
+    --card-foreground: 248 250 252; /* Very light gray-blue */
 
-    --popover: 44 44 44; /* deep-charcoal */
-    --popover-foreground: 253 252 239; /* ivory */
+    --popover: 15 23 42; /* Dark slate */
+    --popover-foreground: 248 250 252; /* Very light gray-blue */
 
-    --primary: 212 175 55; /* dusty-gold */
-    --primary-foreground: 44 44 44; /* deep-charcoal */
+    --primary: 34 197 94; /* Emerald green */
+    --primary-foreground: 2 6 23; /* Very dark blue */
 
-    --secondary: 85 107 47; /* olive-drab */
-    --secondary-foreground: 253 252 239; /* ivory */
+    --secondary: 30 41 59; /* Slate */
+    --secondary-foreground: 248 250 252; /* Very light gray-blue */
 
-    --muted: 85 107 47; /* olive-drab */
-    --muted-foreground: 214 207 196; /* warm-taupe */
+    --muted: 30 41 59; /* Slate */
+    --muted-foreground: 148 163 184; /* Light slate */
 
-    --accent: 163 177 138; /* sage-green */
-    --accent-foreground: 253 252 239; /* ivory */
+    --accent: 22 101 52; /* Forest green */
+    --accent-foreground: 248 250 252; /* Very light gray-blue */
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 253 252 239; /* ivory */
+    --destructive-foreground: 248 250 252; /* Very light gray-blue */
 
-    --border: 85 107 47; /* olive-drab */
-    --input: 85 107 47; /* olive-drab */
-    --ring: 212 175 55; /* dusty-gold */
+    --border: 22 101 52; /* Forest green */
+    --input: 22 101 52; /* Forest green */
+    --ring: 34 197 94; /* Emerald green */
 
-    --sidebar-background: 44 44 44; /* deep-charcoal */
-    --sidebar-foreground: 253 252 239; /* ivory */
-    --sidebar-primary: 212 175 55; /* dusty-gold */
-    --sidebar-primary-foreground: 44 44 44; /* deep-charcoal */
-    --sidebar-accent: 85 107 47; /* olive-drab */
-    --sidebar-accent-foreground: 253 252 239; /* ivory */
-    --sidebar-border: 85 107 47; /* olive-drab */
-    --sidebar-ring: 212 175 55; /* dusty-gold */
+    --sidebar-background: 2 6 23; /* Very dark blue */
+    --sidebar-foreground: 248 250 252; /* Very light gray-blue */
+    --sidebar-primary: 34 197 94; /* Emerald green */
+    --sidebar-primary-foreground: 2 6 23; /* Very dark blue */
+    --sidebar-accent: 30 41 59; /* Slate */
+    --sidebar-accent-foreground: 248 250 252; /* Very light gray-blue */
+    --sidebar-border: 22 101 52; /* Forest green */
+    --sidebar-ring: 34 197 94; /* Emerald green */
   }
 }
 

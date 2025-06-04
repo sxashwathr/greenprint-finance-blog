@@ -26,38 +26,32 @@ export function Header() {
     { name: "Career & Income", href: "/career-income" }
   ];
 
+  const handleNavClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <header className={`fixed w-full top-4 z-40 flex justify-center transition-all duration-300`}>
-      <nav className={`bg-background/95 backdrop-blur-sm border border-sage-green/30 rounded-full shadow-lg transition-all duration-300 ${
-        isScrolled ? 'h-12 px-6' : 'h-16 px-8'
+      <nav className={`bg-background/95 backdrop-blur-sm border border-forest-green/30 rounded-full shadow-lg transition-all duration-300 ${
+        isScrolled ? 'h-10 px-4' : 'h-16 px-8'
       }`}>
         <div className="h-full flex items-center justify-center">
-          <Link to="/" className="absolute left-4 flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-olive-drab to-dusty-gold rounded-lg flex items-center justify-center">
-              <span className="text-ivory font-bold text-sm">G</span>
-            </div>
-            <span className={`font-bold text-foreground transition-all duration-300 ${
-              isScrolled ? 'text-lg' : 'text-xl'
-            }`}>
-              Greenprint
-            </span>
-          </Link>
-
           {/* Desktop Navigation - Centered */}
           <div className="hidden md:flex items-center space-x-2">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
+                onClick={handleNavClick}
                 className={`relative text-foreground transition-all duration-300 font-medium px-4 py-2 rounded-full group ${
-                  location.pathname === item.href ? 'bg-sage-green/20' : ''
-                }`}
+                  location.pathname === item.href ? 'bg-forest-green/20' : ''
+                } ${isScrolled ? 'text-sm' : 'text-base'}`}
               >
                 <span className="relative z-10">{item.name}</span>
                 <div className={`absolute inset-0 rounded-full transition-all duration-300 ${
                   location.pathname === item.href 
-                    ? 'bg-sage-green/20' 
-                    : 'bg-transparent group-hover:bg-sage-green/10'
+                    ? 'bg-forest-green/20' 
+                    : 'bg-transparent group-hover:bg-forest-green/10'
                 }`} />
               </Link>
             ))}
@@ -76,16 +70,19 @@ export function Header() {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="absolute top-full left-0 w-full bg-background border border-sage-green/30 rounded-xl shadow-lg md:hidden mt-2">
+          <div className="absolute top-full left-0 w-full bg-background border border-forest-green/30 rounded-xl shadow-lg md:hidden mt-2">
             <div className="flex flex-col space-y-2 p-4">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`text-foreground transition-colors duration-200 font-medium px-4 py-2 rounded-full hover:bg-sage-green/20 ${
-                    location.pathname === item.href ? 'bg-sage-green/20' : ''
+                  className={`text-foreground transition-colors duration-200 font-medium px-4 py-2 rounded-full hover:bg-forest-green/20 ${
+                    location.pathname === item.href ? 'bg-forest-green/20' : ''
                   }`}
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={() => {
+                    setIsMobileMenuOpen(false);
+                    handleNavClick();
+                  }}
                 >
                   {item.name}
                 </Link>
