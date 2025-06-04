@@ -51,7 +51,7 @@ export function Header() {
                 <div className={`absolute inset-0 rounded-full transition-all duration-300 ${
                   location.pathname === item.href 
                     ? 'bg-forest-green/20' 
-                    : 'bg-transparent group-hover:bg-forest-green/10'
+                    : 'bg-transparent group-hover:bg-forest-green/30 group-hover:shadow-lg group-hover:shadow-forest-green/20'
                 }`} />
               </Link>
             ))}
@@ -61,7 +61,7 @@ export function Header() {
           <Button
             variant="ghost"
             size="sm"
-            className="absolute right-4 md:hidden"
+            className="absolute right-4 md:hidden hover:bg-forest-green/20"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -76,7 +76,7 @@ export function Header() {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`text-foreground transition-colors duration-200 font-medium px-4 py-2 rounded-full hover:bg-forest-green/20 ${
+                  className={`text-foreground transition-all duration-200 font-medium px-4 py-2 rounded-full hover:bg-forest-green/30 hover:shadow-md ${
                     location.pathname === item.href ? 'bg-forest-green/20' : ''
                   }`}
                   onClick={() => {
