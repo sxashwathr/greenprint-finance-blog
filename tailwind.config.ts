@@ -64,9 +64,10 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				'forest-green': '#166534',
-				'emerald-green': '#22c55e',
-				'light-slate': '#f1f5f9',
-				'dark-slate': '#0f172a'
+				'sage-green': '#84a98c',
+				'pine-green': '#2d5016',
+				'emerald-green': '#10b981',
+				'olive-green': '#556b2f'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

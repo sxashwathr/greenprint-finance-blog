@@ -13,7 +13,8 @@ const careerIncomeBlogs = [
     excerpt: "Proven strategies to negotiate higher compensation with confidence.",
     category: "Career & Income",
     date: "2024-01-30",
-    readTime: "14 min read"
+    readTime: "14 min read",
+    categoryColor: "bg-forest-green/80"
   },
   {
     id: 2,
@@ -21,7 +22,8 @@ const careerIncomeBlogs = [
     excerpt: "Diversify your income sources for greater financial security.",
     category: "Career & Income",
     date: "2024-01-28",
-    readTime: "11 min read"
+    readTime: "11 min read",
+    categoryColor: "bg-forest-green/80"
   },
   {
     id: 3,
@@ -29,7 +31,8 @@ const careerIncomeBlogs = [
     excerpt: "How to financially prepare for a major career transition.",
     category: "Career & Income",
     date: "2024-01-25",
-    readTime: "10 min read"
+    readTime: "10 min read",
+    categoryColor: "bg-forest-green/80"
   },
   {
     id: 4,
@@ -37,7 +40,8 @@ const careerIncomeBlogs = [
     excerpt: "In-demand skills that can significantly boost your earning potential.",
     category: "Career & Income",
     date: "2024-01-22",
-    readTime: "13 min read"
+    readTime: "13 min read",
+    categoryColor: "bg-forest-green/80"
   },
   {
     id: 5,
@@ -45,7 +49,8 @@ const careerIncomeBlogs = [
     excerpt: "Finding and succeeding in high-paying remote positions.",
     category: "Career & Income",
     date: "2024-01-20",
-    readTime: "9 min read"
+    readTime: "9 min read",
+    categoryColor: "bg-forest-green/80"
   },
   {
     id: 6,
@@ -53,7 +58,8 @@ const careerIncomeBlogs = [
     excerpt: "Investing in yourself: courses, certifications, and networking.",
     category: "Career & Income",
     date: "2024-01-18",
-    readTime: "8 min read"
+    readTime: "8 min read",
+    categoryColor: "bg-forest-green/80"
   }
 ];
 
@@ -61,18 +67,29 @@ const CareerIncome = () => {
   return (
     <div className="min-h-screen bg-background">
       <ThemeToggle />
+      
+      {/* Greenprint Brand */}
+      <div className="fixed top-4 left-4 z-50">
+        <div className="flex items-center space-x-2">
+          <div className="w-8 h-8 bg-gradient-to-br from-forest-green to-sage-green rounded-lg flex items-center justify-center">
+            <span className="text-white font-bold text-sm">G</span>
+          </div>
+          <span className="font-bold text-lg text-foreground">Greenprint</span>
+        </div>
+      </div>
+      
       <Header />
       
       <section className="pt-32 pb-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="flex justify-center mb-6">
-              <div className="w-16 h-16 bg-gradient-to-br from-olive-drab to-dusty-gold rounded-xl flex items-center justify-center">
-                <Briefcase className="h-8 w-8 text-ivory" />
+              <div className="w-16 h-16 bg-gradient-to-br from-forest-green to-sage-green rounded-xl flex items-center justify-center">
+                <Briefcase className="h-8 w-8 text-white" />
               </div>
             </div>
             
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-olive-drab to-dusty-gold bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-forest-green to-sage-green bg-clip-text text-transparent">
               Career & Income Growth
             </h1>
             
@@ -84,10 +101,10 @@ const CareerIncome = () => {
           {/* Blog Tiles Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {careerIncomeBlogs.map((blog) => (
-              <Card key={blog.id} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-sage-green/20">
+              <Card key={blog.id} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-sage-green/20 bg-card">
                 <CardContent className="p-6">
                   <div className="flex items-center justify-between mb-3">
-                    <span className="text-xs font-semibold text-olive-drab bg-sage-green/20 px-3 py-1 rounded-full">
+                    <span className={`text-xs font-semibold text-white ${blog.categoryColor} px-4 py-2 rounded-full`}>
                       {blog.category}
                     </span>
                     <div className="flex items-center text-muted-foreground text-xs">
@@ -95,7 +112,7 @@ const CareerIncome = () => {
                       {new Date(blog.date).toLocaleDateString()}
                     </div>
                   </div>
-                  <h3 className="text-lg font-bold mb-3 group-hover:text-olive-drab transition-colors">
+                  <h3 className="text-lg font-bold mb-3 group-hover:text-forest-green transition-colors text-foreground">
                     {blog.title}
                   </h3>
                   <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
@@ -103,7 +120,7 @@ const CareerIncome = () => {
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-xs text-muted-foreground">{blog.readTime}</span>
-                    <Button variant="ghost" size="sm" className="text-olive-drab hover:text-olive-drab/80">
+                    <Button variant="ghost" size="sm" className="text-forest-green hover:text-forest-green/80 hover:bg-sage-green/20 rounded-full transition-all duration-300">
                       Read More
                       <ArrowRight className="h-3 w-3 ml-1" />
                     </Button>
