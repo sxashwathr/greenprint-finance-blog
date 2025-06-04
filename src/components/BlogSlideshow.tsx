@@ -61,7 +61,7 @@ export function BlogSlideshow() {
           >
             <div className="absolute inset-0 bg-black/50" />
             <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-              <span className="inline-block px-3 py-1 bg-dusty-gold text-deep-charcoal text-sm font-semibold rounded-full mb-4">
+              <span className="inline-block px-4 py-2 bg-gradient-to-r from-forest-green to-emerald-green text-white text-sm font-bold rounded-full mb-4 shadow-lg border-2 border-white/20 backdrop-blur-sm">
                 {blog.category}
               </span>
               <h3 className="text-2xl md:text-3xl font-bold mb-4">{blog.title}</h3>
@@ -75,7 +75,7 @@ export function BlogSlideshow() {
       <Button
         variant="secondary"
         size="sm"
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm hover:bg-white/30"
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm hover:bg-white/30 hover:scale-105 transition-all duration-300"
         onClick={prevSlide}
       >
         <ChevronLeft className="h-4 w-4" />
@@ -83,7 +83,7 @@ export function BlogSlideshow() {
       <Button
         variant="secondary"
         size="sm"
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm hover:bg-white/30"
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm hover:bg-white/30 hover:scale-105 transition-all duration-300"
         onClick={nextSlide}
       >
         <ChevronRight className="h-4 w-4" />
@@ -94,7 +94,7 @@ export function BlogSlideshow() {
         {mockBlogs.map((_, index) => (
           <button
             key={index}
-            className={`w-2 h-2 rounded-full transition-colors ${
+            className={`w-2 h-2 rounded-full transition-all duration-300 hover:scale-125 ${
               index === currentSlide ? 'bg-white' : 'bg-white/50'
             }`}
             onClick={() => setCurrentSlide(index)}
