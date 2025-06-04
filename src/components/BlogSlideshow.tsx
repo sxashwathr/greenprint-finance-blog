@@ -8,21 +8,21 @@ const mockBlogs = [
     id: 1,
     title: "5 Essential Budgeting Tips for Beginners",
     excerpt: "Learn how to create and stick to a budget that actually works for your lifestyle.",
-    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=500&fit=crop",
     category: "Budgeting"
   },
   {
     id: 2,
     title: "Understanding Investment Basics: A Complete Guide",
     excerpt: "Start your investment journey with these fundamental principles and strategies.",
-    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&h=500&fit=crop",
     category: "Investing"
   },
   {
     id: 3,
     title: "How to Build Credit from Scratch",
     excerpt: "Practical steps to establish and improve your credit score for better financial health.",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=500&fit=crop",
     category: "Credit & Debt"
   }
 ];
@@ -61,7 +61,7 @@ export function BlogSlideshow() {
           >
             <div className="absolute inset-0 bg-black/50" />
             <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-              <span className="inline-block px-3 py-1 bg-gold-500 text-black text-sm font-semibold rounded-full mb-4">
+              <span className="inline-block px-3 py-1 bg-dusty-gold text-deep-charcoal text-sm font-semibold rounded-full mb-4">
                 {blog.category}
               </span>
               <h3 className="text-2xl md:text-3xl font-bold mb-4">{blog.title}</h3>

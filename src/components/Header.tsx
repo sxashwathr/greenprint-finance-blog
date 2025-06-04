@@ -30,10 +30,10 @@ export function Header() {
     <header className={`fixed w-full top-0 z-40 bg-background/95 backdrop-blur-sm border-b transition-all duration-300 ${
       isScrolled ? 'h-16' : 'h-20'
     }`}>
-      <nav className="container mx-auto px-4 h-full flex items-center justify-between">
-        <Link to="/" className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-gradient-to-br from-primary to-gold-500 rounded-lg flex items-center justify-center">
-            <span className="text-white font-bold text-sm">G</span>
+      <nav className="container mx-auto px-4 h-full flex items-center justify-center">
+        <Link to="/" className="absolute left-4 flex items-center space-x-2">
+          <div className="w-10 h-10 bg-gradient-to-br from-olive-drab to-dusty-gold rounded-lg flex items-center justify-center">
+            <span className="text-ivory font-bold text-lg">G</span>
           </div>
           <span className={`font-bold text-foreground transition-all duration-300 ${
             isScrolled ? 'text-xl' : 'text-2xl'
@@ -42,14 +42,14 @@ export function Header() {
           </span>
         </Link>
 
-        {/* Desktop Navigation */}
+        {/* Desktop Navigation - Centered */}
         <div className="hidden md:flex items-center space-x-8">
           {navigation.map((item) => (
             <Link
               key={item.name}
               to={item.href}
-              className={`text-foreground hover:text-primary transition-colors duration-200 font-medium ${
-                location.pathname === item.href ? 'text-primary' : ''
+              className={`relative text-foreground hover:text-olive-drab transition-all duration-300 font-medium px-4 py-2 rounded-full hover:bg-sage-green/20 ${
+                location.pathname === item.href ? 'text-olive-drab bg-sage-green/20' : ''
               }`}
             >
               {item.name}
@@ -61,7 +61,7 @@ export function Header() {
         <Button
           variant="ghost"
           size="sm"
-          className="md:hidden"
+          className="absolute right-4 md:hidden"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -75,8 +75,8 @@ export function Header() {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`text-foreground hover:text-primary transition-colors duration-200 font-medium ${
-                    location.pathname === item.href ? 'text-primary' : ''
+                  className={`text-foreground hover:text-olive-drab transition-colors duration-200 font-medium px-4 py-2 rounded-full hover:bg-sage-green/20 ${
+                    location.pathname === item.href ? 'text-olive-drab bg-sage-green/20' : ''
                   }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >

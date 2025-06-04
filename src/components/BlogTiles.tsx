@@ -61,10 +61,10 @@ export function BlogTiles() {
         <h2 className="text-3xl font-bold text-center mb-12">Recently Published</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {recentBlogs.map((blog) => (
-            <Card key={blog.id} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <Card key={blog.id} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-sage-green/20">
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-xs font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full">
+                  <span className="text-xs font-semibold text-olive-drab bg-sage-green/20 px-3 py-1 rounded-full">
                     {blog.category}
                   </span>
                   <div className="flex items-center text-muted-foreground text-xs">
@@ -72,7 +72,7 @@ export function BlogTiles() {
                     {new Date(blog.date).toLocaleDateString()}
                   </div>
                 </div>
-                <h3 className="text-lg font-bold mb-3 group-hover:text-primary transition-colors">
+                <h3 className="text-lg font-bold mb-3 group-hover:text-olive-drab transition-colors">
                   {blog.title}
                 </h3>
                 <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
@@ -80,7 +80,7 @@ export function BlogTiles() {
                 </p>
                 <div className="flex items-center justify-between">
                   <span className="text-xs text-muted-foreground">{blog.readTime}</span>
-                  <Button variant="ghost" size="sm" className="text-primary hover:text-primary/80">
+                  <Button variant="ghost" size="sm" className="text-olive-drab hover:text-olive-drab/80">
                     Read More
                     <ArrowRight className="h-3 w-3 ml-1" />
                   </Button>

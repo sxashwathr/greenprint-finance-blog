@@ -25,12 +25,12 @@ export function ThemeToggle() {
       variant="ghost"
       size="sm"
       onClick={toggleTheme}
-      className="fixed top-4 right-4 z-50 w-10 h-10 rounded-full bg-background/80 backdrop-blur-sm border shadow-lg hover:shadow-xl transition-all duration-300"
+      className="fixed top-4 right-4 z-50 w-12 h-12 rounded-full bg-background/90 backdrop-blur-sm border shadow-lg hover:shadow-xl transition-all duration-300"
     >
       {isDark ? (
-        <Sun className="h-4 w-4 text-gold-500" />
+        <Sun className="h-5 w-5 text-dusty-gold" />
       ) : (
-        <Moon className="h-4 w-4 text-primary" />
+        <Moon className="h-5 w-5 text-olive-drab" />
       )}
     </Button>
   );
