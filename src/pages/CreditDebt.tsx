@@ -2,7 +2,7 @@
 import { Header } from "@/components/Header";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { Footer } from "@/components/Footer";
-import { Calendar, ArrowRight } from "lucide-react";
+import { Calendar, ArrowRight, CreditCard } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -68,7 +68,7 @@ const CreditDebt = () => {
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="flex justify-center mb-6">
               <div className="w-16 h-16 bg-gradient-to-br from-olive-drab to-dusty-gold rounded-xl flex items-center justify-center">
-                <span className="text-ivory font-bold text-2xl">C</span>
+                <CreditCard className="h-8 w-8 text-ivory" />
               </div>
             </div>
             
