@@ -78,7 +78,7 @@ export function BlogTiles() {
                     {new Date(blog.date).toLocaleDateString()}
                   </div>
                 </div>
-                <h3 className="text-lg font-bold mb-3 group-hover:text-forest-green transition-colors text-foreground">
+                <h3 className="text-lg font-bold mb-3 text-foreground">
                   {blog.title}
                 </h3>
                 <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
