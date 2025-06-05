@@ -21,7 +21,7 @@
     --secondary-foreground: 15 23 42; /* Dark slate */
 
     --muted: 241 245 249; /* Light slate */
-    --muted-foreground: 71 85 105; /* CHANGE THIS - was 100 116 139, now darker slate-600 */
+    --muted-foreground: 100 116 139; /* CHANGE THIS - was 100 116 139, now darker slate-600 */
 
     --accent: 34 197 94; /* Emerald green */
     --accent-foreground: 15 23 42; /* Dark slate */
@@ -62,7 +62,7 @@
     --secondary-foreground: 248 250 252; /* Very light gray-blue */
 
     --muted: 30 41 59; /* Slate */
-    --muted-foreground: 236 72 153; /* CHANGE THIS to pink for dark mode - was 148 163 184 */
+    ---muted-foreground: 148 163 184; /* CHANGE THIS to pink for dark mode - was 148 163 184 */
 
     --accent: 22 101 52; /* Forest green */
     --accent-foreground: 248 250 252; /* Very light gray-blue */
