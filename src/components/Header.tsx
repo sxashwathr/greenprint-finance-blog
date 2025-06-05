@@ -44,13 +44,13 @@ export function Header() {
                 to={item.href}
                 onClick={handleNavClick}
                 className={`relative text-foreground transition-all duration-300 font-medium px-4 py-2 rounded-full group ${
-                  location.pathname === item.href ? 'bg-forest-green/20' : ''
-                } ${isScrolled ? 'text-sm' : 'text-base'}`}
+                  isScrolled ? 'text-sm' : 'text-base'
+                }`}
               >
                 <span className="relative z-10">{item.name}</span>
                 <div className={`absolute inset-0 rounded-full transition-all duration-300 ${
                   location.pathname === item.href 
-                    ? 'bg-forest-green/20' 
+                    ? '' 
                     : 'bg-transparent group-hover:bg-forest-green/30 group-hover:shadow-lg group-hover:shadow-forest-green/20'
                 }`} />
               </Link>
