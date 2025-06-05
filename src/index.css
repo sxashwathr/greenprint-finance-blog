@@ -1,28 +1,41 @@
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base {
   :root {
     --background: 248 250 252; /* Very light gray-blue */
     --foreground: 15 23 42; /* Dark slate */
-    --card: 255 255 255; /* Pure white* */
+
+    --card: 255 255 255; /* Pure white */
     --card-foreground: 15 23 42; /* Dark slate */
+
     --popover: 255 255 255; /* Pure white */
     --popover-foreground: 15 23 42; /* Dark slate */
+
     --primary: 22 101 52; /* Forest green */
     --primary-foreground: 248 250 252; /* Very light gray-blue */
+
     --secondary: 241 245 249; /* Light slate */
     --secondary-foreground: 15 23 42; /* Dark slate */
+
     --muted: 241 245 249; /* Light slate */
     --muted-foreground: 100 116 139; /* Slate */
+
     --accent: 34 197 94; /* Emerald green */
     --accent-foreground: 15 23 42; /* Dark slate */
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 248 250 252; /* Very light gray-blue */
+
     --border: 34 197 94; /* Emerald green */
     --input: 34 197 94; /* Emerald green */
     --ring: 22 101 52; /* Forest green */
+
     --radius: 0.5rem;
+
     --sidebar-background: 248 250 252; /* Very light gray-blue */
     --sidebar-foreground: 15 23 42; /* Dark slate */
     --sidebar-primary: 22 101 52; /* Forest green */
@@ -32,26 +45,36 @@
     --sidebar-border: 34 197 94; /* Emerald green */
     --sidebar-ring: 22 101 52; /* Forest green */
   }
+
   .dark {
     --background: 2 6 23; /* Very dark blue */
     --foreground: 248 250 252; /* Very light gray-blue */
+
     --card: 15 23 42; /* Dark slate */
     --card-foreground: 248 250 252; /* Very light gray-blue */
+
     --popover: 15 23 42; /* Dark slate */
     --popover-foreground: 248 250 252; /* Very light gray-blue */
+
     --primary: 34 197 94; /* Emerald green */
     --primary-foreground: 2 6 23; /* Very dark blue */
+
     --secondary: 30 41 59; /* Slate */
     --secondary-foreground: 248 250 252; /* Very light gray-blue */
-    --muted: 30 41 59; / Slate /
+
+    --muted: 30 41 59; /* Slate */
     --muted-foreground: 148 163 184; /* Light slate */
+
     --accent: 22 101 52; /* Forest green */
     --accent-foreground: 248 250 252; /* Very light gray-blue */
+
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 248 250 252; /* Very light gray-blue */
+
     --border: 22 101 52; /* Forest green */
     --input: 22 101 52; /* Forest green */
     --ring: 34 197 94; /* Emerald green */
+
     --sidebar-background: 2 6 23; /* Very dark blue */
     --sidebar-foreground: 248 250 252; /* Very light gray-blue */
     --sidebar-primary: 34 197 94; /* Emerald green */
@@ -62,24 +85,30 @@
     --sidebar-ring: 34 197 94; /* Emerald green */
   }
 }
+
 @layer base {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 }
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   @apply bg-muted;
 }
+
 ::-webkit-scrollbar-thumb {
   @apply bg-muted-foreground/30 rounded-full;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-muted-foreground/50;
 }
