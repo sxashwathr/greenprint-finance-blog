@@ -117,7 +117,4 @@
     @apply text-rose-800 dark:text-pink-400 !important;
   }
   
-  .text-pink-500 {
-    @apply text-rose-900 dark:text-pink-500 !important;
-  }
-}
+
