@@ -1,12 +1,11 @@
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 248 250 252; /* Very light gray-blue */
+    --background: 250 248 240; /* Cream color from logo */
     --foreground: 15 23 42; /* Dark slate */
 
     --card: 255 255 255; /* Pure white */
@@ -36,7 +35,7 @@
 
     --radius: 0.5rem;
 
-    --sidebar-background: 248 250 252; /* Very light gray-blue */
+    --sidebar-background: 250 248 240; /* Cream color from logo */
     --sidebar-foreground: 15 23 42; /* Dark slate */
     --sidebar-primary: 22 101 52; /* Forest green */
     --sidebar-primary-foreground: 248 250 252; /* Very light gray-blue */
