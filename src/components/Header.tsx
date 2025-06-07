@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, DollarSign, TrendingUp, CreditCard, Briefcase, Users } from "lucide-react";
@@ -35,9 +34,9 @@ export function Header() {
       {/* Greenprint Brand - Fixed position for all pages */}
       <div className="fixed top-4 left-4 z-50">
         <Link to="/" className="flex items-center space-x-2" onClick={handleNavClick}>
-          <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-md border border-forest-green/20">
+          <div className="w-12 h-12 bg-background rounded-lg flex items-center justify-center shadow-md border border-primary/20">
             <img 
-              src="/lovable-uploads/840f2312-113b-4db2-b16f-ba37c803ba71.png" 
+              src="/lovable-uploads/92ea261f-7b6b-4e5e-951b-dea177cce938.png" 
               alt="Greenprint Logo" 
               className="w-8 h-8 object-contain"
             />
@@ -47,8 +46,8 @@ export function Header() {
       </div>
 
       <header className={`fixed w-full top-4 z-40 flex justify-center transition-all duration-300`}>
-        <nav className={`bg-background/95 backdrop-blur-sm border border-forest-green/30 rounded-full shadow-lg transition-all duration-300 ${
-          isScrolled ? 'h-8 px-3' : 'h-12 px-6'
+        <nav className={`bg-background/95 backdrop-blur-sm border border-primary/30 rounded-full shadow-lg transition-all duration-300 ${
+          isScrolled ? 'h-6 px-2' : 'h-10 px-4'
         }`}>
           <div className="h-full flex items-center justify-center">
             {/* Desktop Navigation - Centered */}
@@ -68,8 +67,8 @@ export function Header() {
                     <span className="relative z-10">{item.name}</span>
                     <div className={`absolute inset-0 rounded-full transition-all duration-300 ${
                       location.pathname === item.href 
-                        ? '' 
-                        : 'bg-transparent group-hover:bg-forest-green/30 group-hover:shadow-lg group-hover:shadow-forest-green/20'
+                        ? 'bg-primary/20 shadow-md shadow-primary/20' 
+                        : 'bg-transparent group-hover:bg-primary/30 group-hover:shadow-lg group-hover:shadow-primary/20'
                     }`} />
                   </Link>
                 );
@@ -80,7 +79,7 @@ export function Header() {
             <Button
               variant="ghost"
               size="sm"
-              className="absolute right-4 md:hidden hover:bg-forest-green/20"
+              className="absolute right-4 md:hidden hover:bg-primary/20"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -89,7 +88,7 @@ export function Header() {
 
           {/* Mobile Navigation */}
           {isMobileMenuOpen && (
-            <div className="absolute top-full left-0 w-full bg-background border border-forest-green/30 rounded-xl shadow-lg md:hidden mt-2">
+            <div className="absolute top-full left-0 w-full bg-background border border-primary/30 rounded-xl shadow-lg md:hidden mt-2">
               <div className="flex flex-col space-y-2 p-4">
                 {navigation.map((item) => {
                   const IconComponent = item.icon;
@@ -97,8 +96,8 @@ export function Header() {
                     <Link
                       key={item.name}
                       to={item.href}
-                      className={`text-foreground transition-all duration-200 font-medium px-4 py-2 rounded-full hover:bg-forest-green/30 hover:shadow-md flex items-center space-x-2 ${
-                        location.pathname === item.href ? 'bg-forest-green/20' : ''
+                      className={`text-foreground transition-all duration-200 font-medium px-4 py-2 rounded-full hover:bg-primary/30 hover:shadow-md flex items-center space-x-2 ${
+                        location.pathname === item.href ? 'bg-primary/20' : ''
                       }`}
                       onClick={() => {
                         setIsMobileMenuOpen(false);
