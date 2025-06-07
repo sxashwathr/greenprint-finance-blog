@@ -17,13 +17,13 @@ const Index = () => {
           <div className="w-12 h-12 flex items-center justify-center">
             {/* Light mode logo */}
             <img 
-              src="/lovable-uploads/35e0da6e-dd7f-48b4-a642-6c83cf81e214.png" 
+              src="/lovable-uploads/840f2312-113b-4db2-b16f-ba37c803ba71.png" 
               alt="Greenprint Logo" 
               className="w-10 h-10 dark:hidden"
             />
             {/* Dark mode logo */}
             <img 
-              src="/lovable-uploads/a531e1d6-a935-436f-b382-470a5a357338.png" 
+              src="/lovable-uploads/840f2312-113b-4db2-b16f-ba37c803ba71.png" 
               alt="Greenprint Logo" 
               className="w-10 h-10 hidden dark:block"
             />
