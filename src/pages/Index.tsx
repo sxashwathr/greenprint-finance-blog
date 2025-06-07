@@ -14,8 +14,19 @@ const Index = () => {
       {/* Greenprint Brand */}
       <div className="fixed top-4 left-4 z-50">
         <div className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-gradient-to-br from-forest-green to-sage-green rounded-lg flex items-center justify-center">
-            <span className="text-white font-bold text-sm">G</span>
+          <div className="w-12 h-12 flex items-center justify-center">
+            {/* Light mode logo */}
+            <img 
+              src="/lovable-uploads/840f2312-113b-4db2-b16f-ba37c803ba71.png" 
+              alt="Greenprint Logo" 
+              className="w-10 h-10 dark:hidden"
+            />
+            {/* Dark mode logo */}
+            <img 
+              src="/lovable-uploads/840f2312-113b-4db2-b16f-ba37c803ba71.png" 
+              alt="Greenprint Logo" 
+              className="w-10 h-10 hidden dark:block"
+            />
           </div>
           <span className="font-bold text-lg text-foreground">Greenprint</span>
         </div>
