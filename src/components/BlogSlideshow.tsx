@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -47,7 +46,7 @@ export function BlogSlideshow() {
   };
 
   return (
-    <div className="relative w-full h-[420px] overflow-hidden rounded-xl shadow-2xl">
+    <div className="relative w-full h-[480px] overflow-hidden rounded-xl shadow-2xl">
       {mockBlogs.map((blog, index) => (
         <div
           key={blog.id}
