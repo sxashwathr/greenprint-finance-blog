@@ -88,42 +88,42 @@
 
 /* Hero text sizing to match image scale */
 .text-center h1 {
-  font-size: 4rem !important;
+  font-size: 2.5rem !important;
   line-height: 1.1 !important;
 }
 
 .text-center h1 + p {
-  font-size: 1.5rem !important;
+  font-size: 1rem !important;
   line-height: 1.3 !important;
 }
 
 @media (min-width: 768px) {
   .text-center h1 {
-    font-size: 6rem !important;
+    font-size: 3.5rem !important;
   }
   
   .text-center h1 + p {
-    font-size: 1.75rem !important;
+    font-size: 1.25rem !important;
   }
 }
 
 @media (min-width: 1024px) {
   .text-center h1 {
-    font-size: 8rem !important;
+    font-size: 4.5rem !important;
   }
   
   .text-center h1 + p {
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
   }
 }
 
 @media (min-width: 1280px) {
   .text-center h1 {
-    font-size: 10rem !important;
+    font-size: 5.5rem !important;
   }
   
   .text-center h1 + p {
-    font-size: 2.25rem !important;
+    font-size: 1.75rem !important;
   }
 }
 
