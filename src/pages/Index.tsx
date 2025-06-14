@@ -20,11 +20,11 @@ const Index = () => {
       {/* Hero Section */}
       <section className="pt-24 pb-16">
         <div className="container mx-auto px-3">
-          <div className="text-center mb-12">
-            <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-forest-green via-emerald-green to-forest-green bg-clip-text text-transparent mb-6 animate-fade-in">
+          <div className="text-center mb-16">
+            <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-forest-green via-emerald-green to-forest-green bg-clip-text text-transparent mb-8 animate-fade-in">
               Your Blueprint to Financial Success
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground mb-12 leading-relaxed max-w-2xl mx-auto">
               Master the art of financial literacy with expert guidance, practical tips, 
               and actionable strategies to build wealth and secure your future.
             </p>
