@@ -1,40 +1,28 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @layer base {
   :root {
     --background: 250 248 240; /* Cream color from logo */
     --foreground: 15 23 42; /* Dark slate */
-
     --card: 255 255 255; /* Pure white */
     --card-foreground: 15 23 42; /* Dark slate */
-
     --popover: 255 255 255; /* Pure white */
     --popover-foreground: 15 23 42; /* Dark slate */
-
     --primary: 22 101 52; /* Forest green */
     --primary-foreground: 248 250 252; /* Very light gray-blue */
-
     --secondary: 241 245 249; /* Light slate */
     --secondary-foreground: 15 23 42; /* Dark slate */
-
     --muted: 241 245 249; /* Light slate */
     --muted-foreground: 100 116 139; /* Slate */
-
     --accent: 34 197 94; /* Emerald green */
     --accent-foreground: 15 23 42; /* Dark slate */
-
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 248 250 252; /* Very light gray-blue */
-
     --border: 34 197 94; /* Emerald green */
     --input: 34 197 94; /* Emerald green */
     --ring: 22 101 52; /* Forest green */
-
     --radius: 0.5rem;
-
     --sidebar-background: 250 248 240; /* Cream color from logo */
     --sidebar-foreground: 15 23 42; /* Dark slate */
     --sidebar-primary: 22 101 52; /* Forest green */
@@ -44,36 +32,26 @@
     --sidebar-border: 34 197 94; /* Emerald green */
     --sidebar-ring: 22 101 52; /* Forest green */
   }
-
   .dark {
     --background: 2 6 23; /* Very dark blue */
     --foreground: 248 250 252; /* Very light gray-blue */
-
     --card: 15 23 42; /* Dark slate */
     --card-foreground: 248 250 252; /* Very light gray-blue */
-
     --popover: 15 23 42; /* Dark slate */
     --popover-foreground: 248 250 252; /* Very light gray-blue */
-
     --primary: 34 197 94; /* Emerald green */
     --primary-foreground: 2 6 23; /* Very dark blue */
-
     --secondary: 30 41 59; /* Slate */
     --secondary-foreground: 248 250 252; /* Very light gray-blue */
-
     --muted: 30 41 59; /* Slate */
     --muted-foreground: 148 163 184; /* Light slate */
-
     --accent: 22 101 52; /* Forest green */
     --accent-foreground: 248 250 252; /* Very light gray-blue */
-
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 248 250 252; /* Very light gray-blue */
-
     --border: 22 101 52; /* Forest green */
     --input: 22 101 52; /* Forest green */
     --ring: 34 197 94; /* Emerald green */
-
     --sidebar-background: 2 6 23; /* Very dark blue */
     --sidebar-foreground: 248 250 252; /* Very light gray-blue */
     --sidebar-primary: 34 197 94; /* Emerald green */
@@ -84,32 +62,67 @@
     --sidebar-ring: 34 197 94; /* Emerald green */
   }
 }
-
 @layer base {
   * {
     @apply border-border;
   }
-
   body {
     @apply bg-background text-foreground;
     font-size: 0.9rem; /* Slightly smaller base font size */
     line-height: 1.4; /* Tighter line height */
   }
 }
-
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
 }
-
 ::-webkit-scrollbar-track {
   @apply bg-muted;
 }
-
 ::-webkit-scrollbar-thumb {
   @apply bg-muted-foreground/30 rounded-full;
 }
-
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-muted-foreground/50;
+}
+
+/* Hero text sizing to match image scale */
+.text-center h1 {
+  font-size: 4rem !important;
+  line-height: 1.1 !important;
+}
+
+.text-center h1 + p {
+  font-size: 1.5rem !important;
+  line-height: 1.3 !important;
+}
+
+@media (min-width: 768px) {
+  .text-center h1 {
+    font-size: 6rem !important;
+  }
+  
+  .text-center h1 + p {
+    font-size: 1.75rem !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .text-center h1 {
+    font-size: 8rem !important;
+  }
+  
+  .text-center h1 + p {
+    font-size: 2rem !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .text-center h1 {
+    font-size: 10rem !important;
+  }
+  
+  .text-center h1 + p {
+    font-size: 2.25rem !important;
+  }
 }
