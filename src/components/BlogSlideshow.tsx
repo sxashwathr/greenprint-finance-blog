@@ -46,7 +46,7 @@ export function BlogSlideshow() {
   };
 
   return (
-    <div className="relative w-full h-[520px] overflow-hidden rounded-xl shadow-2xl">
+    <div className="relative w-full h-[560px] overflow-hidden rounded-xl shadow-2xl">
       {mockBlogs.map((blog, index) => (
         <div
           key={blog.id}
