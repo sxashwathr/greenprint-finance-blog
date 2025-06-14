@@ -33,22 +33,27 @@ export function Header() {
   return (
     <>
       {/* Greenprint Brand - Fixed position for all pages */}
-      <div className="fixed top-3 left-3 z-50">
-        <Link to="/" className="flex items-center space-x-2" onClick={handleNavClick}>
-          <div className="w-10 h-10 bg-background rounded-lg flex items-center justify-center shadow-md border border-primary/20">
+      <div className="fixed top-2 left-2 z-50">
+        <Link to="/" className="flex items-center space-x-1.5" onClick={handleNavClick}>
+          <div className="w-8 h-8 bg-background rounded-lg flex items-center justify-center shadow-md border border-primary/20">
             <img 
               src="/lovable-uploads/92ea261f-7b6b-4e5e-951b-dea177cce938.png" 
               alt="Greenprint Logo" 
-              className="w-6 h-6 object-contain"
+              className="w-5 h-5 object-contain"
+              onError={(e) => {
+                console.log("Logo failed to load:", e);
+                e.currentTarget.style.display = 'none';
+              }}
+              onLoad={() => console.log("Logo loaded successfully")}
             />
           </div>
-          <span className="font-bold text-base text-foreground">Greenprint</span>
+          <span className="font-bold text-sm text-foreground">Greenprint</span>
         </Link>
       </div>
 
-      <header className={`fixed w-full top-3 z-40 flex justify-center transition-all duration-300`}>
+      <header className={`fixed w-full top-2 z-40 flex justify-center transition-all duration-300`}>
         <nav className={`bg-background/95 backdrop-blur-sm border border-primary/30 rounded-full shadow-lg transition-all duration-300 ${
-          isScrolled ? 'h-8 px-3' : 'h-12 px-6'
+          isScrolled ? 'h-7 px-2' : 'h-10 px-4'
         }`}>
           <div className="h-full flex items-center justify-center">
             {/* Desktop Navigation - Centered */}
@@ -61,16 +66,16 @@ export function Header() {
                     key={item.name}
                     to={item.href}
                     onClick={handleNavClick}
-                    className={`relative text-foreground transition-all duration-300 font-medium rounded-full group flex items-center space-x-1.5 ${
-                      isScrolled ? 'text-xs px-2 py-1.5' : 'text-sm px-3 py-2'
+                    className={`relative text-foreground transition-all duration-300 font-medium rounded-full group flex items-center justify-center space-x-1 ${
+                      isScrolled ? 'text-xs px-2 py-1' : 'text-sm px-2.5 py-1.5'
                     }`}
                   >
-                    {IconComponent && <IconComponent className={isScrolled ? "h-3 w-3" : "h-4 w-4"} />}
+                    {IconComponent && <IconComponent className={isScrolled ? "h-2.5 w-2.5" : "h-3.5 w-3.5"} />}
                     <span className="relative z-10">{item.name}</span>
                     <div className={`absolute inset-0 rounded-full transition-all duration-300 ${
                       isActive 
-                        ? 'bg-primary/5' 
-                        : 'bg-transparent group-hover:bg-primary/20 group-hover:shadow-lg group-hover:shadow-primary/20'
+                        ? 'bg-primary/10' 
+                        : 'bg-transparent group-hover:bg-primary/15 group-hover:shadow-md group-hover:shadow-primary/15'
                     }`} />
                   </Link>
                 );
@@ -81,24 +86,24 @@ export function Header() {
             <Button
               variant="ghost"
               size="sm"
-              className="absolute right-3 md:hidden hover:bg-primary/20"
+              className="absolute right-2 md:hidden hover:bg-primary/20"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
-              {isMobileMenuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
+              {isMobileMenuOpen ? <X className="h-3.5 w-3.5" /> : <Menu className="h-3.5 w-3.5" />}
             </Button>
           </div>
 
           {/* Mobile Navigation */}
           {isMobileMenuOpen && (
-            <div className="absolute top-full left-0 w-full bg-background border border-primary/30 rounded-xl shadow-lg md:hidden mt-2">
-              <div className="flex flex-col space-y-1 p-3">
+            <div className="absolute top-full left-0 w-full bg-background border border-primary/30 rounded-xl shadow-lg md:hidden mt-1">
+              <div className="flex flex-col space-y-1 p-2">
                 {navigation.map((item) => {
                   const IconComponent = item.icon;
                   return (
                     <Link
                       key={item.name}
                       to={item.href}
-                      className={`text-foreground transition-all duration-200 font-medium px-3 py-2 rounded-full hover:bg-primary/20 hover:shadow-md flex items-center space-x-2 text-sm ${
+                      className={`text-foreground transition-all duration-200 font-medium px-2.5 py-1.5 rounded-full hover:bg-primary/20 hover:shadow-md flex items-center space-x-1.5 text-sm ${
                         location.pathname === item.href ? 'bg-primary/5' : ''
                       }`}
                       onClick={() => {
