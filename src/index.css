@@ -70,7 +70,18 @@
   body {
     @apply bg-background text-foreground;
     font-size: 0.9rem; /* Slightly smaller base font size */
-    line-height: 1.4; /* Tighter line height */
+    line-height: 1.6; /* Increased from 1.4 for better text rendering */
+  }
+  
+  /* Fix text cutoff issues */
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.3;
+    padding-bottom: 0.1em; /* Add small padding to prevent descender cutoff */
+  }
+  
+  p {
+    line-height: 1.6;
+    padding-bottom: 0.05em; /* Small padding for paragraph text */
   }
 }
 /* Custom scrollbar */
