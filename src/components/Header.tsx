@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, DollarSign, TrendingUp, CreditCard, Briefcase, Users } from "lucide-react";
@@ -7,6 +6,7 @@ import { Button } from "@/components/ui/button";
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [logoError, setLogoError] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -30,22 +30,46 @@ export function Header() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const handleLogoError = (e: React.SyntheticEvent<HTMLImageElement>) => {
+    console.error("Logo failed to load:", e);
+    console.log("Attempted logo path:", e.currentTarget.src);
+    console.log("Base URL:", window.location.origin);
+    console.log("Current pathname:", window.location.pathname);
+    setLogoError(true);
+  };
+
+  const handleLogoLoad = () => {
+    console.log("Logo loaded successfully");
+    setLogoError(false);
+  };
+
+  // Try different logo paths based on the environment
+  const getLogoPath = () => {
+    const basePath = import.meta.env.BASE_URL || '/';
+    const logoPath = `${basePath}lovable-uploads/92ea261f-7b6b-4e5e-951b-dea177cce938.png`;
+    console.log("Computed logo path:", logoPath);
+    return logoPath;
+  };
+
   return (
     <>
       {/* Greenprint Brand - Fixed position for all pages */}
       <div className="fixed top-2 left-2 z-50">
         <Link to="/" className="flex items-center space-x-1.5" onClick={handleNavClick}>
           <div className="w-8 h-8 bg-background rounded-lg flex items-center justify-center shadow-md border border-primary/20">
-            <img 
-              src="/lovable-uploads/92ea261f-7b6b-4e5e-951b-dea177cce938.png" 
-              alt="Greenprint Logo" 
-              className="w-5 h-5 object-contain"
-              onError={(e) => {
-                console.log("Logo failed to load:", e);
-                e.currentTarget.style.display = 'none';
-              }}
-              onLoad={() => console.log("Logo loaded successfully")}
-            />
+            {!logoError ? (
+              <img 
+                src={getLogoPath()}
+                alt="Greenprint Logo" 
+                className="w-5 h-5 object-contain"
+                onError={handleLogoError}
+                onLoad={handleLogoLoad}
+              />
+            ) : (
+              <div className="w-5 h-5 bg-primary/20 rounded flex items-center justify-center text-xs font-bold text-primary">
+                G
+              </div>
+            )}
           </div>
           <span className="font-bold text-sm text-foreground">Greenprint</span>
         </Link>

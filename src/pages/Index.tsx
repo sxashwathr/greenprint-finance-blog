@@ -8,6 +8,9 @@ import { Footer } from "@/components/Footer";
 
 const Index = () => {
   console.log("Index component is rendering");
+  console.log("Current location:", window.location.href);
+  console.log("Base URL from import.meta.env:", import.meta.env.BASE_URL);
+  console.log("Mode:", import.meta.env.MODE);
   
   return (
     <div className="min-h-screen bg-background">
