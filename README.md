@@ -1,7 +1,7 @@
 # Welcome to the Greenprint Finance Blog!
 Your Blueprint to Financial Success!
 
-**Visit Here:** https://sxashwathr.github.io/greenprint-finance-blog/index.html
+**Visit Here:** [https://sxashwathr.github.io/greenprint-finance-blog/index.html](https://sxashwathr.github.io/greenprint-finance-blog)
 
 ## What is the blog for?
 This blog is specifically designed to help young individuals and entrepreneuers reach financial stability. 
