@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, DollarSign, TrendingUp, CreditCard, Briefcase, Users } from "lucide-react";
@@ -91,7 +92,7 @@ export function Header() {
                     to={item.href}
                     onClick={handleNavClick}
                     className={`relative text-foreground transition-all duration-300 font-medium rounded-full group flex items-center justify-center space-x-1 ${
-                      isScrolled ? 'text-xs px-2 py-1' : 'text-sm px-2.5 py-1.5'
+                      isScrolled ? 'text-xs px-2.5 py-1' : 'text-sm px-3 py-1.5'
                     }`}
                   >
                     {IconComponent && <IconComponent className={isScrolled ? "h-2.5 w-2.5" : "h-3.5 w-3.5"} />}
