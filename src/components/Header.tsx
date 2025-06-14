@@ -1,5 +1,4 @@
 
-
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, DollarSign, TrendingUp, CreditCard, Briefcase, Users } from "lucide-react";
@@ -49,13 +48,14 @@ export function Header() {
 
       <header className={`fixed w-full top-4 z-40 flex justify-center transition-all duration-300`}>
         <nav className={`bg-background/95 backdrop-blur-sm border border-primary/30 rounded-full shadow-lg transition-all duration-300 ${
-          isScrolled ? 'h-8 px-3' : 'h-14 px-6'
+          isScrolled ? 'h-10 px-4' : 'h-16 px-8'
         }`}>
           <div className="h-full flex items-center justify-center">
             {/* Desktop Navigation - Centered */}
             <div className="hidden md:flex items-center space-x-1">
               {navigation.map((item) => {
                 const IconComponent = item.icon;
+                const isActive = location.pathname === item.href;
                 return (
                   <Link
                     key={item.name}
@@ -68,8 +68,8 @@ export function Header() {
                     {IconComponent && <IconComponent className={isScrolled ? "h-4 w-4" : "h-5 w-5"} />}
                     <span className="relative z-10">{item.name}</span>
                     <div className={`absolute inset-0 rounded-full transition-all duration-300 ${
-                      location.pathname === item.href 
-                        ? 'bg-primary/20' 
+                      isActive 
+                        ? 'bg-primary/10' 
                         : 'bg-transparent group-hover:bg-primary/30 group-hover:shadow-lg group-hover:shadow-primary/20'
                     }`} />
                   </Link>
@@ -99,7 +99,7 @@ export function Header() {
                       key={item.name}
                       to={item.href}
                       className={`text-foreground transition-all duration-200 font-medium px-4 py-2 rounded-full hover:bg-primary/30 hover:shadow-md flex items-center space-x-2 ${
-                        location.pathname === item.href ? 'bg-primary/20' : ''
+                        location.pathname === item.href ? 'bg-primary/10' : ''
                       }`}
                       onClick={() => {
                         setIsMobileMenuOpen(false);
@@ -119,4 +119,3 @@ export function Header() {
     </>
   );
 }
-

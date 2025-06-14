@@ -2,9 +2,8 @@
 import { Header } from "@/components/Header";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { Footer } from "@/components/Footer";
-import { Calendar, ArrowRight, TrendingUp } from "lucide-react";
+import { Calendar, TrendingUp } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 
 const investingBlogs = [
   {
@@ -64,20 +63,14 @@ const investingBlogs = [
 ];
 
 const Investing = () => {
+  const handleTileClick = (blogId: number) => {
+    console.log(`Clicked on blog ${blogId}`);
+    // Navigate to blog post
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <ThemeToggle />
-      
-      {/* Greenprint Brand */}
-      <div className="fixed top-4 left-4 z-50">
-        <div className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-gradient-to-br from-forest-green to-sage-green rounded-lg flex items-center justify-center">
-            <span className="text-white font-bold text-sm">G</span>
-          </div>
-          <span className="font-bold text-lg text-foreground">Greenprint</span>
-        </div>
-      </div>
-      
       <Header />
       
       <section className="pt-32 pb-16">
@@ -101,7 +94,11 @@ const Investing = () => {
           {/* Blog Tiles Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {investingBlogs.map((blog) => (
-              <Card key={blog.id} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-sage-green/20 bg-card">
+              <Card 
+                key={blog.id} 
+                className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-sage-green/20 bg-card cursor-pointer"
+                onClick={() => handleTileClick(blog.id)}
+              >
                 <CardContent className="p-6">
                   <div className="flex items-center justify-between mb-3">
                     <span className={`text-xs font-semibold text-white ${blog.categoryColor} px-4 py-2 rounded-full`}>
@@ -120,10 +117,9 @@ const Investing = () => {
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-xs text-muted-foreground">{blog.readTime}</span>
-                    <Button variant="ghost" size="sm" className="text-forest-green hover:text-forest-green/80 hover:bg-sage-green/20 rounded-full transition-all duration-300">
-                      Read More
-                      <ArrowRight className="h-3 w-3 ml-1" />
-                    </Button>
+                    <span className="text-xs text-forest-green font-medium">
+                      Click to read more →
+                    </span>
                   </div>
                 </CardContent>
               </Card>
