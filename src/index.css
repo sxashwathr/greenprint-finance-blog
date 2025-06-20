@@ -66,6 +66,7 @@
 @layer base {
   * {
     @apply border-border;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
   }
   body {
     @apply bg-background text-foreground;
@@ -84,6 +85,20 @@
     padding-bottom: 0.05em; /* Small padding for paragraph text */
   }
 }
+
+/* Smooth transitions for all theme changes */
+html {
+  transition: background-color 0.3s ease;
+}
+
+/* Prevent flashing during theme transitions */
+.dark-mode-transition,
+.dark-mode-transition *,
+.dark-mode-transition *:before,
+.dark-mode-transition *:after {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease !important;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 6px;

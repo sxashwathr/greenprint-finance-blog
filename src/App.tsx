@@ -10,6 +10,7 @@ import Investing from "./pages/Investing";
 import CreditDebt from "./pages/CreditDebt";
 import Entrepreneurship from "./pages/Entrepreneurship";
 import CareerIncome from "./pages/CareerIncome";
+import BlogPost from "./pages/BlogPost";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => {
             <Route path="/credit-debt" element={<CreditDebt />} />
             <Route path="/entrepreneurship" element={<Entrepreneurship />} />
             <Route path="/career-income" element={<CareerIncome />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

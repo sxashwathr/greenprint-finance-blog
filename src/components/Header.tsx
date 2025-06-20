@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, DollarSign, TrendingUp, CreditCard, Briefcase, Users } from "lucide-react";
+import { Menu, X, DollarSign, TrendingUp, CreditCard, Briefcase, Users, House } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function Header() {
@@ -19,7 +19,7 @@ export function Header() {
   }, []);
 
   const navigation = [
-    { name: "Home", href: "/", icon: null },
+    { name: "Home", href: "/", icon: House },
     { name: "Budgeting", href: "/budgeting", icon: DollarSign },
     { name: "Investing", href: "/investing", icon: TrendingUp },
     { name: "Credit & Debt", href: "/credit-debt", icon: CreditCard },
@@ -44,7 +44,6 @@ export function Header() {
     setLogoError(false);
   };
 
-  // Try different logo paths based on the environment
   const getLogoPath = () => {
     const basePath = import.meta.env.BASE_URL || '/';
     const logoPath = `${basePath}lovable-uploads/92ea261f-7b6b-4e5e-951b-dea177cce938.png`;
@@ -91,13 +90,11 @@ export function Header() {
                     key={item.name}
                     to={item.href}
                     onClick={handleNavClick}
-                    className={`relative text-foreground transition-all duration-300 font-medium rounded-full group flex items-center justify-center ${
-                      IconComponent 
-                        ? `space-x-1 ${isScrolled ? 'text-xs px-3 py-1' : 'text-sm px-3.5 py-1.5'}`
-                        : `${isScrolled ? 'text-xs px-4 py-1' : 'text-sm px-4.5 py-1.5'}`
+                    className={`relative text-foreground transition-all duration-300 font-medium rounded-full group flex items-center justify-center space-x-1 ${
+                      isScrolled ? 'text-xs px-3 py-1' : 'text-sm px-3.5 py-1.5'
                     }`}
                   >
-                    {IconComponent && <IconComponent className={isScrolled ? "h-2.5 w-2.5" : "h-3.5 w-3.5"} />}
+                    <IconComponent className={isScrolled ? "h-2.5 w-2.5" : "h-3.5 w-3.5"} />
                     <span className="relative z-10">{item.name}</span>
                     <div className={`absolute inset-0 rounded-full transition-all duration-300 ${
                       isActive 
@@ -138,7 +135,7 @@ export function Header() {
                         handleNavClick();
                       }}
                     >
-                      {IconComponent && <IconComponent className="h-3 w-3" />}
+                      <IconComponent className="h-3 w-3" />
                       <span>{item.name}</span>
                     </Link>
                   );
