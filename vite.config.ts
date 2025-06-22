@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/greenprint-finance-blog/',
+  base: '/', // Changed from '/greenprint-finance-blog/' to '/' for custom domain
   server: {
     host: "::",
     port: 8080,
