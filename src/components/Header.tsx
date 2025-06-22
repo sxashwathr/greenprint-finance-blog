@@ -44,12 +44,9 @@ export function Header() {
     setLogoError(false);
   };
 
-  const getLogoPath = () => {
-    const basePath = import.meta.env.BASE_URL || '/';
-    const logoPath = `${basePath}lovable-uploads/92ea261f-7b6b-4e5e-951b-dea177cce938.png`;
-    console.log("Computed logo path:", logoPath);
-    return logoPath;
-  };
+ const getLogoPath = () => {
+  return '/favico.png';
+};
 
   return (
     <>
