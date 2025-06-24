@@ -22,7 +22,7 @@ const App = () => {
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
+        <BrowserRouter basename="/greenprint-finance-blog">
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/budgeting" element={<Budgeting />} />
