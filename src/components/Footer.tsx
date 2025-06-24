@@ -28,7 +28,7 @@ export function Footer() {
           {/* About Section */}
           <div>
             <h3 className="text-lg font-bold mb-4 text-foreground">About Greenprint</h3>
-            <p className="text-muted-foreground mb-4 leading-relaxed">
+            <p className="text-foreground mb-4 leading-relaxed">
               Your blueprint to achieving proficient financial literacy. We provide practical, 
               actionable advice to help you build a secure financial future.
             </p>
