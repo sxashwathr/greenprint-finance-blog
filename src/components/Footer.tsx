@@ -1,4 +1,3 @@
-
 import { Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -53,27 +52,27 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Quick Links - Orange only on hover */}
           <div>
             <h3 className="text-lg font-bold mb-4 text-foreground">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link to="/budgeting" onClick={handleNavClick} className="text-muted-foreground hover:text-forest-green transition-colors">Budgeting</Link></li>
-              <li><Link to="/investing" onClick={handleNavClick} className="text-muted-foreground hover:text-forest-green transition-colors">Investing Basics</Link></li>
-              <li><Link to="/credit-debt" onClick={handleNavClick} className="text-muted-foreground hover:text-forest-green transition-colors">Credit & Debt</Link></li>
-              <li><Link to="/entrepreneurship" onClick={handleNavClick} className="text-muted-foreground hover:text-forest-green transition-colors">Entrepreneurship</Link></li>
-              <li><Link to="/career-income" onClick={handleNavClick} className="text-muted-foreground hover:text-forest-green transition-colors">Career & Income</Link></li>
+              <li><Link to="/budgeting" onClick={handleNavClick} className="text-foreground hover:text-orange-500 transition-colors">Budgeting</Link></li>
+              <li><Link to="/investing" onClick={handleNavClick} className="text-foreground hover:text-orange-500 transition-colors">Investing Basics</Link></li>
+              <li><Link to="/credit-debt" onClick={handleNavClick} className="text-foreground hover:text-orange-500 transition-colors">Credit & Debt</Link></li>
+              <li><Link to="/entrepreneurship" onClick={handleNavClick} className="text-foreground hover:text-orange-500 transition-colors">Entrepreneurship</Link></li>
+              <li><Link to="/career-income" onClick={handleNavClick} className="text-foreground hover:text-orange-500 transition-colors">Career & Income</Link></li>
             </ul>
           </div>
 
-          {/* Resources */}
+          {/* Resources - Orange only on hover */}
           <div>
             <h3 className="text-lg font-bold mb-4 text-foreground">Resources</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-muted-foreground hover:text-forest-green transition-colors">Financial Calculator</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-forest-green transition-colors">Budget Templates</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-forest-green transition-colors">Investment Guide</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-forest-green transition-colors">Newsletter Archive</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-forest-green transition-colors">FAQ</a></li>
+              <li><a href="#" className="text-foreground hover:text-orange-500 transition-colors">Financial Calculator</a></li>
+              <li><a href="#" className="text-foreground hover:text-orange-500 transition-colors">Budget Templates</a></li>
+              <li><a href="#" className="text-foreground hover:text-orange-500 transition-colors">Investment Guide</a></li>
+              <li><a href="#" className="text-foreground hover:text-orange-500 transition-colors">Newsletter Archive</a></li>
+              <li><a href="#" className="text-foreground hover:text-orange-500 transition-colors">FAQ</a></li>
             </ul>
           </div>
 
