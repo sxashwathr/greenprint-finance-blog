@@ -12,7 +12,7 @@ const creditDebtBlogs = [
     category: "Credit & Debt",
     date: "2024-01-25",
     readTime: "8 min read",
-    categoryColor: "bg-pink-green"
+    categoryColor: "bg-green-700"  // Changed to unique dark green
   }
 ];
 
