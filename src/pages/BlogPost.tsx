@@ -41,90 +41,40 @@ const BlogPost = () => {
       case "budgeting-basics":
         return (
           <div className="prose prose-lg max-w-4xl mx-auto">
-            <h1 className="text-4xl font-bold mb-8 text-foreground">Budgeting Basics: Your First Step to Financial Freedom</h1>
-            
             <p className="text-lg text-emerald-700 mb-6">
               Creating and sticking to a budget is the foundation of financial success. Let's break down how to build a budget that actually works for your lifestyle.
             </p>
 
-            <h2 className="text-2xl font-bold mt-8 mb-4 text-foreground">Why Budgeting Matters</h2>
-            <p className="mb-4 text-foreground">
-              A budget gives you control over your money instead of wondering where it went. It helps you:
+            <p className="mb-6 text-foreground">
+              A budget gives you control over your money instead of wondering where it went. It helps you track your income and expenses, identify areas where you can save money, and plan for future goals and emergencies.
             </p>
-            <ul className="list-disc pl-6 mb-6 text-foreground">
-              <li>Track your income and expenses</li>
-              <li>Identify areas where you can save money</li>
-              <li>Plan for future goals and emergencies</li>
-              <li>Reduce financial stress</li>
-            </ul>
 
-            <h2 className="text-2xl font-bold mt-8 mb-4 text-foreground">The 50/30/20 Rule</h2>
-            <p className="mb-4 text-foreground">
-              A simple budgeting framework to get started:
+            <p className="mb-6 text-foreground">
+              The 50/30/20 rule is a simple budgeting framework to get started. This approach divides your after-tax income into three categories: 50% for needs like rent and groceries, 30% for wants like entertainment and dining out, and 20% for savings and debt repayment including your emergency fund and retirement contributions.
             </p>
-            <ul className="list-disc pl-6 mb-6 text-foreground">
-              <li><strong>50% for needs:</strong> Rent, groceries, utilities, minimum debt payments</li>
-              <li><strong>30% for wants:</strong> Entertainment, dining out, hobbies</li>
-              <li><strong>20% for savings and debt repayment:</strong> Emergency fund, retirement, extra debt payments</li>
-            </ul>
 
-            <h2 className="text-2xl font-bold mt-8 mb-4 text-foreground">Getting Started</h2>
-            <ol className="list-decimal pl-6 mb-6 text-foreground">
+            <p className="mb-6 text-foreground">
+              Getting started is easier than you think.
+            </p>
+
+            <p className="mb-6 text-foreground">
+              Common budgeting mistakes include being too restrictive with your wants category, not planning for irregular expenses, giving up after one bad month, and not adjusting as your life changes. Remember, the best budget is one you'll actually stick to, so start simple and adjust as you learn what works for your lifestyle.
+            </p>
+
+            <ul className="list-disc pl-6 mb-6 text-foreground">
               <li>Calculate your monthly after-tax income</li>
               <li>Track your expenses for a month</li>
-              <li>Categorize your spending</li>
+              <li>Categorize your spending into needs, wants, and savings</li>
               <li>Set realistic goals for each category</li>
-              <li>Review and adjust monthly</li>
-            </ol>
-
-            <h2 className="text-2xl font-bold mt-8 mb-4 text-foreground">Common Budgeting Mistakes</h2>
-            <ul className="list-disc pl-6 mb-6 text-foreground">
-              <li>Being too restrictive with your "wants" category</li>
-              <li>Not planning for irregular expenses</li>
-              <li>Giving up after one bad month</li>
-              <li>Not adjusting as your life changes</li>
+              <li>Review and adjust monthly based on your actual spending</li>
             </ul>
-
-            <p className="text-lg text-emerald-700 mt-8">
-              Remember, the best budget is one you'll actually stick to. Start simple and adjust as you learn what works for your lifestyle.
-            </p>
           </div>
         );
 
       case "investing-fundamentals":
         return (
           <div className="prose prose-lg max-w-4xl mx-auto">
-            <h1 className="text-4xl font-bold mb-8 text-foreground">Investing Fundamentals: Building Long-Term Wealth</h1>
-            
-            <p className="text-lg text-emerald-700 mb-6">
-              Investing can seem intimidating, but understanding the basics is your first step toward building long-term wealth.
-            </p>
-
-            <h2 className="text-2xl font-bold mt-8 mb-4 text-foreground">Why Invest?</h2>
-            <p className="mb-6 text-foreground">
-              Your money loses value over time due to inflation. Investing helps your money grow faster than inflation, building real wealth over time.
-            </p>
-
-            <h2 className="text-2xl font-bold mt-8 mb-4 text-foreground">Key Investment Types</h2>
-            <ul className="list-disc pl-6 mb-6 text-foreground">
-              <li><strong>Stocks:</strong> Ownership shares in companies</li>
-              <li><strong>Bonds:</strong> Loans to companies or governments</li>
-              <li><strong>Index Funds:</strong> Diversified baskets of stocks or bonds</li>
-              <li><strong>ETFs:</strong> Exchange-traded funds that track indices</li>
-            </ul>
-
-            <h2 className="text-2xl font-bold mt-8 mb-4 text-foreground">Getting Started</h2>
-            <ol className="list-decimal pl-6 mb-6 text-foreground">
-              <li>Build an emergency fund first (3-6 months of expenses)</li>
-              <li>Pay off high-interest debt</li>
-              <li>Open a brokerage account</li>
-              <li>Start with low-cost index funds</li>
-              <li>Invest consistently, regardless of market conditions</li>
-            </ol>
-
-            <p className="text-lg text-emerald-700 mt-8">
-              Time in the market beats timing the market. Start early, stay consistent, and let compound growth work for you.
-            </p>
+            {/* Add your investing content here */}
           </div>
         );
 
