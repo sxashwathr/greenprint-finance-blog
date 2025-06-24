@@ -1,4 +1,3 @@
-
 import { Header } from "@/components/Header";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { Footer } from "@/components/Footer";
@@ -26,7 +25,7 @@ const Budgeting = () => {
       <section className="pt-32 pb-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-16">
-            <div className="flex justify-center mb-6 animate-fade-in">
+            <div className="flex justify-center mb-8 animate-fade-in">
               <div className="w-16 h-16 bg-gradient-to-br from-forest-green to-sage-green rounded-xl flex items-center justify-center">
                 <Calculator className="h-8 w-8 text-white" />
               </div>
@@ -36,20 +35,21 @@ const Budgeting = () => {
               Budgeting Mastery
             </h1>
             
-            <p className="text-xl text-muted-foreground mb-12 leading-relaxed animate-fade-in">
+            {/* CHANGED: Main description text to dark forest green */}
+            <p className="text-xl text-emerald-700 mb-12 leading-relaxed animate-fade-in">
               Learn how to create, manage, and stick to budgets that actually work for your lifestyle and financial goals.
             </p>
           </div>
 
           {/* Blog Tiles Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {budgetingBlogs.map((blog) => (
               <BlogTile key={blog.id} {...blog} />
             ))}
           </div>
         </div>
       </section>
-
+      
       <Footer />
     </div>
   );
