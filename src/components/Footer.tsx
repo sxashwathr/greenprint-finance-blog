@@ -1,8 +1,27 @@
 
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export function Footer() {
+  const [logoError, setLogoError] = useState(false);
+
+  const handleLogoError = () => {
+    setLogoError(true);
+  };
+
+  const handleLogoLoad = () => {
+    setLogoError(false);
+  };
+
+  const getLogoPath = () => {
+    return '/favico.png';
+  };
+
+  const handleNavClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <footer className="bg-muted py-16">
       <div className="container mx-auto px-4">
@@ -15,8 +34,20 @@ export function Footer() {
               actionable advice to help you build a secure financial future.
             </p>
             <div className="flex items-center space-x-2">
-              <div className="w-6 h-6 bg-gradient-to-br from-forest-green to-sage-green rounded flex items-center justify-center">
-                <span className="text-white font-bold text-xs">G</span>
+              <div className="w-6 h-6 bg-background rounded flex items-center justify-center shadow-md border border-primary/20">
+                {!logoError ? (
+                  <img 
+                    src={getLogoPath()}
+                    alt="Greenprint Logo" 
+                    className="w-4 h-4 object-contain"
+                    onError={handleLogoError}
+                    onLoad={handleLogoLoad}
+                  />
+                ) : (
+                  <div className="w-4 h-4 bg-primary/20 rounded flex items-center justify-center text-xs font-bold text-primary">
+                    G
+                  </div>
+                )}
               </div>
               <span className="font-semibold text-foreground">Greenprint</span>
             </div>
@@ -26,11 +57,11 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-4 text-foreground">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link to="/budgeting" className="text-muted-foreground hover:text-forest-green transition-colors">Budgeting</Link></li>
-              <li><Link to="/investing" className="text-muted-foreground hover:text-forest-green transition-colors">Investing Basics</Link></li>
-              <li><Link to="/credit-debt" className="text-muted-foreground hover:text-forest-green transition-colors">Credit & Debt</Link></li>
-              <li><Link to="/entrepreneurship" className="text-muted-foreground hover:text-forest-green transition-colors">Entrepreneurship</Link></li>
-              <li><Link to="/career-income" className="text-muted-foreground hover:text-forest-green transition-colors">Career & Income</Link></li>
+              <li><Link to="/budgeting" onClick={handleNavClick} className="text-muted-foreground hover:text-forest-green transition-colors">Budgeting</Link></li>
+              <li><Link to="/investing" onClick={handleNavClick} className="text-muted-foreground hover:text-forest-green transition-colors">Investing Basics</Link></li>
+              <li><Link to="/credit-debt" onClick={handleNavClick} className="text-muted-foreground hover:text-forest-green transition-colors">Credit & Debt</Link></li>
+              <li><Link to="/entrepreneurship" onClick={handleNavClick} className="text-muted-foreground hover:text-forest-green transition-colors">Entrepreneurship</Link></li>
+              <li><Link to="/career-income" onClick={handleNavClick} className="text-muted-foreground hover:text-forest-green transition-colors">Career & Income</Link></li>
             </ul>
           </div>
 
@@ -52,24 +83,14 @@ export function Footer() {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-forest-green" />
-                <span className="text-muted-foreground">hello@greenprint.blog</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Phone className="h-4 w-4 text-forest-green" />
-                <span className="text-muted-foreground">+1 (555) 123-4567</span>
+                <span className="text-muted-foreground">educate.greenprint@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4 text-forest-green" />
-                <span className="text-muted-foreground">New York, NY</span>
+                <span className="text-muted-foreground">Frisco, Texas</span>
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="pt-8 mt-8 text-center">
-          <p className="text-muted-foreground">
-            © 2024 Greenprint. All rights reserved. Your blueprint to financial success.
-          </p>
         </div>
       </div>
     </footer>
