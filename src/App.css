@@ -11,9 +11,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -39,4 +41,53 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* NEW: Additional blog post styling overrides for light mode */
+
+/* Blog post card containers */
+.blog-card {
+  transition: all 0.3s ease;
+}
+
+/* Ensure blog post titles are dark slate in light mode */
+.blog-card h2,
+.blog-card h3,
+.blog-post-title {
+  color: rgb(15 23 42) !important; /* Dark slate - same as main titles */
+}
+
+/* Blog post descriptions should match titles in light mode */
+.blog-card p:not(.blog-read-time):not(.blog-read-more),
+.blog-description {
+  color: rgb(15 23 42) !important; /* Dark slate - same as titles */
+}
+
+/* Orange styling for meta information */
+.blog-read-time,
+.blog-read-more,
+.read-more-link {
+  color: rgb(251 146 60) !important; /* Orange */
+}
+
+/* Footer and bottom navigation links */
+.footer a,
+.bottom-links a,
+.quick-links a,
+.navigation-links a {
+  color: rgb(251 146 60) !important; /* Orange */
+}
+
+/* Override any existing pink colors specifically in light mode */
+:root:not(.dark) .text-pink-400,
+:root:not(.dark) .text-pink-500,
+:root:not(.dark) .text-pink-600,
+:root:not(.dark) .text-purple-400 {
+  color: rgb(15 23 42) !important; /* Dark slate for descriptions */
+}
+
+/* Keep category bubbles as they are (green) */
+.category-badge,
+.blog-category {
+  /* Don't override - keep existing green styling */
 }
