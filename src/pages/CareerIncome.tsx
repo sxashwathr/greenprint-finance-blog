@@ -12,7 +12,7 @@ const careerIncomeBlogs = [
     category: "Career & Income",
     date: "2024-01-30",
     readTime: "14 min read",
-    categoryColor: "bg-forest-green"
+    categoryColor: "bg-teal-600"  // Changed to unique teal green
   }
 ];
 
