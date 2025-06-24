@@ -29,6 +29,13 @@
       );
     }
   }(window.location))
+  (function() {
+    var redirectPath = sessionStorage.getItem('redirectPath');
+    if (redirectPath && redirectPath !== '/') {
+      sessionStorage.removeItem('redirectPath');
+      window.history.replaceState(null, null, redirectPath);
+    }
+  })();
 </script>
   </head>
   <body>
