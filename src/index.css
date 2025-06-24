@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -32,6 +31,12 @@
     --sidebar-accent-foreground: 15 23 42; /* Dark slate */
     --sidebar-border: 34 197 94; /* Emerald green */
     --sidebar-ring: 22 101 52; /* Forest green */
+    
+    /* NEW: Blog post styling variables for light mode */
+    --blog-title-color: 15 23 42; /* Dark slate - same as main title */
+    --blog-description-color: 15 23 42; /* Dark slate - same as title */
+    --blog-meta-color: 251 146 60; /* Orange for "5 min read" and "Click to read more" */
+    --footer-links-color: 251 146 60; /* Orange for footer/bottom links */
   }
   .dark {
     --background: 2 6 23; /* Very dark blue */
@@ -61,6 +66,12 @@
     --sidebar-accent-foreground: 248 250 252; /* Very light gray-blue */
     --sidebar-border: 22 101 52; /* Forest green */
     --sidebar-ring: 34 197 94; /* Emerald green */
+    
+    /* Dark mode will keep existing behavior for now - only light mode changes */
+    --blog-title-color: 248 250 252; /* Keep existing light color */
+    --blog-description-color: 248 250 252; /* Keep existing light color */
+    --blog-meta-color: 251 146 60; /* Orange for consistency */
+    --footer-links-color: 251 146 60; /* Orange for footer */
   }
 }
 @layer base {
@@ -118,4 +129,41 @@ html {
   filter: brightness(1.3) saturate(1.2) !important;
   border: 1px solid rgba(34, 197, 94, 0.3) !important;
   box-shadow: 0 0 8px rgba(34, 197, 94, 0.2) !important;
+}
+
+/* NEW: Blog post tile styling for light mode fixes */
+.blog-post-title {
+  color: rgb(var(--blog-title-color));
+}
+
+.blog-post-description {
+  color: rgb(var(--blog-description-color)) !important;
+}
+
+.blog-post-meta {
+  color: rgb(var(--blog-meta-color)) !important;
+}
+
+.blog-read-time {
+  color: rgb(var(--blog-meta-color)) !important;
+}
+
+.blog-read-more {
+  color: rgb(var(--blog-meta-color)) !important;
+}
+
+.footer-links {
+  color: rgb(var(--footer-links-color)) !important;
+}
+
+/* Target specific classes that might be used in your blog posts */
+.text-pink-400,
+.text-pink-500,
+.text-pink-600 {
+  color: rgb(var(--blog-description-color)) !important;
+}
+
+/* For any existing pink colors in light mode */
+:root .text-purple-400 {
+  color: rgb(var(--blog-description-color)) !important;
 }
