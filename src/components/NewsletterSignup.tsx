@@ -40,7 +40,7 @@ export function NewsletterSignup() {
       formData.append('entry.712709816', email.trim()); // Your actual entry ID for email
       
       // Submit to Google Form with your actual form ID
-      const response = await fetch('https://docs.google.com/forms/d/e/1FAIpQLSdIXDyN10PUfOJA0QH9vZt9dL1TQEdIyW1tGJtRaCkJTMHb_kpE/formResponse', {
+      await fetch('https://docs.google.com/forms/d/e/1FAIpQLSdZ-aGo9ZUdOoQ6-xzFcSmfDwHEL-7q3AxG1Elvwm-xvFDkbQ/formResponse', {
         method: 'POST',
         body: formData
       });
