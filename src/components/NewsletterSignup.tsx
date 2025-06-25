@@ -34,16 +34,13 @@ export function NewsletterSignup() {
     setIsLoading(true);
 
     try {
-      // Get current date
-      const currentDate = new Date().toLocaleDateString();
-      
       // Using Google Forms approach (most reliable)
       const formData = new FormData();
-      formData.append('entry.1853429173', name.trim()); // Replace YOUR_NAME_ENTRY_ID with your actual name field entry ID
-      formData.append('entry.712709816', email.trim()); // Replace YOUR_EMAIL_ENTRY_ID with your actual email field entry ID
+      formData.append('entry.1853429173', name.trim()); // Name field entry ID
+      formData.append('entry.712709816', email.trim()); // Email field entry ID
       
-      // Submit to Google Form (replace YOUR_FORM_ID with your actual form ID)
-      await fetch('https://docs.google.com/forms/d/e/10PUfOJA0QH9vZt9dL1TQEdIyW1tGJtRaCkJTMHb_kpE/formResponse', {
+      // Submit to Google Form
+      await fetch('https://docs.google.com/forms/d/e/1FAIpQLSdIXDyN10PUfOJA0QH9vZt9dL1TQEdIyW1tGJtRaCkJTMHb_kpE/formResponse', {
         method: 'POST',
         mode: 'no-cors',
         body: formData
