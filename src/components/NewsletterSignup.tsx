@@ -71,26 +71,24 @@ export function NewsletterSignup() {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-br from-forest-green to-sage-green">
+    <section className="py-16 bg-gradient-to-r from-forest-green to-sage-green">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-background/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 text-center border border-white/20 shadow-2xl">
             <div className="flex items-center justify-center mb-6">
-              <Mail className="h-8 w-8 text-white mr-3" />
-              <h2 className="text-3xl md:text-4xl font-bold text-white">Stay Updated</h2>
+              <Mail className="h-8 w-8 mr-3 text-white" />
+              <h3 className="text-3xl font-bold text-white">Stay Updated</h3>
             </div>
-            
-            <p className="text-xl text-white/90 mb-8 leading-relaxed">
+            <p className="text-xl mb-8 text-white/90 leading-relaxed">
               Get the latest financial tips and insights delivered to your inbox weekly.
             </p>
-            
             <form onSubmit={handleSubmit} className="flex flex-col md:flex-row gap-4 max-w-2xl mx-auto">
               <Input
                 type="text"
                 placeholder="First Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="flex-1 h-14 text-lg bg-white/90 border-white/30 placeholder:text-gray-500"
+                className="bg-white/20 border-white/30 text-white placeholder:text-white/70 flex-1 rounded-full"
                 disabled={isLoading}
               />
               <Input
@@ -98,13 +96,12 @@ export function NewsletterSignup() {
                 placeholder="Email Address"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="flex-1 h-14 text-lg bg-white/90 border-white/30 placeholder:text-gray-500"
+                className="bg-white/20 border-white/30 text-white placeholder:text-white/70 flex-1 rounded-full"
                 disabled={isLoading}
               />
               <Button 
                 type="submit" 
-                size="lg" 
-                className="h-14 px-8 text-lg font-semibold bg-white text-forest-green hover:bg-white/90 transition-colors"
+                className="bg-white text-forest-green hover:bg-white/90 font-semibold px-8 rounded-full transition-all duration-300 hover:scale-105"
                 disabled={isLoading}
               >
                 {isLoading ? "Subscribing..." : "Subscribe Now"}
