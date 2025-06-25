@@ -39,11 +39,11 @@ export function NewsletterSignup() {
       
       // Using Google Forms approach (most reliable)
       const formData = new FormData();
-      formData.append('entry.2005620554', name.trim()); // Replace with your actual entry ID for name
-      formData.append('entry.1045781291', email.trim()); // Replace with your actual entry ID for email
+      formData.append('entry.1853429173', name.trim()); // Replace YOUR_NAME_ENTRY_ID with your actual name field entry ID
+      formData.append('entry.712709816', email.trim()); // Replace YOUR_EMAIL_ENTRY_ID with your actual email field entry ID
       
-      // Submit to Google Form (you'll need to create a form connected to your sheet)
-      await fetch('https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse', {
+      // Submit to Google Form (replace YOUR_FORM_ID with your actual form ID)
+      await fetch('https://docs.google.com/forms/d/e/10PUfOJA0QH9vZt9dL1TQEdIyW1tGJtRaCkJTMHb_kpE/formResponse', {
         method: 'POST',
         mode: 'no-cors',
         body: formData
