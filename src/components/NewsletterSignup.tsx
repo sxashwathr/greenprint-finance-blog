@@ -42,6 +42,7 @@ export function NewsletterSignup() {
       // Submit to Google Form with your actual form ID
       await fetch('https://docs.google.com/forms/d/e/1FAIpQLSdZ-aGo9ZUdOoQ6-xzFcSmfDwHEL-7q3AxG1Elvwm-xvFDkbQ/formResponse', {
         method: 'POST',
+        mode: 'no-cors',
         body: formData
       });
 
