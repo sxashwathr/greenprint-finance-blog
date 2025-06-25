@@ -70,10 +70,10 @@ export function NewsletterSignup() {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-br from-green-700 to-green-600">
+    <section className="py-16 bg-gradient-to-br from-forest-green to-sage-green">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-black/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+          <div className="bg-background/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
             <div className="flex items-center justify-center mb-6">
               <Mail className="h-8 w-8 text-white mr-3" />
               <h2 className="text-3xl md:text-4xl font-bold text-white">Stay Updated</h2>
@@ -103,7 +103,7 @@ export function NewsletterSignup() {
               <Button 
                 type="submit" 
                 size="lg" 
-                className="h-14 px-8 text-lg font-semibold bg-white text-green-700 hover:bg-white/90 transition-colors"
+                className="h-14 px-8 text-lg font-semibold bg-white text-forest-green hover:bg-white/90 transition-colors"
                 disabled={isLoading}
               >
                 {isLoading ? "Subscribing..." : "Subscribe Now"}
