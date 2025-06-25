@@ -36,10 +36,10 @@ export function NewsletterSignup() {
     try {
       // Using Google Forms approach (most reliable)
       const formData = new FormData();
-      formData.append('entry.1853429173', name.trim()); // Name field entry ID
-      formData.append('entry.712709816', email.trim()); // Email field entry ID
+      formData.append('entry.1853429173', name.trim()); // Your actual entry ID for name
+      formData.append('entry.712709816', email.trim()); // Your actual entry ID for email
       
-      // Submit to Google Form
+      // Submit to Google Form with your actual form ID
       await fetch('https://docs.google.com/forms/d/e/1FAIpQLSdIXDyN10PUfOJA0QH9vZt9dL1TQEdIyW1tGJtRaCkJTMHb_kpE/formResponse', {
         method: 'POST',
         mode: 'no-cors',
