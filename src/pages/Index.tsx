@@ -17,10 +17,10 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16">
+      <section className="pt-24 pb-8">
         <div className="container mx-auto px-3">
-          <div className="text-center mb-16">
-            <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-forest-green via-emerald-green to-forest-green bg-clip-text text-transparent mb-8 animate-fade-in">
+          <div className="text-center mb-8">
+            <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-forest-green via-emerald-green via-sage-green to-forest-green bg-[length:200%_200%] animate-gradient-x bg-clip-text text-transparent mb-8 animate-fade-in">
               Your Blueprint to Financial Success
             </h1>
             {/* CHANGED: Main hero description to dark forest green */}
