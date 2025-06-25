@@ -85,6 +85,13 @@
     line-height: 1.6; /* Increased from 1.4 for better text rendering */
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* Same font stack as Tailwind's font-sans */
     font-weight: 400; /* Normal weight - same font family but not bold */
+    overflow-x: hidden; /* Remove horizontal scroll and yellow buffer */
+  }
+  
+  /* Remove yellow buffer and overscroll effects */
+  html, body {
+    overscroll-behavior: none;
+    background-color: rgb(var(--background));
   }
   
   /* Fix text cutoff issues */
@@ -99,9 +106,10 @@
   }
 }
 
-/* Smooth transitions for all theme changes */
+/* Smooth transitions for all theme changes - Remove flashing */
 html {
   transition: background-color 0.3s ease;
+  background-color: rgb(var(--background));
 }
 
 /* Prevent flashing during theme transitions */
