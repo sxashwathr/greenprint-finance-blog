@@ -16,6 +16,7 @@ export function BlogTile({ id, title, excerpt, category, date, readTime, categor
 
   const handleTileClick = () => {
     navigate(`/blog/${id}`);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
