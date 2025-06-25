@@ -43,9 +43,7 @@ const Index = () => {
       </div>
 
       {/* Newsletter Signup */}
-      <div className="py-8">
-        <NewsletterSignup />
-      </div>
+      <NewsletterSignup />
 
       {/* Footer */}
       <Footer />
