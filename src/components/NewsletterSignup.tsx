@@ -11,64 +11,59 @@ export function NewsletterSignup() {
   const { toast } = useToast();
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  e.preventDefault();
+  
+  if (!name.trim() || !email.trim()) {
+    toast({
+      title: "Please fill in all fields",
+      description: "Both name and email are required.",
+      variant: "destructive",
+    });
+    return;
+  }
+
+  if (!email.includes("@")) {
+    toast({
+      title: "Invalid email",
+      description: "Please enter a valid email address.",
+      variant: "destructive",
+    });
+    return;
+  }
+
+  setIsLoading(true);
+
+  try {
+    const formData = new FormData();
+    formData.append('entry.1853429173', name.trim());
+    formData.append('entry.712709816', email.trim());
     
-    if (!name.trim() || !email.trim()) {
-      toast({
-        title: "Please fill in all fields",
-        description: "Both name and email are required.",
-        variant: "destructive",
-      });
-      return;
-    }
+    await fetch('https://docs.google.com/forms/d/e/1FAIpQLSdIXDyN10PUfOJA0QH9vZt9dL1TQEdIyW1tGJtRaCkJTMHb_kpE/formResponse', {
+      method: 'POST',
+      mode: 'no-cors',
+      body: formData
+    });
 
-    if (!email.includes("@")) {
-      toast({
-        title: "Invalid email",
-        description: "Please enter a valid email address.",
-        variant: "destructive",
-      });
-      return;
-    }
-
-    setIsLoading(true);
-
-    try {
-      // Using Google Forms approach (most reliable)
-      const formData = new FormData();
-      formData.append('entry.1853429173', name.trim()); // Your actual entry ID for name
-      formData.append('entry.712709816', email.trim()); // Your actual entry ID for email
-      
-      // Submit to Google Form with your actual form ID
-      await fetch('https://docs.google.com/forms/d/e/1FAIpQLSdIXDyN10PUfOJA0QH9vZt9dL1TQEdIyW1tGJtRaCkJTMHb_kpE/formResponse', {
-        method: 'POST',
-        mode: 'no-cors',
-        body: formData
-      });
-
-      toast({
-        title: "Success! 🎉",
-        description: "You've been successfully subscribed to our newsletter.",
-      });
-      
-      // Auto-dismiss after 5 seconds
-      setTimeout(() => {
-        // Toast will auto-dismiss
-      }, 5000);
-      
-      setName("");
-      setEmail("");
-    } catch (error) {
-      console.error("Subscription error:", error);
-      toast({
-        title: "Subscription failed",
-        description: "There was an error subscribing you to the newsletter. Please try again.",
-        variant: "destructive",
-      });
-    } finally {
-      setIsLoading(false);
-    }
-  };
+    toast({
+      title: "Success! 🎉",
+      description: "You've been successfully subscribed to our newsletter.",
+    });
+    
+    setTimeout(() => {}, 5000);
+    
+    setName("");
+    setEmail("");
+  } catch (error) {
+    console.error("Subscription error:", error);
+    toast({
+      title: "Subscription failed",
+      description: "There was an error subscribing you to the newsletter. Please try again.",
+      variant: "destructive",
+    });
+  } finally {
+    setIsLoading(false);
+  }
+};
 
   return (
     <section className="py-16 bg-gradient-to-br from-forest-green to-sage-green">
