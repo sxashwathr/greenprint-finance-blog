@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -35,44 +34,30 @@ export function NewsletterSignup() {
     setIsLoading(true);
 
     try {
-      // Google Sheets API endpoint for your sheet
-      const SHEET_ID = "1h6SyKu6A6TmV5fBEPAxyDSde_ckjkG_FRL2ti2zF3Ok";
-      const API_KEY = "your-google-api-key"; // You'll need to get this from Google Cloud Console
-      const RANGE = "Sheet1!A:C"; // Assuming columns A (Name), B (Email), C (Date)
+      // Using Google Forms approach (most reliable)
+      const formData = new FormData();
+      formData.append('entry.1853429173', name.trim()); // Your actual entry ID for name
+      formData.append('entry.712709816', email.trim()); // Your actual entry ID for email
       
-      // Get current date
-      const currentDate = new Date().toLocaleDateString();
-      
-      // Prepare the data to append
-      const values = [[name.trim(), email.trim(), currentDate]];
-      
-      // Alternative approach using Google Apps Script Web App (recommended)
-      // You'll need to create a Google Apps Script and deploy it as a web app
-      const SCRIPT_URL = "https://script.google.com/macros/s/your-script-id/exec";
-      
-      const response = await fetch(https://script.google.com/macros/s/AKfycbx7mOc-ZZauhZ9ubHZWQqCHsDwo8mcMnMymCOe1wG1zNELVikzc1da6bmdkTV1vDMnA/exec, {
+      // Submit to Google Form with your actual form ID
+      await fetch('https://docs.google.com/forms/d/e/1FAIpQLSdIXDyN10PUfOJA0QH9vZt9dL1TQEdIyW1tGJtRaCkJTMHb_kpE/formResponse', {
         method: 'POST',
-        mode: 'cors',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name: name.trim(),
-          email: email.trim(),
-          date: currentDate
-        })
+        mode: 'no-cors',
+        body: formData
       });
 
-      if (response.ok) {
-        toast({
-          title: "Success! 🎉",
-          description: "You've been successfully subscribed to our newsletter.",
-        });
-        setName("");
-        setEmail("");
-      } else {
-        throw new Error("Failed to subscribe");
-      }
+      toast({
+        title: "Success! 🎉",
+        description: "You've been successfully subscribed to our newsletter.",
+      });
+      
+      // Auto-dismiss after 5 seconds
+      setTimeout(() => {
+        // Toast will auto-dismiss
+      }, 5000);
+      
+      setName("");
+      setEmail("");
     } catch (error) {
       console.error("Subscription error:", error);
       toast({
