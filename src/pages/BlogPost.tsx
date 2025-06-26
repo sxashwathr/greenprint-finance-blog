@@ -9,8 +9,8 @@ const blogPosts = {
     category: "Budgeting"
   },
   "money-psychology": {
-    title: "The Psychology of Money: Why We Spend and How to Change It".
-      category: "Budgeting"
+    title: "The Psychology of Money: Why We Spend and How to Change It",
+    category: "Budgeting"
   },
   "investing-fundamentals": {
     title: "Investing Fundamentals: Building Long-Term Wealth",
