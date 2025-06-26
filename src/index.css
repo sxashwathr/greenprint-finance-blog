@@ -32,7 +32,7 @@
     --sidebar-border: 34 197 94; /* Emerald green */
     --sidebar-ring: 22 101 52; /* Forest green */
     
-    /* NEW: Blog post styling variables for light mode */
+    /* Blog post styling variables for light mode */
     --blog-title-color: 15 23 42; /* Dark slate - same as main title */
     --blog-description-color: 15 23 42; /* Dark slate - same as title */
     --blog-meta-color: 251 146 60; /* Orange for "5 min read" and "Click to read more" */
@@ -67,7 +67,7 @@
     --sidebar-border: 22 101 52; /* Forest green */
     --sidebar-ring: 34 197 94; /* Emerald green */
     
-    /* Dark mode will keep existing behavior for now - only light mode changes */
+    /* Dark mode keeps existing behavior */
     --blog-title-color: 248 250 252; /* Keep existing light color */
     --blog-description-color: 248 250 252; /* Keep existing light color */
     --blog-meta-color: 251 146 60; /* Orange for consistency */
@@ -158,7 +158,7 @@ html {
   animation: gradient-x 4s ease infinite;
 }
 
-/* NEW: Blog post tile styling for light mode fixes */
+/* Blog post tile styling for light mode fixes */
 .blog-post-title {
   color: rgb(var(--blog-title-color));
 }
@@ -196,16 +196,25 @@ html {
 }
 
 /* Fix ALL header visibility in light mode ONLY - make them brown like the text */
-:root:not(.dark) .prose h1,
-:root:not(.dark) .prose h2,
-:root:not(.dark) .prose h3,
-:root:not(.dark) .prose h4,
-:root:not(.dark) .prose h5,
-:root:not(.dark) .prose h6 {
+html:not(.dark) .prose h1,
+html:not(.dark) .prose h2,
+html:not(.dark) .prose h3,
+html:not(.dark) .prose h4,
+html:not(.dark) .prose h5,
+html:not(.dark) .prose h6 {
   color: rgb(120 113 108) !important;
 }
 
-:root:not(.dark) .text-white {
+html:not(.dark) .text-white {
+  color: rgb(120 113 108) !important;
+}
+
+html:not(.dark) h1,
+html:not(.dark) h2,
+html:not(.dark) h3,
+html:not(.dark) h4,
+html:not(.dark) h5,
+html:not(.dark) h6 {
   color: rgb(120 113 108) !important;
 }
 
@@ -236,14 +245,35 @@ html {
   font-weight: 500 !important;
 }
 
-/* Light mode ONLY: Add orange border to blog tiles */
-html:not(.dark) .rounded-lg,
-html:not(.dark) .rounded-xl {
+.prose.prose-lg {
+  max-width: 5xl !important;
+  font-size: 19px !important;
+}
+
+.prose.prose-lg.max-w-4xl {
+  max-width: 6xl !important;
+}
+
+.prose em {
+  font-style: italic;
+  font-weight: 500;
+  color: rgba(248, 250, 252, 0.95);
+}
+
+/* Light mode ONLY: Orange border for blog tiles - specific targeting */
+html:not(.dark) .rounded-lg.border.bg-card,
+html:not(.dark) .bg-card.rounded-lg {
+  border-color: rgb(251 146 60) !important;
+}
+
+html:not(.dark) .rounded-lg.text-card-foreground.shadow-sm {
+  border-color: rgb(251 146 60) !important;
+}
+
+html:not(.dark) .bg-card {
   border: 1px solid rgb(251 146 60) !important;
 }
 
-/* More specific targeting for blog tiles in light mode */
-html:not(.dark) [class*="bg-card"],
-html:not(.dark) [class*="bg-"] {
-  border: 1px solid rgb(251 146 60) !important;
+html:not(.dark) .border {
+  border-color: rgb(251 146 60) !important;
 }
