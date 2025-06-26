@@ -11,8 +11,17 @@ const creditDebtBlogs = [
     excerpt: "Step-by-step guide to establishing your first credit history responsibly.",
     category: "Credit & Debt",
     date: "2024-01-25",
-    readTime: "8 min read",
-    categoryColor: "bg-green-700"  // Changed to unique dark green
+    readTime: "10 min read",
+    categoryColor: "bg-green-700" 
+  },
+  {
+    id: "credit-essentials",
+    title: "Debt Payoff Strategies: Finding Your Path to Freedom",
+    excerpt: "Explore proven methods to eliminate debt and regain control of your financial future.",
+    category: "Credit & Debt",
+    date: "2024-01-25",
+    readTime: "10 min read",
+    categoryColor: "bg-green-700" 
   }
 ];
 
