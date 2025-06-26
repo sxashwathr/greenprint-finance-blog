@@ -132,3 +132,69 @@
 .prose.prose-lg {
   max-width: none !important; /* Remove max-width restriction */
 }
+
+/* Fix header visibility in light mode */
+:root:not(.dark) .prose h3,
+:root:not(.dark) .prose h4 {
+  color: rgb(120 113 108) !important; /* Brown color matching text */
+}
+
+/* Increase text size and make it take up more page width */
+.prose p {
+  font-size: 18px !important; /* Increased from 17px */
+  line-height: 1.7 !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* Make the prose container wider */
+.prose.prose-lg {
+  max-width: 5xl !important; /* Wider than default */
+  font-size: 18px !important;
+}
+
+/* Increase container width for blog content */
+.prose.prose-lg.max-w-4xl {
+  max-width: 6xl !important; /* Even wider container */
+}
+
+/* Blog content headers - larger sizes */
+.prose h3 {
+  font-size: 24px !important; /* Increased from 22px */
+  font-weight: 600 !important;
+  margin-bottom: 1rem !important;
+  margin-top: 2rem !important;
+}
+
+.prose h4 {
+  font-size: 20px !important; /* Increased from 19px */
+  font-weight: 500 !important;
+  margin-bottom: 0.75rem !important;
+  margin-top: 1.5rem !important;
+}
+
+/* Blog opening text (green text) - larger */
+.prose .text-emerald-700 {
+  font-size: 19px !important; /* Increased from 18px */
+  line-height: 1.6 !important;
+  font-weight: 500 !important;
+}
+
+/* Light mode only: Add orange border to blog tiles */
+:root:not(.dark) .blog-card,
+:root:not(.dark) [class*="bg-card"],
+:root:not(.dark) .card {
+  border: 1px solid rgb(251 146 60) !important; /* Orange border */
+}
+
+/* If your blog tiles use specific classes, target them too */
+:root:not(.dark) .blog-tile,
+:root:not(.dark) .post-card,
+:root:not(.dark) .article-card {
+  border: 1px solid rgb(251 146 60) !important; /* Orange border */
+}
+
+/* Target any rounded cards in light mode */
+:root:not(.dark) .rounded-lg[class*="bg-"],
+:root:not(.dark) .rounded-xl[class*="bg-"] {
+  border: 1px solid rgb(251 146 60) !important; /* Orange border */
+}
