@@ -12,7 +12,16 @@ const careerIncomeBlogs = [
     category: "Career & Income",
     date: "2024-01-30",
     readTime: "14 min read",
-    categoryColor: "bg-teal-600"  // Changed to unique teal green
+    categoryColor: "bg-teal-600"  
+  },
+  {
+    id: "remote-work-mastery",
+    title: "Remote Work Mastery: Thriving in the Digital Economy",
+    excerpt: "Essential skills and strategies for building a successful remote career in today's job market.",
+    category: "Career & Income",
+    date: "2024-01-30",
+    readTime: "8 min read",
+    categoryColor: "bg-teal-600"  
   }
 ];
 
