@@ -270,9 +270,9 @@ html:not(.dark) .prose * {
   color: rgb(120 113 108) !important;
 }
 
-/* Keep the green text green */
+/* Keep the green text the correct darker green */
 html:not(.dark) .prose .text-emerald-700 {
-  color: rgb(34 197 94) !important; /* Keep green */
+  color: rgb(22 101 52) !important; /* Darker green like homepage */
 }
 
 /* Make sure italicized text is also brown */
