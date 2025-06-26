@@ -32,16 +32,16 @@ const blogPosts = {
     title: "Entrepreneurship Starters: From Idea to Income",
     category: "Entrepreneurship"
   },
-   "entrepreneurship-starters": {
-    title: "Entrepreneurship Starters: From Idea to Income",
+   "side-hustle-revolution": {
+    title: "The Side Hustle Revolution: Building Income Outside the 9-to-5 ",
     category: "Entrepreneurship"
   },
   "career-growth": {
     title: "Career Growth: Maximizing Your Earning Potential",
     category: "Career & Income"
   },
-  "career-growth": {
-    title: "Career Growth: Maximizing Your Earning Potential",
+  "remote-work-mastery": {
+    title: "Remote Work Mastery: Thriving in the Digital Economy",
     category: "Career & Income"
   },
 };
@@ -548,20 +548,315 @@ const BlogPost = () => {
         </div>
       );
 
-    // ADD MORE CASES FOR OTHER BLOG POSTS HERE
     case "entrepreneurship-starters":
-      return (
-        <div className="prose prose-lg max-w-4xl mx-auto">
-          {/* Add your entrepreneurship content here */}
-        </div>
-      );
+  return (
+    <div className="prose prose-lg max-w-4xl mx-auto">
+      <p className="text-lg text-emerald-700 mb-6">
+        Starting a business doesn't require a huge investment or years of planning—sometimes the best opportunities are hiding in plain sight.
+      </p>
 
-    case "career-growth":
-      return (
-        <div className="prose prose-lg max-w-4xl mx-auto">
-          {/* Add your career content here */}
-        </div>
-      );
+      <p className="mb-6 text-foreground">
+        Have you ever had a business idea but convinced yourself you needed thousands of dollars and a perfect business plan to get started? The truth is, many successful businesses began with nothing more than solving a simple problem for someone willing to pay for the solution.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">The Lean Startup Mindset</h3>
+
+      <p className="mb-6 text-foreground">
+        Modern entrepreneurship has moved away from writing lengthy business plans and securing massive funding before launching. Instead, successful entrepreneurs start small, test quickly, and adapt based on real customer feedback.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        This approach reduces financial risk and allows you to learn what actually works rather than what you think will work.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Service-Based Businesses: Your Fastest Path to Revenue</h3>
+
+      <p className="mb-6 text-foreground">
+        Service businesses often require minimal upfront investment because you're selling your time and expertise rather than products.
+      </p>
+
+      <div className="mb-6 text-foreground">
+        <p className="mb-4"><em>Virtual Assistant Services:</em> Many small business owners need help with email management, social media, scheduling, or basic administrative tasks.</p>
+        
+        <p className="mb-4"><em>Social Media Management:</em> Small businesses know they need social media presence but often lack the time or knowledge to do it effectively.</p>
+        
+        <p className="mb-4"><em>Tutoring and Teaching:</em> If you excel in any subject, there are students and parents willing to pay for your expertise.</p>
+        
+        <p className="mb-4"><em>Pet Services:</em> Dog walking, pet sitting, and grooming services are always in demand and require minimal startup costs.</p>
+      </div>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Digital Products: Create Once, Sell Forever</h4>
+
+      <p className="mb-6 text-foreground">
+        Digital products offer incredible profit margins because you create them once and can sell them repeatedly.
+      </p>
+
+      <div className="mb-6 text-foreground">
+        <p className="mb-4"><em>Printable Planners and Templates:</em> Budget trackers, meal planners, and organizational templates are popular on platforms like Etsy.</p>
+        
+        <p className="mb-4"><em>Online Courses:</em> If you have expertise in any area, you can create video courses and sell them on platforms like Udemy or Teachable.</p>
+        
+        <p className="mb-4"><em>Stock Photography:</em> If you enjoy photography, you can sell your images on stock photo websites.</p>
+      </div>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Validating Your Business Idea</h4>
+
+      <p className="mb-6 text-foreground">
+        Before building anything elaborate, find five people willing to pay for your product or service. This proves there's real demand and helps you refine your offering based on actual feedback.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Don't assume you know what customers want—ask them directly and be prepared to adjust your approach.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Common Mistakes to Avoid</h4>
+
+      <div className="mb-6 text-foreground">
+        <p className="mb-4"><em>Perfectionism:</em> Don't wait until everything is perfect to launch. Start with a simple version and improve based on customer feedback.</p>
+        
+        <p className="mb-4"><em>Underpricing:</em> Many new entrepreneurs undervalue their services. Research market rates and price competitively but fairly.</p>
+        
+        <p className="mb-4"><em>Lack of focus:</em> It's better to excel at one service than to offer mediocre versions of many services.</p>
+      </div>
+
+      <p className="mb-6 text-foreground">
+        The most successful entrepreneurs are those who start before they feel ready. You don't need unlimited funding or a perfect plan—you need to take the first step and learn as you go.
+      </p>
+    </div>
+  );
+
+case "side-hustle-revolution":
+  return (
+    <div className="prose prose-lg max-w-4xl mx-auto">
+      <p className="text-lg text-emerald-700 mb-6">
+        The traditional career path is evolving, and smart professionals are creating multiple income streams to boost their financial security.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Have you ever calculated how much your spare time could be worth if you monetized it strategically? With the rise of remote work and digital platforms, earning extra income has never been more accessible or flexible.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Why Side Hustles Matter</h3>
+
+      <p className="mb-6 text-foreground">
+        Side hustles provide financial cushion during uncertain times and can accelerate your progress toward financial goals. They also offer opportunities to develop new skills and potentially discover career alternatives.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        The beauty of a side hustle is that it can start small and grow at your own pace. Maybe you begin by selling handmade crafts for an extra $200 per month, then gradually scale up.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Technology Has Changed the Game</h3>
+
+      <p className="mb-6 text-foreground">
+        You can start a YouTube channel, launch a podcast, or create an online course without any upfront investment beyond your time and creativity.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Platforms like Etsy, eBay, and Facebook Marketplace make it easy to sell products to a global audience from your home.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Matching Skills to Opportunities</h4>
+
+      <p className="mb-6 text-foreground">
+        The key is aligning your side hustle with your existing skills and interests.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        If you're a teacher, tutoring or creating educational content makes sense. If you're in marketing, helping small businesses with their advertising could be lucrative.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Consider your hobbies too—photography, crafting, writing, or fitness knowledge can all become income sources.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Time Management Is Critical</h4>
+
+      <p className="mb-6 text-foreground">
+        Block out specific hours for your business activities and treat them as seriously as any other commitment. Consistency beats intensity when building something sustainable.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Many successful side hustlers work on their projects early in the morning or in the evenings after their regular job.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Financial Considerations</h4>
+
+      <p className="mb-6 text-foreground">
+        Keep receipts for business expenses and set aside money for taxes—a good rule of thumb is 25-30% of your side hustle income.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        You might need to make quarterly tax payments if you earn more than $1,000 from your side hustle.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Growing Your Side Hustle</h4>
+
+      <p className="mb-6 text-foreground">
+        Don't try to pursue every opportunity at once. Pick one side hustle and focus on making it successful before branching out.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Treat your extra income strategically—either reinvest in growing your business or put it toward long-term financial goals like retirement or real estate.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        The most successful side hustlers view their ventures as investments in their future, not just ways to make quick money.
+      </p>
+    </div>
+  );
+
+case "career-growth":
+  return (
+    <div className="prose prose-lg max-w-4xl mx-auto">
+      <p className="text-lg text-emerald-700 mb-6">
+        Your income potential isn't fixed—with the right approach, you can significantly increase your earnings throughout your career.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Have you ever wondered why some people seem to effortlessly climb the career ladder while others get stuck in the same role for years? The difference often comes down to strategic career planning and the confidence to advocate for yourself.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">The Salary Negotiation Skill</h3>
+
+      <p className="mb-6 text-foreground">
+        Salary negotiation is a skill that can literally be worth hundreds of thousands of dollars over your career, yet most people avoid it because they feel uncomfortable or fear rejection.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        The truth is, employers expect negotiation and often have room built into their initial offers.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Research Is Your Foundation</h4>
+
+      <p className="mb-6 text-foreground">
+        Before any negotiation, know what people in similar roles at comparable companies are earning in your area. Websites like Glassdoor, PayScale, and salary.com provide valuable data.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Also tap into your professional network for real-world insights that websites might miss.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Document Your Value</h4>
+
+      <p className="mb-6 text-foreground">
+        Keep a running list of projects you've completed, problems you've solved, and value you've added to the organization throughout the year.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Quantify your impact whenever possible—numbers speak louder than general statements about your contributions.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Beyond Base Salary</h3>
+
+      <p className="mb-6 text-foreground">
+        Consider the total compensation package, not just base salary. Health insurance, retirement contributions, vacation time, and flexible work arrangements all have monetary value.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Sometimes a lower base salary with better benefits or more flexibility is more valuable overall.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Skill Development Strategy</h4>
+
+      <p className="mb-6 text-foreground">
+        Building valuable skills is the most reliable way to increase your earning potential long-term. Identify which skills are in high demand in your industry and invest time in developing them.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        This might mean taking online courses, earning certifications, or volunteering for challenging projects at work.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">The Power of Strategic Job Changes</h4>
+
+      <p className="mb-6 text-foreground">
+        While job-hopping too frequently can be a red flag, staying in one role too long can limit your growth potential.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Sometimes the biggest salary increases come from external moves rather than internal promotions. The key is timing these moves strategically.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Remember that negotiation doesn't end once you accept a position. Regular salary reviews, performance bonuses, and additional responsibilities all present opportunities to increase your compensation.
+      </p>
+    </div>
+  );
+
+case "remote-work-mastery":
+  return (
+    <div className="prose prose-lg max-w-4xl mx-auto">
+      <p className="text-lg text-emerald-700 mb-6">
+        Remote work isn't just a temporary trend—it's reshaping how we think about careers, location independence, and work-life balance.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Have you ever dreamed of working from anywhere in the world while building a successful career? Remote work has transformed from a rare perk into a competitive advantage for both employees and employers.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">The Remote Work Opportunity</h3>
+
+      <p className="mb-6 text-foreground">
+        The remote job market offers unique opportunities for career growth and salary optimization. Without geographical constraints, you can access positions with companies worldwide.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        This can potentially mean earning higher salaries than what's available in your local market while living in a lower-cost area.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Essential Remote Work Skills</h3>
+
+      <p className="mb-6 text-foreground">
+        Success in remote work requires a different skill set than traditional office environments.
+      </p>
+
+      <div className="mb-6 text-foreground">
+        <p className="mb-4"><em>Self-discipline</em> becomes crucial when you're working independently without direct supervision.</p>
+        
+        <p className="mb-4"><em>Communication skills</em> are even more important when you can't rely on casual conversations or body language.</p>
+        
+        <p className="mb-4"><em>Technical proficiency</em> is essential for navigating various collaboration tools and platforms.</p>
+      </div>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Creating Your Productive Workspace</h4>
+
+      <p className="mb-6 text-foreground">
+        You don't need an expensive home office, but you do need a dedicated space that signals to your brain that you're in work mode.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        This space should be separate from areas associated with relaxation or entertainment when possible.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Time Management Strategies</h4>
+
+      <p className="mb-6 text-foreground">
+        Without the natural boundaries of an office environment, it's easy to either work too much or struggle with distractions.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Establishing clear routines and boundaries protects both your productivity and mental health.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Building Professional Relationships Remotely</h4>
+
+      <p className="mb-6 text-foreground">
+        Developing relationships with colleagues requires more intentional effort when working remotely.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Schedule virtual coffee chats, participate actively in video calls, and find ways to connect beyond just work-related discussions.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        The flexibility of remote work often accommodates freelance projects, consulting work, or even running a small business alongside your primary job.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Remote work isn't just about location independence—it's about developing the discipline, communication skills, and self-management abilities that are valuable in any professional context.
+      </p>
+    </div>
+  );
 
     default:
       return (
