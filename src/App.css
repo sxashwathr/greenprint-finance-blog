@@ -175,3 +175,29 @@
 .dark .rounded-xl {
   border: none !important;
 }
+
+
+/* Fix ALL header visibility in light mode - make them brown like the text */
+:root:not(.dark) .prose h1,
+:root:not(.dark) .prose h2,
+:root:not(.dark) .prose h3,
+:root:not(.dark) .prose h4,
+:root:not(.dark) .prose h5,
+:root:not(.dark) .prose h6 {
+  color: rgb(120 113 108) !important; /* Same brown color as body text */
+}
+
+/* Also target any headers with text-white class in light mode */
+:root:not(.dark) .text-white {
+  color: rgb(120 113 108) !important; /* Brown instead of white in light mode */
+}
+
+/* Make sure this overrides any existing header styling in light mode */
+:root:not(.dark) h1,
+:root:not(.dark) h2,
+:root:not(.dark) h3,
+:root:not(.dark) h4,
+:root:not(.dark) h5,
+:root:not(.dark) h6 {
+  color: rgb(120 113 108) !important;
+}
