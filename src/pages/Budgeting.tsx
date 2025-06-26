@@ -11,7 +11,16 @@ const budgetingBlogs = [
     excerpt: "Learn how to create and stick to a budget that actually works for your lifestyle.",
     category: "Budgeting",
     date: "2024-01-20",
-    readTime: "6 min read",
+    readTime: "7 min read",
+    categoryColor: "bg-forest-green"
+  },
+  {
+    id: "money-psychology",
+    title: "The Psychology of Money: Why We Spend and How to Change It ",
+    excerpt: "Discover the hidden psychological triggers that drive your spending habits and learn practical strategies to overcome them.",
+    category: "Budgeting",
+    date: "2024-01-20",
+    readTime: "9 min read",
     categoryColor: "bg-forest-green"
   }
 ];
@@ -37,7 +46,7 @@ const Budgeting = () => {
             
             {/* CHANGED: Main description text to dark forest green */}
             <p className="text-xl text-emerald-700 mb-12 leading-relaxed animate-fade-in">
-              Learn how to create, manage, and stick to budgets that actually work for your lifestyle and financial goals.
+              Learn how to create, manage, and stick to budgets that actually work for your lifestyle and future financial goals.
             </p>
           </div>
 
