@@ -20,7 +20,7 @@ const budgetingBlogs = [
     excerpt: "Discover the hidden psychological triggers that drive your spending habits and learn practical strategies to overcome them.",
     category: "Budgeting",
     date: "2024-01-20",
-    readTime: "9 min read",
+    readTime: "11 min read",
     categoryColor: "bg-forest-green"
   }
 ];
