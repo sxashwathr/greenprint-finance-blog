@@ -195,27 +195,15 @@ html {
   color: rgb(var(--blog-description-color)) !important;
 }
 
-/* Fix ALL header visibility in light mode ONLY - make them brown like the text */
+/* ONLY make blog content headers and paragraphs the same brownish color as footer text */
 html:not(.dark) .prose h1,
 html:not(.dark) .prose h2,
 html:not(.dark) .prose h3,
 html:not(.dark) .prose h4,
 html:not(.dark) .prose h5,
-html:not(.dark) .prose h6 {
-  color: rgb(120 113 108) !important;
-}
-
-html:not(.dark) .text-white {
-  color: rgb(120 113 108) !important;
-}
-
-html:not(.dark) h1,
-html:not(.dark) h2,
-html:not(.dark) h3,
-html:not(.dark) h4,
-html:not(.dark) h5,
-html:not(.dark) h6 {
-  color: rgb(120 113 108) !important;
+html:not(.dark) .prose h6,
+html:not(.dark) .prose p {
+  color: rgb(120 113 108) !important; /* Same brownish color as footer */
 }
 
 /* Blog content text sizing - increased font sizes */
@@ -276,26 +264,4 @@ html:not(.dark) .bg-card {
 
 html:not(.dark) .border {
   border-color: rgb(251 146 60) !important;
-}
-
-/* Fix all text to be brown in light mode instead of grey */
-html:not(.dark) .text-foreground {
-  color: rgb(120 113 108) !important; /* Brown instead of grey */
-}
-
-html:not(.dark) .prose .text-foreground {
-  color: rgb(120 113 108) !important; /* Brown for blog content text */
-}
-
-/* Override any grey text colors in light mode */
-html:not(.dark) .text-slate-600,
-html:not(.dark) .text-slate-700,
-html:not(.dark) .text-gray-600,
-html:not(.dark) .text-gray-700 {
-  color: rgb(120 113 108) !important; /* Brown instead of grey */
-}
-
-/* Make sure all paragraph text is brown in light mode */
-html:not(.dark) p {
-  color: rgb(120 113 108) !important;
 }
