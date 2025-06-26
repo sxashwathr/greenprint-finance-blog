@@ -4,22 +4,18 @@
   padding: 2rem;
   text-align: center;
 }
-
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
-
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
-
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
-
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -28,24 +24,19 @@
     transform: rotate(360deg);
   }
 }
-
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
 }
-
 .card {
   padding: 2em;
 }
-
 .read-the-docs {
   color: #888;
 }
 
-/* NEW: Additional blog post styling overrides for light mode */
-
-/* Blog post card containers */
+/* Blog post styling overrides */
 .blog-card {
   transition: all 0.3s ease;
 }
@@ -54,20 +45,20 @@
 .blog-card h2,
 .blog-card h3,
 .blog-post-title {
-  color: rgb(15 23 42) !important; /* Dark slate - same as main titles */
+  color: rgb(15 23 42) !important;
 }
 
 /* Blog post descriptions should match titles in light mode */
 .blog-card p:not(.blog-read-time):not(.blog-read-more),
 .blog-description {
-  color: rgb(15 23 42) !important; /* Dark slate - same as titles */
+  color: rgb(15 23 42) !important;
 }
 
 /* Orange styling for meta information */
 .blog-read-time,
 .blog-read-more,
 .read-more-link {
-  color: rgb(251 146 60) !important; /* Orange */
+  color: rgb(251 146 60) !important;
 }
 
 /* Footer and bottom navigation links */
@@ -75,7 +66,7 @@
 .bottom-links a,
 .quick-links a,
 .navigation-links a {
-  color: rgb(251 146 60) !important; /* Orange */
+  color: rgb(251 146 60) !important;
 }
 
 /* Override any existing pink colors specifically in light mode */
@@ -83,54 +74,36 @@
 :root:not(.dark) .text-pink-500,
 :root:not(.dark) .text-pink-600,
 :root:not(.dark) .text-purple-400 {
-  color: rgb(15 23 42) !important; /* Dark slate for descriptions */
+  color: rgb(15 23 42) !important;
 }
 
-/* Keep category bubbles as they are (green) */
-.category-badge,
-.blog-category {
-  /* Don't override - keep existing green styling */
-}
-
-/* Blog content text sizing */
+/* Blog content text sizing - increased font sizes */
 .prose p {
-  font-size: 17px !important; /* Increased from default */
+  font-size: 19px !important; /* Increased from 18px */
   line-height: 1.7 !important;
   margin-bottom: 1.5rem !important;
 }
 
-/* Blog content headers */
+/* Blog content headers - larger sizes */
 .prose h3 {
-  font-size: 22px !important; /* Major section headers */
+  font-size: 26px !important; /* Increased from 24px */
   font-weight: 600 !important;
   margin-bottom: 1rem !important;
   margin-top: 2rem !important;
 }
 
 .prose h4 {
-  font-size: 19px !important; /* Subsection headers */
+  font-size: 22px !important; /* Increased from 20px */
   font-weight: 500 !important;
   margin-bottom: 0.75rem !important;
   margin-top: 1.5rem !important;
 }
 
-/* Blog opening text (green text) */
+/* Blog opening text (green text) - larger */
 .prose .text-emerald-700 {
-  font-size: 18px !important;
+  font-size: 20px !important; /* Increased from 19px */
   line-height: 1.6 !important;
   font-weight: 500 !important;
-}
-
-/* Emphasized text (italics) */
-.prose em {
-  font-style: italic;
-  font-weight: 500;
-  color: rgba(248, 250, 252, 0.95); /* Slightly brighter than regular text */
-}
-
-/* Better spacing for blog content container */
-.prose.prose-lg {
-  max-width: none !important; /* Remove max-width restriction */
 }
 
 /* Fix header visibility in light mode */
@@ -139,62 +112,66 @@
   color: rgb(120 113 108) !important; /* Brown color matching text */
 }
 
-/* Increase text size and make it take up more page width */
-.prose p {
-  font-size: 18px !important; /* Increased from 17px */
-  line-height: 1.7 !important;
-  margin-bottom: 1.5rem !important;
-}
-
 /* Make the prose container wider */
 .prose.prose-lg {
-  max-width: 5xl !important; /* Wider than default */
-  font-size: 18px !important;
+  max-width: 5xl !important;
+  font-size: 19px !important; /* Increased base font size */
 }
 
 /* Increase container width for blog content */
 .prose.prose-lg.max-w-4xl {
-  max-width: 6xl !important; /* Even wider container */
+  max-width: 6xl !important;
 }
 
-/* Blog content headers - larger sizes */
-.prose h3 {
-  font-size: 24px !important; /* Increased from 22px */
-  font-weight: 600 !important;
-  margin-bottom: 1rem !important;
-  margin-top: 2rem !important;
+/* Emphasized text (italics) */
+.prose em {
+  font-style: italic;
+  font-weight: 500;
+  color: rgba(248, 250, 252, 0.95);
 }
 
-.prose h4 {
-  font-size: 20px !important; /* Increased from 19px */
-  font-weight: 500 !important;
-  margin-bottom: 0.75rem !important;
-  margin-top: 1.5rem !important;
+/* Light mode ONLY: Add orange border to blog tiles */
+:root:not(.dark) .blog-card {
+  border: 1px solid rgb(251 146 60) !important;
 }
 
-/* Blog opening text (green text) - larger */
-.prose .text-emerald-700 {
-  font-size: 19px !important; /* Increased from 18px */
-  line-height: 1.6 !important;
-  font-weight: 500 !important;
-}
-
-/* Light mode only: Add orange border to blog tiles */
-:root:not(.dark) .blog-card,
-:root:not(.dark) [class*="bg-card"],
-:root:not(.dark) .card {
-  border: 1px solid rgb(251 146 60) !important; /* Orange border */
-}
-
-/* If your blog tiles use specific classes, target them too */
+/* Target blog tiles in light mode with various possible class names */
 :root:not(.dark) .blog-tile,
 :root:not(.dark) .post-card,
 :root:not(.dark) .article-card {
-  border: 1px solid rgb(251 146 60) !important; /* Orange border */
+  border: 1px solid rgb(251 146 60) !important;
 }
 
-/* Target any rounded cards in light mode */
+/* Target cards with background colors in light mode */
+:root:not(.dark) [class*="bg-card"]:not(.dark *) {
+  border: 1px solid rgb(251 146 60) !important;
+}
+
+/* Target rounded cards in light mode */
 :root:not(.dark) .rounded-lg[class*="bg-"],
 :root:not(.dark) .rounded-xl[class*="bg-"] {
-  border: 1px solid rgb(251 146 60) !important; /* Orange border */
+  border: 1px solid rgb(251 146 60) !important;
+}
+
+/* More specific targeting for blog post tiles in light mode */
+:root:not(.dark) .container .rounded-lg,
+:root:not(.dark) .container .rounded-xl {
+  border: 1px solid rgb(251 146 60) !important;
+}
+
+/* Target any card-like elements in light mode */
+:root:not(.dark) [class*="card"],
+:root:not(.dark) [class*="tile"] {
+  border: 1px solid rgb(251 146 60) !important;
+}
+
+/* Ensure dark mode does NOT get the orange border */
+.dark .blog-card,
+.dark .blog-tile,
+.dark .post-card,
+.dark .article-card,
+.dark [class*="bg-card"],
+.dark .rounded-lg,
+.dark .rounded-xl {
+  border: none !important;
 }
