@@ -8,6 +8,10 @@ const blogPosts = {
     title: "Budgeting Basics: Your First Step to Financial Freedom",
     category: "Budgeting"
   },
+  "money-psychology": {
+    title: "The Psychology of Money: Why We Spend and How to Change It".
+      category: "Budgeting"
+  },
   "investing-fundamentals": {
     title: "Investing Fundamentals: Building Long-Term Wealth",
     category: "Investing"
@@ -70,11 +74,42 @@ const BlogPost = () => {
             </ul>
           </div>
         );
-
-      case "investing-fundamentals":
+       case "investing-fundamentals":
         return (
           <div className="prose prose-lg max-w-4xl mx-auto">
-            {/* Add your investing content here */}
+            {/* Add your career content here */}
+          </div>
+        );
+      case "money-psychology":
+        return (
+          <div className="prose prose-lg max-w-4xl mx-auto">
+            <p className="text-lg text-emerald-700 mb-6">
+            Understanding why we make certain financial decisions can be the difference between building wealth and living paycheck to paycheck.
+            </p>
+             <p className="mb-6 text-foreground"> 
+            Have you ever bought something you didn't really need, then wondered why you made that purchase? Our relationship with money goes much deeper than simple math—it's rooted in psychology, emotions, and often unconscious patterns we've developed over years.
+            </p>
+             <p className="mb-6 text-foreground"> 
+               Think about the last time you made an impulse purchase. Were you stressed? Celebrating something? Feeling left out? Most spending decisions aren't really about the item itself—they're about how we're feeling in that moment.
+                </p>
+             <p className="mb-6 text-foreground"> 
+               Retailers understand this psychology better than we do. They design stores to trigger specific emotions. The bright lights, the strategic placement of sale items, the limited-time offers—it's all calculated to bypass our rational thinking and tap into our emotional responses.
+                </p>
+             <p className="mb-6 text-foreground"> 
+               But here's the empowering part: once you understand these triggers, you can start to recognize them in real time. That moment of pause before you buy something? That's your opportunity to ask yourself what you're really trying to accomplish with this purchase.
+                </p>
+             <p className="mb-6 text-foreground"> 
+               One powerful technique is the 24-hour rule for non-essential purchases over $50. When you want something, write it down instead of buying it immediately. Come back to it the next day and see if you still feel the same way. You'll be surprised how often that intense desire fades.
+                </p>
+             <p className="mb-6 text-foreground"> 
+               Social media plays a huge role in our spending psychology too. We see friends traveling, buying new clothes, or dining at expensive restaurants, and suddenly we feel like we need to keep up. But remember—you're seeing their highlight reel, not their credit card statements.
+                </p>
+             <p className="mb-6 text-foreground"> 
+               Creating awareness around your spending triggers is the first step toward financial freedom. Start paying attention to your emotions before, during, and after purchases. Keep a spending journal for a week and note how you were feeling each time you spent money.
+                </p>
+              <p className="mb-6 text-foreground"> 
+                The goal isn't to eliminate all emotional spending—it's to make conscious choices that align with your values and long-term goals.
+                </p>
           </div>
         );
 
@@ -99,7 +134,12 @@ const BlogPost = () => {
             {/* Add your career content here */}
           </div>
         );
-
+      case "investing-fundamentals":
+        return (
+          <div className="prose prose-lg max-w-4xl mx-auto">
+            {/* Add your career content here */}
+          </div>
+        );
       default:
         return (
           <div className="prose prose-lg max-w-4xl mx-auto">
