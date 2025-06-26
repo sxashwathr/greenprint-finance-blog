@@ -194,3 +194,56 @@ html {
 :root .text-purple-400 {
   color: rgb(var(--blog-description-color)) !important;
 }
+
+/* Fix ALL header visibility in light mode ONLY - make them brown like the text */
+:root:not(.dark) .prose h1,
+:root:not(.dark) .prose h2,
+:root:not(.dark) .prose h3,
+:root:not(.dark) .prose h4,
+:root:not(.dark) .prose h5,
+:root:not(.dark) .prose h6 {
+  color: rgb(120 113 108) !important;
+}
+
+:root:not(.dark) .text-white {
+  color: rgb(120 113 108) !important;
+}
+
+/* Blog content text sizing - increased font sizes */
+.prose p {
+  font-size: 19px !important;
+  line-height: 1.7 !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.prose h3 {
+  font-size: 26px !important;
+  font-weight: 600 !important;
+  margin-bottom: 1rem !important;
+  margin-top: 2rem !important;
+}
+
+.prose h4 {
+  font-size: 22px !important;
+  font-weight: 500 !important;
+  margin-bottom: 0.75rem !important;
+  margin-top: 1.5rem !important;
+}
+
+.prose .text-emerald-700 {
+  font-size: 20px !important;
+  line-height: 1.6 !important;
+  font-weight: 500 !important;
+}
+
+/* Light mode ONLY: Add orange border to blog tiles */
+html:not(.dark) .rounded-lg,
+html:not(.dark) .rounded-xl {
+  border: 1px solid rgb(251 146 60) !important;
+}
+
+/* More specific targeting for blog tiles in light mode */
+html:not(.dark) [class*="bg-card"],
+html:not(.dark) [class*="bg-"] {
+  border: 1px solid rgb(251 146 60) !important;
+}
