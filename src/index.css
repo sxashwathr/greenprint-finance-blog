@@ -265,3 +265,22 @@ html:not(.dark) .bg-card {
 html:not(.dark) .border {
   border-color: rgb(251 146 60) !important;
 }
+/* Make ALL blog content brown in light mode (except green text) */
+html:not(.dark) .prose * {
+  color: rgb(120 113 108) !important;
+}
+
+/* Keep the green text green */
+html:not(.dark) .prose .text-emerald-700 {
+  color: rgb(34 197 94) !important; /* Keep green */
+}
+
+/* Make sure italicized text is also brown */
+html:not(.dark) .prose em {
+  color: rgb(120 113 108) !important;
+}
+
+/* Make sure any divs with text inside prose are brown */
+html:not(.dark) .prose div {
+  color: rgb(120 113 108) !important;
+}
