@@ -91,3 +91,44 @@
 .blog-category {
   /* Don't override - keep existing green styling */
 }
+
+/* Blog content text sizing */
+.prose p {
+  font-size: 17px !important; /* Increased from default */
+  line-height: 1.7 !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* Blog content headers */
+.prose h3 {
+  font-size: 22px !important; /* Major section headers */
+  font-weight: 600 !important;
+  margin-bottom: 1rem !important;
+  margin-top: 2rem !important;
+}
+
+.prose h4 {
+  font-size: 19px !important; /* Subsection headers */
+  font-weight: 500 !important;
+  margin-bottom: 0.75rem !important;
+  margin-top: 1.5rem !important;
+}
+
+/* Blog opening text (green text) */
+.prose .text-emerald-700 {
+  font-size: 18px !important;
+  line-height: 1.6 !important;
+  font-weight: 500 !important;
+}
+
+/* Emphasized text (italics) */
+.prose em {
+  font-style: italic;
+  font-weight: 500;
+  color: rgba(248, 250, 252, 0.95); /* Slightly brighter than regular text */
+}
+
+/* Better spacing for blog content container */
+.prose.prose-lg {
+  max-width: none !important; /* Remove max-width restriction */
+}
