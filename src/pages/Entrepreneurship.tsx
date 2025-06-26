@@ -13,6 +13,15 @@ const entrepreneurshipBlogs = [
     date: "2024-01-28",
     readTime: "12 min read",
     categoryColor: "bg-emerald-green"
+  },
+  {
+    id: "side-hustle-revolution",
+    title: "The Side Hustle Revolution: Building Income Outside the 9-to-5 ",
+    excerpt: "Transform your spare time into profitable income streams that fit around your schedule.",
+    category: "Entrepreneurship",
+    date: "2024-01-28",
+    readTime: "7 min read",
+    categoryColor: "bg-emerald-green"
   }
 ];
 
