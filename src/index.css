@@ -277,3 +277,25 @@ html:not(.dark) .bg-card {
 html:not(.dark) .border {
   border-color: rgb(251 146 60) !important;
 }
+
+/* Fix all text to be brown in light mode instead of grey */
+html:not(.dark) .text-foreground {
+  color: rgb(120 113 108) !important; /* Brown instead of grey */
+}
+
+html:not(.dark) .prose .text-foreground {
+  color: rgb(120 113 108) !important; /* Brown for blog content text */
+}
+
+/* Override any grey text colors in light mode */
+html:not(.dark) .text-slate-600,
+html:not(.dark) .text-slate-700,
+html:not(.dark) .text-gray-600,
+html:not(.dark) .text-gray-700 {
+  color: rgb(120 113 108) !important; /* Brown instead of grey */
+}
+
+/* Make sure all paragraph text is brown in light mode */
+html:not(.dark) p {
+  color: rgb(120 113 108) !important;
+}
