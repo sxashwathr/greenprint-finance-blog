@@ -106,12 +106,6 @@
   font-weight: 500 !important;
 }
 
-/* Fix header visibility in light mode */
-:root:not(.dark) .prose h3,
-:root:not(.dark) .prose h4 {
-  color: rgb(120 113 108) !important; /* Brown color matching text */
-}
-
 /* Make the prose container wider */
 .prose.prose-lg {
   max-width: 5xl !important;
@@ -130,54 +124,7 @@
   color: rgba(248, 250, 252, 0.95);
 }
 
-/* Light mode ONLY: Add orange border to blog tiles */
-:root:not(.dark) .blog-card {
-  border: 1px solid rgb(251 146 60) !important;
-}
-
-/* Target blog tiles in light mode with various possible class names */
-:root:not(.dark) .blog-tile,
-:root:not(.dark) .post-card,
-:root:not(.dark) .article-card {
-  border: 1px solid rgb(251 146 60) !important;
-}
-
-/* Target cards with background colors in light mode */
-:root:not(.dark) [class*="bg-card"]:not(.dark *) {
-  border: 1px solid rgb(251 146 60) !important;
-}
-
-/* Target rounded cards in light mode */
-:root:not(.dark) .rounded-lg[class*="bg-"],
-:root:not(.dark) .rounded-xl[class*="bg-"] {
-  border: 1px solid rgb(251 146 60) !important;
-}
-
-/* More specific targeting for blog post tiles in light mode */
-:root:not(.dark) .container .rounded-lg,
-:root:not(.dark) .container .rounded-xl {
-  border: 1px solid rgb(251 146 60) !important;
-}
-
-/* Target any card-like elements in light mode */
-:root:not(.dark) [class*="card"],
-:root:not(.dark) [class*="tile"] {
-  border: 1px solid rgb(251 146 60) !important;
-}
-
-/* Ensure dark mode does NOT get the orange border */
-.dark .blog-card,
-.dark .blog-tile,
-.dark .post-card,
-.dark .article-card,
-.dark [class*="bg-card"],
-.dark .rounded-lg,
-.dark .rounded-xl {
-  border: none !important;
-}
-
-
-/* Fix ALL header visibility in light mode - make them brown like the text */
+/* Fix ALL header visibility in light mode ONLY - make them brown like the text */
 :root:not(.dark) .prose h1,
 :root:not(.dark) .prose h2,
 :root:not(.dark) .prose h3,
@@ -200,4 +147,66 @@
 :root:not(.dark) h5,
 :root:not(.dark) h6 {
   color: rgb(120 113 108) !important;
+}
+
+/* Light mode ONLY: Add orange border to blog tiles with multiple targeting approaches */
+:root:not(.dark) .rounded-lg {
+  border: 1px solid rgb(251 146 60) !important;
+}
+
+:root:not(.dark) .rounded-xl {
+  border: 1px solid rgb(251 146 60) !important;
+}
+
+:root:not(.dark) .rounded-md {
+  border: 1px solid rgb(251 146 60) !important;
+}
+
+/* Target specific blog-related containers in light mode */
+:root:not(.dark) [class*="bg-"] {
+  border: 1px solid rgb(251 146 60) !important;
+}
+
+/* Target cards and tiles more broadly in light mode */
+:root:not(.dark) .blog-card,
+:root:not(.dark) .blog-tile,
+:root:not(.dark) .post-card,
+:root:not(.dark) .article-card,
+:root:not(.dark) .card {
+  border: 1px solid rgb(251 146 60) !important;
+}
+
+/* Target any div with background classes in light mode */
+:root:not(.dark) div[class*="bg-card"],
+:root:not(.dark) div[class*="bg-background"],
+:root:not(.dark) div[class*="bg-"] {
+  border: 1px solid rgb(251 146 60) !important;
+}
+
+/* More aggressive targeting for light mode borders */
+:root:not(.dark) .container > div > div {
+  border: 1px solid rgb(251 146 60) !important;
+}
+
+/* Target any clickable/interactive elements that might be blog tiles */
+:root:not(.dark) a > div,
+:root:not(.dark) button > div {
+  border: 1px solid rgb(251 146 60) !important;
+}
+
+/* Ensure dark mode does NOT get any borders */
+.dark * {
+  border-color: transparent !important;
+}
+
+.dark .rounded-lg,
+.dark .rounded-xl,
+.dark .rounded-md,
+.dark [class*="bg-"],
+.dark .blog-card,
+.dark .blog-tile,
+.dark .post-card,
+.dark .article-card,
+.dark .card {
+  border: none !important;
 }
