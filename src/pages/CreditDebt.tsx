@@ -15,7 +15,7 @@ const creditDebtBlogs = [
     categoryColor: "bg-green-700" 
   },
   {
-    id: "credit-essentials",
+    id: "debt-payoff-strategies",
     title: "Debt Payoff Strategies: Finding Your Path to Freedom",
     excerpt: "Explore proven methods to eliminate debt and regain control of your financial future.",
     category: "Credit & Debt",
