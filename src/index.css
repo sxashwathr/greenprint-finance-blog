@@ -291,53 +291,86 @@ html:not(.dark) .prose div {
 
 /* Mobile First - Phones (up to 480px) */
 @media (max-width: 480px) {
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  
   #root {
-    max-width: 100%;
-    padding: 0.5rem;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
   
   body {
     font-size: 0.9rem;
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
+    background-color: rgb(250 248 240) !important;
   }
   
-  /* Force color consistency on mobile */
+  /* Force proper background colors */
+  html:not(.dark) {
+    background-color: rgb(250 248 240) !important;
+  }
+  
   html:not(.dark) * {
+    background-color: inherit !important;
+  }
+  
+  /* Force exact desktop colors on mobile - NO YELLOW */
+  html:not(.dark) h1,
+  html:not(.dark) h2, 
+  html:not(.dark) h3,
+  html:not(.dark) h4,
+  html:not(.dark) h5,
+  html:not(.dark) h6 {
     color: rgb(15 23 42) !important;
+    background-color: transparent !important;
+  }
+  
+  html:not(.dark) p,
+  html:not(.dark) span,
+  html:not(.dark) div {
+    color: rgb(15 23 42) !important;
+    background-color: transparent !important;
   }
   
   html:not(.dark) .text-foreground {
     color: rgb(15 23 42) !important;
-  }
-  
-  html:not(.dark) .text-muted-foreground {
-    color: rgb(100 116 139) !important;
+    background-color: transparent !important;
   }
   
   html:not(.dark) .prose * {
     color: rgb(120 113 108) !important;
+    background-color: transparent !important;
   }
   
   html:not(.dark) .prose .text-emerald-700 {
     color: rgb(22 101 52) !important;
+    background-color: transparent !important;
   }
   
-  /* Keep orange for links and meta */
+  /* Keep orange for links ONLY */
   html:not(.dark) .text-orange-500,
-  html:not(.dark) .hover\\:text-orange-500:hover,
-  html:not(.dark) .blog-read-time,
-  html:not(.dark) .blog-read-more {
+  html:not(.dark) .hover\\:text-orange-500:hover {
     color: rgb(251 146 60) !important;
+    background-color: transparent !important;
   }
   
-  /* Container adjustments */
+  /* Container adjustments - full width */
   .container {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
   }
   
-  /* FIXED: Header mobile layout - Top positioned */
+  /* Header mobile layout fixes */
   .fixed.top-2.left-2.z-50 {
     position: fixed !important;
     top: 0.5rem !important;
@@ -359,25 +392,24 @@ html:not(.dark) .prose div {
     font-size: 0.8rem !important;
   }
   
-  /* FIXED: Navigation positioned at top right */
+  /* FIXED: Navigation header positioning */
   .fixed.w-full.top-2.z-40 {
     position: fixed !important;
     top: 0.5rem !important;
-    right: 0.5rem !important;
-    left: auto !important;
+    left: 8rem !important;
+    right: 3rem !important;
     width: auto !important;
     display: flex !important;
-    justify-content: flex-end !important;
+    justify-content: center !important;
   }
   
-  /* FIXED: Navigation container */
+  /* Navigation container sizing */
   .fixed.w-full.top-2.z-40 nav {
     width: auto !important;
-    min-width: 200px !important;
-    max-width: calc(100vw - 8rem) !important;
+    max-width: calc(100vw - 11rem) !important;
   }
   
-  /* Mobile menu positioning */
+  /* Mobile menu positioning - show theme toggle */
   .absolute.top-full.left-0.w-full {
     position: absolute !important;
     top: 100% !important;
@@ -385,14 +417,18 @@ html:not(.dark) .prose div {
     right: 0 !important;
     width: 100% !important;
     margin-top: 0.5rem !important;
+    z-index: 45 !important;
   }
   
-  /* Theme toggle repositioning */
+  /* Theme toggle repositioning - left of nav */
   .fixed.top-4.right-4.z-50 {
-    top: 3.5rem !important;
+    position: fixed !important;
+    top: 0.5rem !important;
     right: 0.5rem !important;
+    left: auto !important;
     width: 2.25rem !important;
     height: 2.25rem !important;
+    z-index: 51 !important;
   }
   
   .fixed.top-4.right-4.z-50 .h-5.w-5 {
@@ -469,11 +505,20 @@ html:not(.dark) .prose div {
   section {
     padding-top: 2rem !important;
     padding-bottom: 2rem !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
   
   /* Main content spacing */
   main {
     padding-top: 4rem !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+  
+  /* Remove any yellow backgrounds */
+  .bg-gradient-to-r {
+    background: rgb(250 248 240) !important;
   }
 }
 
