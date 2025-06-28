@@ -284,64 +284,130 @@ html:not(.dark) .prose em {
 html:not(.dark) .prose div {
   color: rgb(120 113 108) !important;
 }
+
 /* =================================
    MOBILE RESPONSIVE STYLES
-   Add this to the END of index.css
    ================================= */
 
 /* Mobile First - Phones (up to 480px) */
 @media (max-width: 480px) {
   #root {
     max-width: 100%;
-    padding: 1rem;
+    padding: 0.5rem;
   }
   
   body {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  /* Force color consistency on mobile */
+  html:not(.dark) * {
+    color: rgb(15 23 42) !important;
+  }
+  
+  html:not(.dark) .text-foreground {
+    color: rgb(15 23 42) !important;
+  }
+  
+  html:not(.dark) .text-muted-foreground {
+    color: rgb(100 116 139) !important;
+  }
+  
+  html:not(.dark) .prose * {
+    color: rgb(120 113 108) !important;
+  }
+  
+  html:not(.dark) .prose .text-emerald-700 {
+    color: rgb(22 101 52) !important;
+  }
+  
+  /* Keep orange for links and meta */
+  html:not(.dark) .text-orange-500,
+  html:not(.dark) .hover\\:text-orange-500:hover,
+  html:not(.dark) .blog-read-time,
+  html:not(.dark) .blog-read-more {
+    color: rgb(251 146 60) !important;
   }
   
   /* Container adjustments */
   .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
   
-  /* Header mobile adjustments */
+  /* FIXED: Header mobile layout - Top positioned */
   .fixed.top-2.left-2.z-50 {
-    top: 0.25rem !important;
-    left: 0.25rem !important;
+    position: fixed !important;
+    top: 0.5rem !important;
+    left: 0.5rem !important;
+    z-index: 50 !important;
   }
   
   .fixed.top-2.left-2.z-50 .w-8.h-8 {
-    width: 1.75rem !important;
-    height: 1.75rem !important;
+    width: 2rem !important;
+    height: 2rem !important;
   }
   
   .fixed.top-2.left-2.z-50 .w-5.h-5 {
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+  }
+  
+  .fixed.top-2.left-2.z-50 .text-sm {
+    font-size: 0.8rem !important;
+  }
+  
+  /* FIXED: Navigation positioned at top right */
+  .fixed.w-full.top-2.z-40 {
+    position: fixed !important;
+    top: 0.5rem !important;
+    right: 0.5rem !important;
+    left: auto !important;
+    width: auto !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+  }
+  
+  /* FIXED: Navigation container */
+  .fixed.w-full.top-2.z-40 nav {
+    width: auto !important;
+    min-width: 200px !important;
+    max-width: calc(100vw - 8rem) !important;
+  }
+  
+  /* Mobile menu positioning */
+  .absolute.top-full.left-0.w-full {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    margin-top: 0.5rem !important;
+  }
+  
+  /* Theme toggle repositioning */
+  .fixed.top-4.right-4.z-50 {
+    top: 3.5rem !important;
+    right: 0.5rem !important;
+    width: 2.25rem !important;
+    height: 2.25rem !important;
+  }
+  
+  .fixed.top-4.right-4.z-50 .h-5.w-5 {
     width: 1rem !important;
     height: 1rem !important;
   }
   
-  .fixed.top-2.left-2.z-50 .text-sm {
-    font-size: 0.75rem !important;
-  }
-  
-  /* Navigation mobile adjustments */
-  .fixed.w-full.top-2.z-40 {
-    top: 0.25rem !important;
-    left: 3rem !important;
-    right: 0.25rem !important;
-    width: auto !important;
-  }
-  
   /* Blog slideshow mobile */
   .h-\\[560px\\] {
-    height: 300px !important;
+    height: 250px !important;
+    margin-top: 4rem !important;
   }
   
   .text-2xl.md\\:text-3xl {
-    font-size: 1.25rem !important;
+    font-size: 1.125rem !important;
   }
   
   .text-lg {
@@ -357,6 +423,7 @@ html:not(.dark) .prose div {
   /* Newsletter mobile */
   .flex.flex-col.md\\:flex-row {
     flex-direction: column !important;
+    gap: 0.75rem !important;
   }
   
   .max-w-2xl {
@@ -366,48 +433,47 @@ html:not(.dark) .prose div {
   /* Footer mobile */
   .grid.md\\:grid-cols-2.lg\\:grid-cols-4 {
     grid-template-columns: 1fr !important;
-    gap: 2rem !important;
+    gap: 1.5rem !important;
   }
   
   /* Blog content mobile sizing */
   .prose p {
     font-size: 16px !important;
     line-height: 1.6 !important;
-    margin-bottom: 1.25rem !important;
+    margin-bottom: 1rem !important;
   }
   
   .prose h3 {
-    font-size: 22px !important;
-    margin-bottom: 0.75rem !important;
-    margin-top: 1.5rem !important;
-  }
-  
-  .prose h4 {
     font-size: 20px !important;
-    margin-bottom: 0.5rem !important;
+    margin-bottom: 0.75rem !important;
     margin-top: 1.25rem !important;
   }
   
+  .prose h4 {
+    font-size: 18px !important;
+    margin-bottom: 0.5rem !important;
+    margin-top: 1rem !important;
+  }
+  
   .prose .text-emerald-700 {
-    font-size: 17px !important;
+    font-size: 16px !important;
     line-height: 1.5 !important;
   }
   
   .prose.prose-lg {
     font-size: 16px !important;
+    padding-top: 4rem !important;
   }
   
-  /* Theme toggle mobile */
-  .fixed.top-4.right-4.z-50 {
-    top: 0.5rem !important;
-    right: 0.5rem !important;
-    width: 2.5rem !important;
-    height: 2.5rem !important;
+  /* Section spacing adjustments */
+  section {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
   }
   
-  .fixed.top-4.right-4.z-50 .h-5.w-5 {
-    width: 1rem !important;
-    height: 1rem !important;
+  /* Main content spacing */
+  main {
+    padding-top: 4rem !important;
   }
 }
 
@@ -415,39 +481,63 @@ html:not(.dark) .prose div {
 @media (max-width: 768px) {
   #root {
     max-width: 100%;
-    padding: 1.5rem;
+    padding: 1rem;
   }
   
   body {
-    font-size: 0.875rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Force color consistency on tablet */
+  html:not(.dark) * {
+    color: rgb(15 23 42) !important;
+  }
+  
+  html:not(.dark) .text-foreground {
+    color: rgb(15 23 42) !important;
+  }
+  
+  html:not(.dark) .prose * {
+    color: rgb(120 113 108) !important;
+  }
+  
+  html:not(.dark) .prose .text-emerald-700 {
+    color: rgb(22 101 52) !important;
+  }
+  
+  /* Keep orange for links */
+  html:not(.dark) .text-orange-500,
+  html:not(.dark) .hover\\:text-orange-500:hover {
+    color: rgb(251 146 60) !important;
   }
   
   /* Container adjustments */
   .container {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   
   /* Header tablet adjustments */
   .fixed.top-2.left-2.z-50 {
-    top: 0.375rem !important;
-    left: 0.375rem !important;
+    top: 0.75rem !important;
+    left: 0.75rem !important;
   }
   
   .fixed.w-full.top-2.z-40 {
-    top: 0.375rem !important;
-    left: 7rem !important;
-    right: 0.375rem !important;
+    top: 0.75rem !important;
+    right: 0.75rem !important;
+    left: auto !important;
     width: auto !important;
   }
   
   /* Blog slideshow tablet */
   .h-\\[560px\\] {
-    height: 400px !important;
+    height: 350px !important;
+    margin-top: 3rem !important;
   }
   
   .text-2xl.md\\:text-3xl {
-    font-size: 1.5rem !important;
+    font-size: 1.375rem !important;
   }
   
   /* Blog tiles tablet */
@@ -459,34 +549,46 @@ html:not(.dark) .prose div {
   /* Footer tablet */
   .grid.md\\:grid-cols-2.lg\\:grid-cols-4 {
     grid-template-columns: repeat(2, 1fr) !important;
-    gap: 2rem !important;
+    gap: 1.75rem !important;
   }
   
   /* Blog content tablet sizing */
   .prose p {
     font-size: 17px !important;
     line-height: 1.65 !important;
-    margin-bottom: 1.375rem !important;
+    margin-bottom: 1.25rem !important;
   }
   
   .prose h3 {
-    font-size: 24px !important;
+    font-size: 22px !important;
     margin-bottom: 0.875rem !important;
-    margin-top: 1.75rem !important;
+    margin-top: 1.5rem !important;
   }
   
   .prose h4 {
-    font-size: 21px !important;
+    font-size: 19px !important;
     margin-bottom: 0.625rem !important;
-    margin-top: 1.375rem !important;
+    margin-top: 1.25rem !important;
   }
   
   .prose .text-emerald-700 {
-    font-size: 18px !important;
+    font-size: 17px !important;
     line-height: 1.55 !important;
   }
   
   .prose.prose-lg {
     font-size: 17px !important;
+    padding-top: 3rem !important;
+  }
+  
+  /* Section spacing */
+  section {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+  
+  /* Main content spacing */
+  main {
+    padding-top: 3rem !important;
   }
 }
