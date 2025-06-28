@@ -35,32 +35,27 @@
 .read-the-docs {
   color: #888;
 }
-
 /* Blog post styling overrides for light mode */
 .blog-card {
   transition: all 0.3s ease;
 }
-
 /* Ensure blog post titles are dark slate in light mode */
 .blog-card h2,
 .blog-card h3,
 .blog-post-title {
   color: rgb(15 23 42) !important; /* Dark slate - same as main titles */
 }
-
 /* Blog post descriptions should match titles in light mode */
 .blog-card p:not(.blog-read-time):not(.blog-read-more),
 .blog-description {
   color: rgb(15 23 42) !important; /* Dark slate - same as titles */
 }
-
 /* Orange styling for meta information */
 .blog-read-time,
 .blog-read-more,
 .read-more-link {
   color: rgb(251 146 60) !important; /* Orange */
 }
-
 /* Footer and bottom navigation links */
 .footer a,
 .bottom-links a,
@@ -68,7 +63,6 @@
 .navigation-links a {
   color: rgb(251 146 60) !important; /* Orange */
 }
-
 /* Override any existing pink colors specifically in light mode */
 :root:not(.dark) .text-pink-400,
 :root:not(.dark) .text-pink-500,
@@ -76,19 +70,24 @@
 :root:not(.dark) .text-purple-400 {
   color: rgb(15 23 42) !important; /* Dark slate for descriptions */
 }
-
 /* Keep category bubbles as they are (green) */
 .category-badge,
 .blog-category {
   /* Don't override - keep existing green styling */
 }
+
 /* =================================
    MOBILE RESPONSIVE STYLES
-   Add this to the END of App.css
    ================================= */
 
 /* Mobile First - Phones (up to 480px) */
 @media (max-width: 480px) {
+  #root {
+    max-width: 100%;
+    padding: 0.5rem;
+    text-align: left;
+  }
+  
   .card {
     padding: 1rem;
   }
@@ -96,6 +95,24 @@
   .logo {
     height: 4em;
     padding: 1em;
+  }
+  
+  /* Force proper text colors on mobile */
+  html:not(.dark) .blog-card h2,
+  html:not(.dark) .blog-card h3,
+  html:not(.dark) .blog-post-title {
+    color: rgb(15 23 42) !important;
+  }
+  
+  html:not(.dark) .blog-card p:not(.blog-read-time):not(.blog-read-more),
+  html:not(.dark) .blog-description {
+    color: rgb(15 23 42) !important;
+  }
+  
+  html:not(.dark) .blog-read-time,
+  html:not(.dark) .blog-read-more,
+  html:not(.dark) .read-more-link {
+    color: rgb(251 146 60) !important;
   }
   
   /* Blog card mobile styling */
@@ -124,10 +141,23 @@
   .read-more-link {
     font-size: 0.75rem !important;
   }
+  
+  /* Footer and navigation link colors on mobile */
+  html:not(.dark) .footer a,
+  html:not(.dark) .bottom-links a,
+  html:not(.dark) .quick-links a,
+  html:not(.dark) .navigation-links a {
+    color: rgb(251 146 60) !important;
+  }
 }
 
 /* Tablets (481px to 768px) */
 @media (max-width: 768px) {
+  #root {
+    max-width: 100%;
+    padding: 1rem;
+  }
+  
   .card {
     padding: 1.5rem;
   }
@@ -135,6 +165,24 @@
   .logo {
     height: 5em;
     padding: 1.25em;
+  }
+  
+  /* Force proper text colors on tablet */
+  html:not(.dark) .blog-card h2,
+  html:not(.dark) .blog-card h3,
+  html:not(.dark) .blog-post-title {
+    color: rgb(15 23 42) !important;
+  }
+  
+  html:not(.dark) .blog-card p:not(.blog-read-time):not(.blog-read-more),
+  html:not(.dark) .blog-description {
+    color: rgb(15 23 42) !important;
+  }
+  
+  html:not(.dark) .blog-read-time,
+  html:not(.dark) .blog-read-more,
+  html:not(.dark) .read-more-link {
+    color: rgb(251 146 60) !important;
   }
   
   /* Blog card tablet styling */
@@ -162,5 +210,13 @@
   .blog-read-more,
   .read-more-link {
     font-size: 0.8rem !important;
+  }
+  
+  /* Footer and navigation link colors on tablet */
+  html:not(.dark) .footer a,
+  html:not(.dark) .bottom-links a,
+  html:not(.dark) .quick-links a,
+  html:not(.dark) .navigation-links a {
+    color: rgb(251 146 60) !important;
   }
 }
