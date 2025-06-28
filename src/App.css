@@ -83,9 +83,11 @@
 /* Mobile First - Phones (up to 480px) */
 @media (max-width: 480px) {
   #root {
-    max-width: 100%;
-    padding: 0.5rem;
-    text-align: left;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: left !important;
   }
   
   .card {
@@ -97,28 +99,40 @@
     padding: 1em;
   }
   
-  /* Force proper text colors on mobile */
+  /* Force exact desktop colors - NO YELLOW */
   html:not(.dark) .blog-card h2,
   html:not(.dark) .blog-card h3,
   html:not(.dark) .blog-post-title {
     color: rgb(15 23 42) !important;
+    background-color: transparent !important;
   }
   
   html:not(.dark) .blog-card p:not(.blog-read-time):not(.blog-read-more),
   html:not(.dark) .blog-description {
     color: rgb(15 23 42) !important;
+    background-color: transparent !important;
   }
   
   html:not(.dark) .blog-read-time,
   html:not(.dark) .blog-read-more,
   html:not(.dark) .read-more-link {
     color: rgb(251 146 60) !important;
+    background-color: transparent !important;
+  }
+  
+  /* Remove any gradient backgrounds that might cause yellow */
+  html:not(.dark) .bg-gradient-to-r,
+  html:not(.dark) .bg-gradient-to-l,
+  html:not(.dark) .bg-gradient-to-t,
+  html:not(.dark) .bg-gradient-to-b {
+    background: rgb(250 248 240) !important;
   }
   
   /* Blog card mobile styling */
   .blog-card {
     margin-bottom: 1rem;
     padding: 1rem;
+    background-color: rgb(255 255 255) !important;
   }
   
   .blog-card h2,
@@ -148,14 +162,17 @@
   html:not(.dark) .quick-links a,
   html:not(.dark) .navigation-links a {
     color: rgb(251 146 60) !important;
+    background-color: transparent !important;
   }
 }
 
 /* Tablets (481px to 768px) */
 @media (max-width: 768px) {
   #root {
-    max-width: 100%;
-    padding: 1rem;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 1rem !important;
   }
   
   .card {
@@ -167,28 +184,40 @@
     padding: 1.25em;
   }
   
-  /* Force proper text colors on tablet */
+  /* Force exact desktop colors on tablet */
   html:not(.dark) .blog-card h2,
   html:not(.dark) .blog-card h3,
   html:not(.dark) .blog-post-title {
     color: rgb(15 23 42) !important;
+    background-color: transparent !important;
   }
   
   html:not(.dark) .blog-card p:not(.blog-read-time):not(.blog-read-more),
   html:not(.dark) .blog-description {
     color: rgb(15 23 42) !important;
+    background-color: transparent !important;
   }
   
   html:not(.dark) .blog-read-time,
   html:not(.dark) .blog-read-more,
   html:not(.dark) .read-more-link {
     color: rgb(251 146 60) !important;
+    background-color: transparent !important;
+  }
+  
+  /* Remove gradients */
+  html:not(.dark) .bg-gradient-to-r,
+  html:not(.dark) .bg-gradient-to-l,
+  html:not(.dark) .bg-gradient-to-t,
+  html:not(.dark) .bg-gradient-to-b {
+    background: rgb(250 248 240) !important;
   }
   
   /* Blog card tablet styling */
   .blog-card {
     margin-bottom: 1.5rem;
     padding: 1.25rem;
+    background-color: rgb(255 255 255) !important;
   }
   
   .blog-card h2,
@@ -218,5 +247,6 @@
   html:not(.dark) .quick-links a,
   html:not(.dark) .navigation-links a {
     color: rgb(251 146 60) !important;
+    background-color: transparent !important;
   }
 }
