@@ -22,6 +22,15 @@ const entrepreneurshipBlogs = [
     date: "2024-01-28",
     readTime: "7 min read",
     categoryColor: "bg-emerald-green"
+  },
+  {
+    id: "scaling-your-business",
+    title: "Scaling Your Business: From Solo Act to Sustainable Growth",
+    excerpt: "Learn the key strategies and systems needed to grow your business beyond what you can handle alone.",
+    category: "Entrepreneurship",
+    date: "2024-01-28",
+    readTime: "10 min read",
+    categoryColor: "bg-emerald-green"
   }
 ];
 
