@@ -26,7 +26,7 @@ const investingBlogs = [
   {
     id: "dollar-cost-averaging",
     title: "Dollar-Cost Averaging vs. Lump Sum Investing: Which Strategy Wins?",
-    excerpt: "Compare two popular investment strategies to determine the approach that might work better for your financial situation.",
+    excerpt: "Compare two investment strategies to determine the one that works better for your financial situation.",
     category: "Investing",
     date: "2024-01-22",
     readTime: "9 min read",
