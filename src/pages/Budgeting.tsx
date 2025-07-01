@@ -16,11 +16,20 @@ const budgetingBlogs = [
   },
   {
     id: "money-psychology",
-    title: "The Psychology of Money: Why We Spend and How to Change It ",
+    title: "The Psychology of Money: Why We Spend and How to Change It",
     excerpt: "Discover the triggers that drive spending habits and learn useful strategies to overcome them.",
     category: "Budgeting",
     date: "2024-01-20",
     readTime: "11 min read",
+    categoryColor: "bg-forest-green"
+  }
+  {
+    id: "emergency-fund-essentials",
+    title: "Emergency Fund Essentials: Your Financial Safety Net",
+    excerpt: "Build a financial cushion that protects you from unexpected expenses and gives you peace of mind.",
+    category: "Budgeting",
+    date: "2024-01-20",
+    readTime: "8 min read",
     categoryColor: "bg-forest-green"
   }
 ];
