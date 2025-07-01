@@ -18,6 +18,9 @@ export function BlogTiles() {
     <section className="py-16">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12 text-foreground animate-fade-in">Recently Published</h2>
+        <p className="text-lg text-foreground mb-8 leading-relaxed max-w-2xl mx-auto">
+  Stay informed with our latest insights on budgeting, investing, and building wealth
+</p>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {recentBlogs.map((blog) => (
             <BlogTile key={blog.id} {...blog} />
