@@ -24,12 +24,12 @@ const investingBlogs = [
     categoryColor: "bg-sage-green"
   },
   {
-    id: "retirement-planning",
-    title: "Retirement Planning in Your 20s: The Ultimate Advantage",
-    excerpt: "Why starting retirement planning early is the smartest financial decision you'll ever make.",
+    id: "dollar-cost-averaging",
+    title: "Dollar-Cost Averaging vs. Lump Sum Investing: Which Strategy Wins?",
+    excerpt: "Compare two popular investment strategies to determine the approach that might work better for your financial situation.",
     category: "Investing",
     date: "2024-01-22",
-    readTime: "6 min read",
+    readTime: "9 min read",
     categoryColor: "bg-sage-green"
   }
   
