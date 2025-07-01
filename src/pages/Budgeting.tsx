@@ -26,7 +26,7 @@ const budgetingBlogs = [
   {
     id: "emergency-fund-essentials",
     title: "Emergency Fund Essentials: Your Financial Safety Net",
-    excerpt: "Build a financial cushion that protects you from unexpected expenses and gives you peace of mind.",
+    excerpt: "Build a financial cushion that protects you from needless expenses and gives you peace of mind.",
     category: "Budgeting",
     date: "2024-01-20",
     readTime: "8 min read",
