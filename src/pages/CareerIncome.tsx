@@ -22,6 +22,15 @@ const careerIncomeBlogs = [
     date: "2024-01-30",
     readTime: "8 min read",
     categoryColor: "bg-teal-600"  
+  },
+  {
+    id: "multiple-income-streams",
+    title: "Building Multiple Income Streams: Your Path to Financial Security",
+    excerpt: "Diversify your income sources to reduce financial risk and accelerate your path to financial independence.",
+    category: "Career & Income",
+    date: "2024-01-30",
+    readTime: "11 min read",
+    categoryColor: "bg-teal-600"  
   }
 ];
 
