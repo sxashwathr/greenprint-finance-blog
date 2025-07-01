@@ -44,6 +44,26 @@ const blogPosts = {
     title: "Remote Work Mastery: Thriving in the Digital Economy",
     category: "Career & Income"
   },
+  "emergency-fund-essentials": {
+    title: "Emergency Fund Essentials: Your Financial Safety Net",
+    category: "Budgeting"
+  },
+  "dollar-cost-averaging": {
+    title: "Dollar-Cost Averaging vs. Lump Sum Investing: Which Strategy Wins?",
+    category: "Investing"
+  },
+  "credit-score-myths": {
+    title: "Credit Score Myths: Separating Fact from Fiction",
+    category: "Credit & Debt"
+  },
+  "scaling-your-business": {
+    title: "Scaling Your Business: From Solo Act to Sustainable Growth",
+    category: "Entrepreneurship"
+  },
+   "multiple-income-streams": {
+    title: "Building Multiple Income Streams: Your Path to Financial Security",
+    category: "Career & Income"
+  },
 };
 
 const BlogPost = () => {
@@ -857,14 +877,481 @@ case "remote-work-mastery":
       </p>
     </div>
   );
+  case "emergency-fund-essentials":
+  return (
+    <div className="prose prose-lg max-w-4xl mx-auto">
+      <p className="text-lg text-emerald-700 mb-6">
+        An emergency fund isn't just a nice-to-have—it's the foundation that prevents temporary setbacks from becoming permanent financial disasters.
+      </p>
 
-    default:
-      return (
-        <div className="prose prose-lg max-w-4xl mx-auto">
-          {/* Content area - add your blog content here */}
-        </div>
-      );
-  }
+      <p className="mb-6 text-foreground">
+        Have you ever had your car break down, gotten an unexpected medical bill, or faced a sudden job loss? Without an emergency fund, these situations can derail your entire financial plan and force you into debt.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Why Emergency Funds Matter More Than Ever</h3>
+
+      <p className="mb-6 text-foreground">
+        In today's economy, traditional job security has decreased while expenses continue to rise. An emergency fund acts as a buffer between you and financial catastrophe, giving you options when life throws curveballs.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Studies show that people with emergency funds are significantly less likely to accumulate credit card debt and more likely to weather financial storms without long-term damage to their financial health.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">How Much Do You Really Need?</h3>
+
+      <p className="mb-6 text-foreground">
+        The traditional advice of three to six months of expenses isn't one-size-fits-all. Your ideal emergency fund size depends on your job stability, health, family situation, and risk tolerance.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        If you have a stable government job with good benefits, three months might suffice. If you're self-employed or work in a volatile industry, six to twelve months provides better protection.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Start Small, Think Big</h3>
+
+      <p className="mb-6 text-foreground">
+        If saving several months of expenses feels overwhelming, start with a micro-emergency fund of $500-$1,000. This covers most minor emergencies like car repairs or small medical bills.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Once you've built this initial buffer, gradually work toward your full emergency fund goal. Even $500 can prevent you from reaching for credit cards when unexpected expenses arise.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Where to Keep Your Emergency Money</h3>
+
+      <p className="mb-6 text-foreground">
+        Your emergency fund should be easily accessible but separate from your everyday checking account. High-yield savings accounts offer the best combination of accessibility and growth.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Avoid investing emergency funds in stocks or other volatile assets. The goal is preservation and accessibility, not maximum returns.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">The Psychology of Financial Security</h3>
+
+      <p className="mb-6 text-foreground">
+        Beyond the practical benefits, emergency funds provide psychological peace of mind that affects other areas of your life. Knowing you can handle unexpected expenses reduces stress and allows you to take calculated risks in your career.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        This security can actually lead to better financial decisions overall, as you're not operating from a place of fear or desperation.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Replenishing After Use</h3>
+
+      <p className="mb-6 text-foreground">
+        When you do use your emergency fund—and you will—make replenishing it a top priority. Treat it like any other essential bill that must be paid.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        The habit of rebuilding your emergency fund reinforces the importance of this financial tool and ensures you're prepared for the next unexpected event.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Your emergency fund isn't money sitting idle—it's working 24/7 to protect your financial future and give you the confidence to navigate life's uncertainties.
+      </p>
+    </div>
+  );
+
+case "dollar-cost-averaging":
+  return (
+    <div className="prose prose-lg max-w-4xl mx-auto">
+      <p className="text-lg text-emerald-700 mb-6">
+        The debate between dollar-cost averaging and lump sum investing reveals important truths about market timing, risk tolerance, and long-term wealth building.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Have you ever received a bonus, inheritance, or tax refund and wondered whether to invest it all at once or spread it out over time? This decision between lump sum and dollar-cost averaging can significantly impact your investment returns.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Understanding Dollar-Cost Averaging</h3>
+
+      <p className="mb-6 text-foreground">
+        Dollar-cost averaging means investing a fixed amount regularly, regardless of market conditions. When prices are high, you buy fewer shares. When prices are low, you buy more shares.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        This strategy removes the emotional component of trying to time the market and helps smooth out the impact of market volatility over time.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">The Lump Sum Approach</h3>
+
+      <p className="mb-6 text-foreground">
+        Lump sum investing means putting all available money to work immediately. Since markets tend to rise over time, getting your money invested sooner typically produces better long-term results.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Historical data shows that lump sum investing outperforms dollar-cost averaging about 60-70% of the time over long periods.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">When Dollar-Cost Averaging Makes Sense</h3>
+
+      <p className="mb-6 text-foreground">
+        Despite the mathematical advantage of lump sum investing, dollar-cost averaging can be the better choice in certain situations.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        If you're psychologically uncomfortable investing a large amount during market uncertainty, dollar-cost averaging provides emotional comfort and keeps you invested rather than paralyzed by fear.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">The Comfort Factor</h3>
+
+      <p className="mb-6 text-foreground">
+        Many investors who plan to invest a lump sum end up waiting for the "perfect" moment, which often never comes. Dollar-cost averaging forces action and prevents analysis paralysis.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        The psychological benefits of dollar-cost averaging can outweigh the potential mathematical disadvantage if it means you actually invest rather than sitting in cash indefinitely.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Market Timing Reality Check</h3>
+
+      <p className="mb-6 text-foreground">
+        Both strategies acknowledge that consistently timing the market is nearly impossible. Even professional fund managers rarely succeed at market timing over long periods.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        The key insight is that time in the market generally beats timing the market, regardless of which strategy you choose.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Practical Implementation</h3>
+
+      <p className="mb-6 text-foreground">
+        For most people, the choice isn't purely theoretical. If you receive money gradually through paychecks, dollar-cost averaging happens naturally through regular 401(k) contributions.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        If you suddenly have a large sum to invest, consider a hybrid approach: invest a portion immediately and dollar-cost average the rest over 6-12 months.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">The Winner Depends on You</h3>
+
+      <p className="mb-6 text-foreground">
+        The "best" strategy depends more on your psychology than pure mathematics. The strategy you can stick with consistently is the one that will serve you best.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Whether you choose dollar-cost averaging or lump sum investing, the most important factor is starting and staying consistent with your investment plan.
+      </p>
+    </div>
+  );
+
+case "credit-score-myths":
+  return (
+    <div className="prose prose-lg max-w-4xl mx-auto">
+      <p className="text-lg text-emerald-700 mb-6">
+        Misinformation about credit scores can lead to poor financial decisions and missed opportunities to improve your creditworthiness.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Have you ever heard that checking your credit score hurts it, or that you need to carry a balance to build good credit? These persistent myths can actually damage your financial health if you believe them.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Myth 1: Checking Your Credit Score Hurts It</h3>
+
+      <p className="mb-6 text-foreground">
+        This is completely false. When you check your own credit score, it's called a "soft inquiry" and has zero impact on your score.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        You should check your credit score regularly to monitor for errors, identity theft, and track your progress. Many credit card companies now provide free monthly score updates.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Myth 2: You Need to Carry a Balance to Build Credit</h3>
+
+      <p className="mb-6 text-foreground">
+        This costly myth has led many people to pay unnecessary interest. Credit card companies report your payment history regardless of whether you pay in full or carry a balance.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Paying your full balance every month demonstrates responsible credit use while avoiding interest charges. This is the optimal strategy for building credit.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Myth 3: Closing Old Credit Cards Improves Your Score</h3>
+
+      <p className="mb-6 text-foreground">
+        Closing old credit cards can actually hurt your credit score in two ways: it reduces your total available credit (increasing utilization) and can shorten your average account age.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Keep old cards open, especially if they have no annual fee. Use them occasionally for small purchases to keep them active.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Myth 4: All Credit Scores Are the Same</h3>
+
+      <p className="mb-6 text-foreground">
+        There are dozens of different credit scoring models, and your score can vary significantly between them. FICO and VantageScore are the most common, but even within these brands, there are multiple versions.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Focus on the trends and general range rather than obsessing over small variations between different scoring models.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Myth 5: Income Affects Your Credit Score</h3>
+
+      <p className="mb-6 text-foreground">
+        Your credit score is based solely on your credit history, not your income. A high earner with poor credit habits will have a lower score than a modest earner with excellent payment history.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        However, income does matter when lenders evaluate your ability to repay, even if it doesn't directly affect your score calculation.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Myth 6: Paying Off Collections Removes Them</h3>
+
+      <p className="mb-6 text-foreground">
+        Paying off a collection account doesn't automatically remove it from your credit report. The account will still appear for seven years, though newer scoring models give less weight to paid collections.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        You can try negotiating a "pay for delete" agreement, but collection agencies aren't required to remove accurate information.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">What Actually Matters</h3>
+
+      <p className="mb-6 text-foreground">
+        Focus on the factors that genuinely impact your credit score: paying all bills on time, keeping credit utilization low, maintaining older accounts, and having a mix of credit types.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Understanding these facts helps you make informed decisions about your credit rather than following well-meaning but incorrect advice.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Don't let credit score myths derail your financial progress. Base your decisions on accurate information and focus on building long-term creditworthiness through responsible financial habits.
+      </p>
+    </div>
+  );
+
+case "scaling-your-business":
+  return (
+    <div className="prose prose-lg max-w-4xl mx-auto">
+      <p className="text-lg text-emerald-700 mb-6">
+        The transition from doing everything yourself to building scalable systems is often the biggest challenge entrepreneurs face.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Have you ever felt trapped in your own business, working longer hours for diminishing returns while dreaming of the freedom entrepreneurship was supposed to provide? You're experiencing the classic scaling challenge.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">The Scaling Paradox</h3>
+
+      <p className="mb-6 text-foreground">
+        Many entrepreneurs start businesses to gain freedom but end up creating jobs for themselves that are harder to escape than traditional employment. The key to breaking free is building systems that work without your constant involvement.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Scaling isn't just about growing revenue—it's about creating sustainable growth that doesn't require proportional increases in your time and effort.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">When to Start Thinking About Scale</h3>
+
+      <p className="mb-6 text-foreground">
+        The best time to think about scaling is before you desperately need it. If you're consistently booked solid, working maximum hours, or turning away customers, you're ready to scale.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Warning signs include: dreading vacation because work piles up, being the bottleneck for every decision, or feeling like your business would collapse without you.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Systems Before Staff</h3>
+
+      <p className="mb-6 text-foreground">
+        Before hiring your first employee, document your processes. Create step-by-step procedures for every recurring task in your business, from client onboarding to project delivery.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        These systems become the foundation for training others and ensure consistency even as your team grows. Well-documented processes are also valuable business assets.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">The Art of Delegation</h3>
+
+      <p className="mb-6 text-foreground">
+        Many entrepreneurs struggle with delegation because they believe no one else can do the job as well as they can. This perfectionist mindset is a growth killer.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Start by delegating tasks that are time-consuming but don't require your unique expertise. Virtual assistants can handle scheduling, basic customer service, and administrative tasks.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Building Revenue Streams That Scale</h3>
+
+      <p className="mb-6 text-foreground">
+        Service-based businesses often hit scaling limits because they trade time for money. Look for opportunities to create products or systems that generate revenue without proportional time investment.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        This might include digital products, courses, licensing your processes, or creating recurring revenue models that compound over time.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Technology as a Force Multiplier</h3>
+
+      <p className="mb-6 text-foreground">
+        Invest in tools and software that automate repetitive tasks. Customer relationship management (CRM) systems, scheduling software, and automated email sequences can handle many routine interactions.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        The goal is to use technology to handle predictable tasks while freeing you to focus on strategy, relationships, and high-value activities only you can do.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Managing Cash Flow During Growth</h3>
+
+      <p className="mb-6 text-foreground">
+        Scaling often requires upfront investment before seeing returns. Plan for increased expenses from hiring, technology, and inventory while revenue growth may lag behind.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Maintain sufficient cash reserves to fund growth without jeopardizing day-to-day operations. Many profitable businesses fail during rapid expansion due to cash flow problems.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">The Leadership Transition</h3>
+
+      <p className="mb-6 text-foreground">
+        As your business grows, your role must evolve from doing to leading. This means developing skills in hiring, training, managing people, and creating company culture.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        The entrepreneur who built the business isn't always the best person to manage its growth. Be honest about your strengths and consider bringing in management expertise when needed.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Scaling successfully requires letting go of control while maintaining your vision. Focus on building systems, processes, and people that can execute your ideas without your constant oversight.
+      </p>
+    </div>
+  );
+
+case "multiple-income-streams":
+  return (
+    <div className="prose prose-lg max-w-4xl mx-auto">
+      <p className="text-lg text-emerald-700 mb-6">
+        In an era of economic uncertainty, relying on a single income source is like putting all your eggs in one very fragile basket.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Have you ever calculated what would happen to your lifestyle if your primary income disappeared tomorrow? The average person is just a few paychecks away from financial difficulty, making income diversification crucial for long-term security.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Why Multiple Income Streams Matter</h3>
+
+      <p className="mb-6 text-foreground">
+        Traditional job security has eroded significantly. Companies regularly conduct layoffs, industries face disruption, and economic downturns can eliminate positions overnight.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Multiple income streams provide resilience against these shocks while also accelerating wealth building. When one stream faces challenges, others can compensate.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">The Three Types of Income</h3>
+
+      <div className="mb-6 text-foreground">
+        <p className="mb-4"><em>Linear Income:</em> Traditional employment where you trade time directly for money. This includes salaries, hourly wages, and most consulting work.</p>
+        
+        <p className="mb-4"><em>Leveraged Income:</em> Money earned through systems, investments, or products that generate returns beyond the initial time investment.</p>
+        
+        <p className="mb-4"><em>Passive Income:</em> Revenue that continues flowing with minimal ongoing effort, such as rental properties, dividends, or royalties.</p>
+      </div>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Starting Your Second Stream</h3>
+
+      <p className="mb-6 text-foreground">
+        The easiest way to add income streams is to monetize skills you already possess. If you're good at graphic design, offer freelance services. If you're knowledgeable about fitness, consider personal training or online coaching.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Start small and test the waters before committing significant time or resources. Many successful businesses began as side projects that gradually grew.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Digital Income Opportunities</h3>
+
+      <p className="mb-6 text-foreground">
+        The internet has democratized income generation. You can create online courses, sell digital products, offer virtual services, or build content that generates advertising revenue.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        These digital streams often have low startup costs and high scalability potential. A successful online course can generate income for years after creation.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Investment Income Fundamentals</h3>
+
+      <p className="mb-6 text-foreground">
+        Building investment income requires upfront capital but can provide truly passive returns. Start with index funds and gradually explore real estate, bonds, or other investment vehicles.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Even small amounts invested consistently can grow into meaningful income streams over time. The key is starting early and being consistent.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Service-Based Side Hustles</h3>
+
+      <p className="mb-6 text-foreground">
+        Skills-based services like tutoring, consulting, writing, or technical support can generate immediate income. These leverage your existing expertise while building new professional relationships.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        The goal is to eventually systematize these services so they require less of your personal time while generating the same or higher income.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Creating Scalable Products</h3>
+
+      <p className="mb-6 text-foreground">
+        Products that can be sold repeatedly without additional production costs offer excellent scaling potential. This includes software, courses, books, templates, or any intellectual property.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        The initial creation requires significant effort, but successful products can generate income for years with minimal maintenance.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Managing Multiple Streams</h3>
+
+      <p className="mb-6 text-foreground">
+        As your income sources multiply, organization becomes crucial. Track each stream separately to understand profitability and time investment.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Some streams will prove more valuable than others. Focus your energy on the most profitable and sustainable options while eliminating those that drain resources.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">The Compound Effect</h3>
+
+      <p className="mb-6 text-foreground">
+        Multiple income streams create compound benefits. They provide security, accelerate wealth building, and often lead to unexpected opportunities and connections.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        The diversification also allows you to take more calculated risks in your primary career, knowing you have backup income sources.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Long-Term Strategy</h3>
+
+      <p className="mb-6 text-foreground">
+        Aim to eventually have income from all three categories: linear income from your primary job, leveraged income from products or systems, and passive income from investments.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        This balanced approach provides both immediate cash flow and long-term wealth building potential, creating true financial independence over time.
+      </p>
+    </div>
+  );
+
+default:
+  return (
+    <div className="prose prose-lg max-w-4xl mx-auto">
+      <div className="text-center py-16">
+        <h2 className="text-2xl font-bold mb-4 text-white">Blog Post Not Found</h2>
+        <p className="text-lg text-foreground mb-8">
+          The blog post you're looking for doesn't exist or hasn't been published yet.
+        </p>
+        <a 
+          href="/" 
+          className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
+        >
+          Return to Home
+        </a>
+      </div>
+    </div>
+  );
+}
 };
 
 return (
