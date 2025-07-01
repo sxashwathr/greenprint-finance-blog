@@ -22,6 +22,15 @@ const creditDebtBlogs = [
     date: "2024-01-25",
     readTime: "10 min read",
     categoryColor: "bg-green-700" 
+  },
+  {
+    id: "credit-score-myths",
+    title: "Credit Score Myths: Separating Fact from Fiction",
+    excerpt: "Debunk common credit score misconceptions that could be hurting your financial progress",
+    category: "Credit & Debt",
+    date: "2024-01-25",
+    readTime: "7 min read",
+    categoryColor: "bg-green-700" 
   }
 ];
 
