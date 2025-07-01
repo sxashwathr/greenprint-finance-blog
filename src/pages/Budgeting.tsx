@@ -22,7 +22,7 @@ const budgetingBlogs = [
     date: "2024-01-20",
     readTime: "11 min read",
     categoryColor: "bg-forest-green"
-  }
+  },
   {
     id: "emergency-fund-essentials",
     title: "Emergency Fund Essentials: Your Financial Safety Net",
