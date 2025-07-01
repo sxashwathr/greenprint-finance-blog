@@ -22,7 +22,17 @@ const investingBlogs = [
     date: "2024-01-22",
     readTime: "6 min read",
     categoryColor: "bg-sage-green"
+  },
+  {
+    id: "retirement-planning",
+    title: "Retirement Planning in Your 20s: The Ultimate Advantage",
+    excerpt: "Why starting retirement planning early is the smartest financial decision you'll ever make.",
+    category: "Investing",
+    date: "2024-01-22",
+    readTime: "6 min read",
+    categoryColor: "bg-sage-green"
   }
+  
 ];
 
 const Investing = () => {
