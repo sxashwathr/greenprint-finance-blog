@@ -37,6 +37,23 @@
     }
   })();
 </script>
+    <div id="visitor-count" style="display: none;" data-total="0"></div>
+
+<script>
+function updateCounter() {
+  const counterDiv = document.getElementById('visitor-count');
+  
+  // This gets the TOTAL count including all previous visits
+  let total = parseInt(localStorage.getItem('totalVisits') || 0) + 1;
+  
+  counterDiv.dataset.total = total;
+  localStorage.setItem('totalVisits', total); // Saves forever
+  
+  console.log('Total Visits:', total);
+}
+
+document.addEventListener('DOMContentLoaded', updateCounter);
+</script>
   </head>
   <body>
     <div id="root"></div>
