@@ -39,11 +39,9 @@
  <body>
    <div id="root"></div>
    
-   <!-- Hidden visitor counter -->
    <div id="visitor-count" style="display: none;" data-total="0"></div>
    
    <script>
-     // Simple visitor counter - starts at 1000
      try {
        var visits = localStorage.getItem('totalVisits');
        var newCount = visits ? parseInt(visits) + 1 : 1000;
