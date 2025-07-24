@@ -64,6 +64,66 @@ const blogPosts = {
     title: "Building Multiple Income Streams: Your Path to Financial Security",
     category: "Career & Income"
   },
+  "expense-tracking-mastery": {
+    title: "Expense Tracking Mastery: The Simple System That Actually Works",
+    category: "Budgeting"
+  },
+  "subscription-audit-guide": {
+    title: "Subscription Audit Guide: Reclaim Hundreds from Hidden Costs",
+    category: "Budgeting"
+  },
+  "budgeting-for-irregular-income": {
+    title: "Budgeting for Irregular Income: Thriving with Unpredictable Paychecks",
+    category: "Budgeting"
+  },
+  "investment-portfolio-basics": {
+    title: "Investment Portfolio Basics: Building Your Wealth Foundation",
+    category: "Investing"
+  },
+  "tax-advantaged-investing": {
+    title: "Tax-Advantaged Investing: Maximize Returns While Minimizing Taxes",
+    category: "Investing"
+  },
+  "market-volatility-strategies": {
+    title: "Market Volatility Strategies: Staying Calm When Markets Go Crazy",
+    category: "Investing"
+  },
+  "credit-card-rewards-optimization": {
+    title: "Credit Card Rewards Optimization: Earning Money Without Debt",
+    category: "Credit & Debt"
+  },
+  "student-loan-strategies": {
+    title: "Student Loan Strategies: Smart Repayment for Financial Freedom",
+    category: "Credit & Debt"
+  },
+  "building-business-credit": {
+    title: "Building Business Credit: Separate Your Personal and Business Finances",
+    category: "Credit & Debt"
+  },
+  "e-commerce-business-models": {
+    title: "E-Commerce Business Models: Finding Your Path to Online Success",
+    category: "Entrepreneurship"
+  },
+  "business-funding-options": {
+    title: "Business Funding Options: From Bootstrapping to Venture Capital",
+    category: "Entrepreneurship"
+  },
+  "intellectual-property-basics": {
+    title: "Intellectual Property Basics: Protecting Your Business Assets",
+    category: "Entrepreneurship"
+  },
+  "networking-for-career-growth": {
+    title: "Networking for Career Growth: Building Relationships That Pay",
+    category: "Career & Income"
+  },
+  "skills-based-career-pivoting": {
+    title: "Skills-Based Career Pivoting: Changing Paths Without Starting Over",
+    category: "Career & Income"
+  },
+  "freelancing-business-fundamentals": {
+    title: "Freelancing Business Fundamentals: Building a Sustainable Solo Career",
+    category: "Career & Income"
+  },
 };
 
 const BlogPost = () => {
