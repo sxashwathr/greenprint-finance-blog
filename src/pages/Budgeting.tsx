@@ -31,6 +31,33 @@ const budgetingBlogs = [
     date: "2024-01-20",
     readTime: "8 min read",
     categoryColor: "bg-forest-green"
+  },
+  {
+    id: "expense-tracking-mastery",
+    title: "Expense Tracking Mastery: The Simple System That Actually Works",
+    excerpt: "Discover a sustainable approach to tracking expenses that doesn't overwhelm you but gives you complete control over your spending.",
+    category: "Budgeting",
+    date: "2024-01-20",
+    readTime: "6 min read",
+    categoryColor: "bg-forest-green"
+  },
+  {
+    id: "subscription-audit-guide",
+    title: "Subscription Audit Guide: Reclaim Hundreds from Hidden Costs",
+    excerpt: "Uncover forgotten subscriptions and learn strategies to optimize recurring expenses.",
+    category: "Budgeting",
+    date: "2024-01-20",
+    readTime: "5 min read",
+    categoryColor: "bg-forest-green"
+  },
+  {
+    id: "budgeting-for-irregular-income",
+    title: "Budgeting for Irregular Income: Thriving with Unpredictable Paychecks",
+    excerpt: "Master budgeting strategies for freelancers and anyone with variable income.",
+    category: "Budgeting",
+    date: "2024-01-20",
+    readTime: "7 min read",
+    categoryColor: "bg-forest-green"
   }
 ];
 
