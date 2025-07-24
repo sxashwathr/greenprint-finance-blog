@@ -43,7 +43,7 @@ const careerIncomeBlogs = [
   },
   {
     id: "skills-based-career-pivoting",
-    title: "Skills-Based Career Pivoting: Changing Paths Without Starting Over",
+    title: "Career Pivoting: Leverage Skills to Change Paths",
     excerpt: "Leverage transferable skills to transition into new industries successfully.",
     category: "Career & Income",
     date: "2024-01-30",
