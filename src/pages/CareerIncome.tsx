@@ -31,6 +31,33 @@ const careerIncomeBlogs = [
     date: "2024-01-30",
     readTime: "11 min read",
     categoryColor: "bg-teal-600"  
+  },
+  {
+    id: "networking-for-career-growth",
+    title: "Networking for Career Growth: Building Relationships That Pay",
+    excerpt: "Transform networking into genuine relationship building that accelerates careers.",
+    category: "Career & Income",
+    date: "2024-01-30",
+    readTime: "6 min read",
+    categoryColor: "bg-teal-600"  
+  },
+  {
+    id: "skills-based-career-pivoting",
+    title: "Skills-Based Career Pivoting: Changing Paths Without Starting Over",
+    excerpt: "Leverage transferable skills to transition into new industries successfully.",
+    category: "Career & Income",
+    date: "2024-01-30",
+    readTime: "8 min read",
+    categoryColor: "bg-teal-600"  
+  },
+  {
+    id: "freelancing-business-fundamentals",
+    title: "Freelancing Business Fundamentals: Building a Sustainable Solo Career",
+    excerpt: "Master the business side of freelancing from pricing to scaling.",
+    category: "Career & Income",
+    date: "2024-01-30",
+    readTime: "9 min read",
+    categoryColor: "bg-teal-600"  
   }
 ];
 
