@@ -31,6 +31,33 @@ const entrepreneurshipBlogs = [
     date: "2024-01-28",
     readTime: "10 min read",
     categoryColor: "bg-emerald-green"
+  },
+  {
+    id: "e-commerce-business-models",
+    title: "E-Commerce Business Models: Finding Your Path to Online Succes",
+    excerpt: "Explore different e-commerce approaches and find the right model for you.",
+    category: "Entrepreneurship",
+    date: "2024-01-28",
+    readTime: "9 min read",
+    categoryColor: "bg-emerald-green"
+  },
+  {
+    id: "business-funding-options",
+    title: "Business Funding Options: From Bootstrapping to Venture Capita",
+    excerpt: "Understand funding sources and choose the right capital strategy.",
+    category: "Entrepreneurship",
+    date: "2024-01-28",
+    readTime: "9 min read",
+    categoryColor: "bg-emerald-green"
+  },
+  {
+    id: "intellectual-property-basics",
+    title: "Intellectual Property Basics: Protecting Your Business Assets",
+    excerpt: "Learn to protect your innovations through trademarks, copyrights, and more.",
+    category: "Entrepreneurship",
+    date: "2024-01-28",
+    readTime: "8 min read",
+    categoryColor: "bg-emerald-green"
   }
 ];
 
