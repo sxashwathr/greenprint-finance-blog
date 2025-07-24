@@ -1142,7 +1142,7 @@ case "scaling-your-business":
       </p>
 
       <p className="mb-6 text-foreground">
-        Scaling isn't just about growing revenue—it's about creating sustainable growth that doesn't require proportional increases in your time and effort.
+        Scaling isn't just about growing revenue, it's about creating sustainable growth that doesn't require proportional increases in your time and effort.
       </p>
 
       <h3 className="text-xl font-semibold mb-4 text-white">When to Start Thinking About Scale</h3>
