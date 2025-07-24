@@ -31,6 +31,33 @@ const creditDebtBlogs = [
     date: "2024-01-25",
     readTime: "7 min read",
     categoryColor: "bg-green-700" 
+  },
+  {
+    id: "credit-card-rewards-optimization",
+    title: "Credit Card Rewards Optimization: Earning Money Without Debt",
+    excerpt: "Maximize credit card rewards while maintaining excellent financial habits.",
+    category: "Credit & Debt",
+    date: "2024-01-25",
+    readTime: "7 min read",
+    categoryColor: "bg-green-700" 
+  },
+  {
+    id: "building-business-credit",
+    title: "Building Business Credit: Separate Your Personal and Business Finances",
+    excerpt: "Navigate repayment options and strategies to minimize your loan burden..",
+    category: "Credit & Debt",
+    date: "2024-01-25",
+    readTime: "9 min read",
+    categoryColor: "bg-green-700" 
+  },
+  {
+    id: "credit-score-myths",
+    title: "Credit Score Myths: Separating Fact from Fiction",
+    excerpt: "Establish business credit to protect assets and access better funding.",
+    category: "Credit & Debt",
+    date: "2024-01-25",
+    readTime: "7 min read",
+    categoryColor: "bg-green-700" 
   }
 ];
 
