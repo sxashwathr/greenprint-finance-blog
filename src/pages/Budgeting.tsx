@@ -35,7 +35,7 @@ const budgetingBlogs = [
   {
     id: "expense-tracking-mastery",
     title: "Expense Tracking Mastery: The Simple System That Actually Works",
-    excerpt: "Discover a sustainable approach to tracking expenses that doesn't overwhelm you but gives you complete control over your spending.",
+    excerpt: "Discover a sustainable approach to expense tracking that gives you complete spending control.",
     category: "Budgeting",
     date: "2024-01-20",
     readTime: "6 min read",
