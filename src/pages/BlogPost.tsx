@@ -1333,6 +1333,1408 @@ case "multiple-income-streams":
       </p>
     </div>
   );
+case "expense-tracking-mastery":
+  return (
+    <div className="prose prose-lg max-w-4xl mx-auto">
+      <p className="text-lg text-emerald-700 mb-6">
+        Knowing where your money goes is the first step to financial control, but most people track expenses wrong and give up within weeks.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Have you ever tried tracking every expense for a month, only to abandon the effort because it felt overwhelming and tedious? The problem isn't your willpower—it's your approach.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Why Traditional Expense Tracking Fails</h3>
+
+      <p className="mb-6 text-foreground">
+        Most expense tracking advice focuses on recording every single transaction in real-time. This creates decision fatigue and turns a helpful tool into a burdensome chore.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        The key is focusing on patterns and trends rather than perfect accuracy. You need enough information to make informed decisions, not a forensic accounting of every coffee purchase.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">The 80/20 Approach to Expense Tracking</h3>
+
+      <p className="mb-6 text-foreground">
+        Twenty percent of your spending categories likely account for 80% of your expenses. Identify and focus on tracking these major categories first: housing, transportation, food, and debt payments.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Don't worry about tracking every small purchase initially. A $4 coffee matters less than understanding whether you're spending $800 or $1,200 monthly on groceries.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Choosing Your Tracking Method</h4>
+
+      <div className="mb-6 text-foreground">
+        <p className="mb-4"><em>Bank statement review:</em> Spend 30 minutes weekly categorizing expenses from your bank statements. This captures 90% of your spending with minimal daily effort.</p>
+        
+        <p className="mb-4"><em>Photo receipts:</em> Take photos of receipts and categorize them later. This captures cash spending without immediate data entry.</p>
+        
+        <p className="mb-4"><em>Automated apps:</em> Tools like Mint or YNAB automatically categorize most transactions, requiring only occasional corrections.</p>
+      </div>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Creating Meaningful Categories</h4>
+
+      <p className="mb-6 text-foreground">
+        Avoid over-categorizing expenses. Start with 8-10 broad categories that align with your budget goals. You can always add detail later if needed.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Make categories actionable. Instead of just "Entertainment," use "Streaming Services" and "Dining Out" so you can make specific adjustments.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Weekly Review Ritual</h4>
+
+      <p className="mb-6 text-foreground">
+        Schedule 15 minutes every Sunday to review the previous week's spending. Look for unusual expenses, categorize transactions, and note any patterns.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Ask yourself: "What surprised me this week?" and "Where did I spend more than expected?" These insights drive behavioral changes.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Tracking Without Judgment</h4>
+
+      <p className="mb-6 text-foreground">
+        The first month of tracking should be purely observational. Don't try to change spending habits while you're still learning your patterns.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Judgment and shame kill tracking consistency. Your goal is understanding, not perfection. Every piece of data helps you make better future decisions.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Effective expense tracking isn't about recording every transaction—it's about gathering enough information to make informed financial decisions while maintaining a system you can sustain long-term.
+      </p>
+    </div>
+  );
+
+case "subscription-audit-guide":
+  return (
+    <div className="prose prose-lg max-w-4xl mx-auto">
+      <p className="text-lg text-emerald-700 mb-6">
+        Hidden subscription costs are silently draining hundreds of dollars from your budget every year—money that could be building your financial future instead.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Have you ever been shocked by a charge you forgot about, only to realize you've been paying for a service you barely use? The average American has 12 paid subscriptions and spends over $270 monthly on recurring services.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">The Subscription Trap</h3>
+
+      <p className="mb-6 text-foreground">
+        Companies deliberately make subscriptions easy to start and difficult to cancel. Free trials automatically convert to paid plans, and cancellation processes are often buried in account settings.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        The psychological effect is powerful: $9.99 monthly feels manageable, but that's $120 annually for each service. Multiple subscriptions can easily consume $2,000-$3,000 of your yearly budget.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">The Complete Subscription Audit Process</h3>
+
+      <p className="mb-6 text-foreground">
+        Start by gathering three months of bank and credit card statements. Look for any recurring charges, paying special attention to small amounts that are easy to overlook.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Create a spreadsheet listing each subscription, its cost, billing frequency, and last usage date. Include annual memberships that might not appear on recent statements.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Common Hidden Subscriptions</h4>
+
+      <div className="mb-6 text-foreground">
+        <p className="mb-4"><em>App subscriptions:</em> Many mobile apps charge monthly fees that bypass your usual payment methods through app stores.</p>
+        
+        <p className="mb-4"><em>Software renewals:</em> Adobe, Microsoft, and antivirus programs often auto-renew annually for hundreds of dollars.</p>
+        
+        <p className="mb-4"><em>Fitness and wellness:</em> Meditation apps, workout programs, and nutrition trackers frequently operate on subscription models.</p>
+        
+        <p className="mb-4"><em>Entertainment bundles:</em> Premium tiers for music, gaming, and streaming services can stack up quickly.</p>
+      </div>
+
+      <h4 className="text-lg font-medium mb-3 text-white">The Keep, Pause, or Cancel Framework</h4>
+
+      <p className="mb-6 text-foreground">
+        For each subscription, ask: "Have I used this in the past 30 days?" and "Would I sign up for this today at the current price?"
+      </p>
+
+      <div className="mb-6 text-foreground">
+        <p className="mb-4"><em>Keep:</em> Services you use regularly and that provide clear value relative to their cost.</p>
+        
+        <p className="mb-4"><em>Pause:</em> Services you use seasonally or occasionally—cancel now and resubscribe when needed.</p>
+        
+        <p className="mb-4"><em>Cancel:</em> Services you rarely use, duplicate functionalities, or no longer need.</p>
+      </div>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Negotiation and Downgrading Strategies</h4>
+
+      <p className="mb-6 text-foreground">
+        Before canceling valuable services, try negotiating. Many companies offer discounted rates, free months, or downgraded plans to retain customers.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Consider family plans for services multiple household members use, or share accounts where terms of service allow. The savings can be substantial.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Preventing Future Subscription Creep</h4>
+
+      <p className="mb-6 text-foreground">
+        Set calendar reminders for all free trial end dates. Use a dedicated credit card for subscriptions to make tracking easier and prevent surprises.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Schedule quarterly subscription reviews. As your needs change, services that once provided value may become unnecessary expenses.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Redirecting Your Subscription Savings</h4>
+
+      <p className="mb-6 text-foreground">
+        After cutting unnecessary subscriptions, immediately redirect those savings toward financial goals. Set up automatic transfers to prevent lifestyle inflation from consuming the extra money.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        If you save $100 monthly from subscription audits and invest it earning 7% annually, you'll have over $17,000 in 10 years—all from money that was silently disappearing from your budget.
+      </p>
+    </div>
+  );
+
+case "budgeting-for-irregular-income":
+  return (
+    <div className="prose prose-lg max-w-4xl mx-auto">
+      <p className="text-lg text-emerald-700 mb-6">
+        Traditional budgeting advice assumes steady paychecks, but millions of people navigate unpredictable income from freelancing, sales, or seasonal work.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Have you ever struggled to budget when your income varies dramatically month to month? Whether you're earning $2,000 one month and $6,000 the next, you need strategies that work with income volatility, not against it.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">The Irregular Income Challenge</h3>
+
+      <p className="mb-6 text-foreground">
+        Standard budgeting methods fail when income is unpredictable because they're designed around consistent cash flow. You can't allocate 30% to housing when you don't know what 100% will be.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        The solution isn't trying to smooth out your income—it's building flexibility into your financial system while maintaining control over spending.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">The Minimum Viable Budget Approach</h3>
+
+      <p className="mb-6 text-foreground">
+        Calculate your absolute minimum monthly expenses: rent, utilities, groceries, debt payments, and transportation. This becomes your "survival number."
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Your goal is to always have enough savings to cover 2-3 months of this minimum budget. This creates security without requiring massive emergency funds.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">The Percentage-Based Buffer System</h4>
+
+      <p className="mb-6 text-foreground">
+        When income arrives, immediately allocate percentages before spending anything: 50% to current month's expenses, 30% to next month's buffer, 20% to goals and savings.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        This system ensures you're always funding future months while building long-term financial stability, regardless of income timing.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Creating Income Buckets</h4>
+
+      <div className="mb-6 text-foreground">
+        <p className="mb-4"><em>Essential expenses account:</em> Holds 2-3 months of minimum living expenses. Only touched for necessities during low-income periods.</p>
+        
+        <p className="mb-4"><em>Variable expenses account:</em> Funds discretionary spending like entertainment, dining out, and non-essential purchases.</p>
+        
+        <p className="mb-4"><em>Tax and business account:</em> Sets aside 25-30% of gross income for taxes and business expenses if self-employed.</p>
+      </div>
+
+      <h4 className="text-lg font-medium mb-3 text-white">The Good Month, Bad Month Strategy</h4>
+
+      <p className="mb-6 text-foreground">
+        During high-income months, resist lifestyle inflation. Instead, stockpile money in your buffer accounts and accelerate financial goals.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        During low-income months, draw from buffers without guilt. This is exactly what these accounts are designed for—smoothing income volatility.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Tracking and Forecasting</h4>
+
+      <p className="mb-6 text-foreground">
+        Keep detailed records of income patterns. Many irregular earners have more predictability than they realize once they analyze historical data.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Note seasonal trends, client payment cycles, and project timelines. This information helps you anticipate lean periods and plan accordingly.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Building Multiple Income Streams</h4>
+
+      <p className="mb-6 text-foreground">
+        Diversify your income sources to reduce volatility. If one client or revenue stream disappears, others can maintain cash flow.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Consider adding some predictable income through part-time work, retainer agreements, or passive income sources that provide stability.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Irregular income requires different budgeting strategies, but it doesn't prevent financial success. Focus on building buffers, maintaining flexibility, and smoothing income volatility through strategic saving.
+      </p>
+    </div>
+  );
+
+case "investment-portfolio-basics":
+  return (
+    <div className="prose prose-lg max-w-4xl mx-auto">
+      <p className="text-lg text-emerald-700 mb-6">
+        Building a well-balanced investment portfolio doesn't require complex strategies or expensive advisors—just understanding a few key principles about risk and diversification.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Have you ever wondered how to create an investment portfolio that grows wealth while managing risk? The secret lies not in picking winning stocks, but in building a foundation that can weather any market condition.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Asset Allocation: Your Portfolio's Foundation</h3>
+
+      <p className="mb-6 text-foreground">
+        Asset allocation—how you divide money between stocks, bonds, and other investments—matters more than individual security selection for long-term returns.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        A simple rule of thumb: subtract your age from 100 to determine your stock percentage. A 30-year-old might hold 70% stocks and 30% bonds, while a 60-year-old might prefer 40% stocks and 60% bonds.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Understanding Investment Risk</h3>
+
+      <p className="mb-6 text-foreground">
+        Risk in investing isn't just about losing money—it's about volatility and uncertainty. Stocks fluctuate more but historically provide higher returns. Bonds are steadier but offer lower growth potential.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Your risk tolerance should match your timeline. Money needed in five years shouldn't be in volatile investments, while retirement funds 30 years away can handle more risk for higher growth.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">The Three-Fund Portfolio</h4>
+
+      <p className="mb-6 text-foreground">
+        One of the simplest effective portfolios contains just three index funds: total stock market, international stocks, and bonds. This provides broad diversification with minimal complexity.
+      </p>
+
+      <div className="mb-6 text-foreground">
+        <p className="mb-4"><em>U.S. Total Stock Market (60%):</em> Captures the entire American stock market from large companies to small startups.</p>
+        
+        <p className="mb-4"><em>International Stocks (20%):</em> Provides exposure to developed and emerging markets outside the U.S.</p>
+        
+        <p className="mb-4"><em>Bonds (20%):</em> Offers stability and income through government and corporate debt securities.</p>
+      </div>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Rebalancing Your Portfolio</h4>
+
+      <p className="mb-6 text-foreground">
+        Over time, successful investments grow larger while struggling investments shrink, shifting your asset allocation away from your target.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Rebalance annually by selling high-performing assets and buying underperformers. This forces you to "buy low, sell high" automatically.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Tax-Efficient Investing</h4>
+
+      <p className="mb-6 text-foreground">
+        Hold tax-inefficient investments in retirement accounts where growth isn't immediately taxed. Keep tax-efficient index funds in taxable accounts.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Consider tax-loss harvesting in taxable accounts—selling losing investments to offset gains and reduce tax liability.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Avoiding Common Portfolio Mistakes</h4>
+
+      <div className="mb-6 text-foreground">
+        <p className="mb-4"><em>Over-diversification:</em> Owning too many similar funds provides little additional benefit while increasing complexity and costs.</p>
+        
+        <p className="mb-4"><em>Chasing performance:</em> Last year's best-performing funds often become this year's underperformers.</p>
+        
+        <p className="mb-4"><em>Emotional decisions:</em> Buying when markets are up and selling when they're down destroys long-term returns.</p>
+      </div>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Starting Small and Growing</h4>
+
+      <p className="mb-6 text-foreground">
+        Begin with a simple two-fund portfolio of stocks and bonds, then add complexity as your knowledge and account balance grow.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Focus on consistent contributions rather than perfect portfolio construction. Time in the market and regular investing matter more than optimal asset allocation percentages.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        A well-constructed portfolio isn't about maximizing returns—it's about maximizing the returns you can actually achieve by staying invested through all market conditions.
+      </p>
+    </div>
+  );
+
+case "tax-advantaged-investing":
+  return (
+    <div className="prose prose-lg max-w-4xl mx-auto">
+      <p className="text-lg text-emerald-700 mb-6">
+        Understanding tax-advantaged accounts can save you thousands in taxes while accelerating your wealth-building journey—yet most people underutilize these powerful tools.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Have you ever wondered why financial advisors always mention 401(k)s and IRAs first? These accounts offer something rare: government incentives to save and invest for your future.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">The Tax Advantage Explained</h3>
+
+      <p className="mb-6 text-foreground">
+        Tax-advantaged accounts provide benefits unavailable in regular investment accounts: tax deductions, tax-free growth, or tax-free withdrawals—sometimes all three.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        These benefits compound over decades. A $1,000 investment might grow to $7,000 in 30 years, but taxes could claim $1,500-$2,000 of that growth in a regular account.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Traditional vs. Roth: The Tax Timing Decision</h3>
+
+      <p className="mb-6 text-foreground">
+        Traditional accounts give you tax deductions now but tax withdrawals later. Roth accounts require paying taxes upfront but offer tax-free withdrawals in retirement.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        The optimal choice depends on your current tax bracket versus your expected retirement tax bracket. If you're in a high bracket now, traditional may be better. If you expect higher taxes later, choose Roth.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Employer 401(k) Plans: Start Here</h4>
+
+      <p className="mb-6 text-foreground">
+        Always contribute enough to get your full employer match—it's an immediate 100% return on investment that no other investment can guarantee.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Many plans offer both traditional and Roth options. Consider splitting contributions to hedge your tax bet: some tax benefits now, some tax-free growth later.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Individual Retirement Accounts (IRAs)</h4>
+
+      <div className="mb-6 text-foreground">
+        <p className="mb-4"><em>Traditional IRA:</em> Tax-deductible contributions with taxable withdrawals. Income limits apply for deduction eligibility.</p>
+        
+        <p className="mb-4"><em>Roth IRA:</em> After-tax contributions with tax-free qualified withdrawals. Income limits restrict eligibility but backdoor Roth conversions may be possible.</p>
+      </div>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Health Savings Accounts: The Triple Tax Advantage</h4>
+
+      <p className="mb-6 text-foreground">
+        HSAs offer the best tax treatment available: deductible contributions, tax-free growth, and tax-free withdrawals for qualified medical expenses.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        After age 65, HSAs function like traditional IRAs for non-medical expenses while remaining tax-free for healthcare costs—making them powerful retirement accounts.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Contribution Prioritization Strategy</h4>
+
+      <div className="mb-6 text-foreground">
+        <p className="mb-2">1. Contribute enough to 401(k) to get full employer match</p>
+        <p className="mb-2">2. Maximize HSA contributions if eligible</p>
+        <p className="mb-2">3. Max out Roth IRA if within income limits</p>
+        <p className="mb-2">4. Return to 401(k) to reach annual maximum</p>
+        <p className="mb-2">5. Consider taxable investment accounts for additional savings</p>
+      </div>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Advanced Strategies</h4>
+
+      <p className="mb-6 text-foreground">
+        Roth conversions allow you to move money from traditional to Roth accounts, paying taxes now for future tax-free withdrawals. This works well during low-income years.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Mega backdoor Roth strategies use after-tax 401(k) contributions converted to Roth, potentially allowing much higher effective Roth contributions.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Required Minimum Distributions</h4>
+
+      <p className="mb-6 text-foreground">
+        Traditional accounts require withdrawals starting at age 73, potentially pushing you into higher tax brackets. Roth accounts have no required distributions during your lifetime.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Plan withdrawal strategies early to minimize taxes and maximize account longevity. Consider Roth conversions during early retirement before RMDs begin.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Tax-advantaged investing isn't just about saving money—it's about keeping more of your investment returns working for you over decades of compound growth.
+      </p>
+    </div>
+  );
+
+case "market-volatility-strategies":
+  return (
+    <div className="prose prose-lg max-w-4xl mx-auto">
+      <p className="text-lg text-emerald-700 mb-6">
+        Market volatility terrifies many investors, but understanding how to navigate ups and downs is crucial for long-term investing success.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Have you ever watched your investment account lose thousands of dollars in value and wondered if you should sell everything? You're experiencing the emotional challenge that destroys more wealth than any market crash.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Volatility Is Normal, Not Dangerous</h3>
+
+      <p className="mb-6 text-foreground">
+        Stock markets experience corrections (10%+ declines) almost every year and bear markets (20%+ declines) every 3-5 years on average. This volatility is the price you pay for higher long-term returns.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Trying to avoid volatility by staying in cash or bonds guarantees lower returns and fails to protect against inflation over long periods.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">The Emotional Cycle of Market Swings</h3>
+
+      <p className="mb-6 text-foreground">
+        Most investors buy when they feel optimistic (markets are high) and sell when they feel pessimistic (markets are low). This emotional pattern is the opposite of successful investing.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Understanding your emotional reactions to market movements helps you recognize when feelings, not logic, are driving investment decisions.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Strategies for Down Markets</h4>
+
+      <div className="mb-6 text-foreground">
+        <p className="mb-4"><em>Continue regular contributions:</em> Dollar-cost averaging during market declines means you're buying more shares at lower prices.</p>
+        
+        <p className="mb-4"><em>Rebalance strategically:</em> Sell high-performing assets (bonds) to buy low-performing assets (stocks) during major market shifts.</p>
+        
+        <p className="mb-4"><em>Tax-loss harvesting:</em> Sell losing investments to offset gains and reduce tax liability while staying invested.</p>
+      </div>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Building Volatility Tolerance</h4>
+
+      <p className="mb-6 text-foreground">
+        Your risk tolerance isn't just theoretical—it's tested during real market stress. Start with conservative allocations and gradually increase stock exposure as you experience volatility firsthand.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Focus on time horizon rather than account balances. Money not needed for 10+ years can recover from even severe market downturns.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">The Recovery Pattern</h4>
+
+      <p className="mb-6 text-foreground">
+        History shows that markets always recover from downturns, often faster than expected. The biggest gains frequently occur during the early stages of recovery.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Missing just the 10 best market days over 20-year periods can reduce returns by 50% or more. This is why staying invested through volatility is crucial.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Creating Your Volatility Action Plan</h4>
+
+      <p className="mb-6 text-foreground">
+        Before the next market downturn, write down exactly what you'll do: continue contributions, avoid checking accounts daily, and remember your long-term goals.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Having a predetermined plan removes emotion from volatile periods and prevents costly panic decisions.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">When to Adjust Your Strategy</h4>
+
+      <p className="mb-6 text-foreground">
+        Change investment strategy due to life changes (new job, approaching retirement) or goal changes—not market movements.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        If market volatility prevents you from sleeping at night, reduce stock allocation gradually rather than abandoning investing entirely.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Opportunity in Volatility</h4>
+
+      <p className="mb-6 text-foreground">
+        Market downturns create buying opportunities for long-term investors. Some of the best investment returns come from money invested during periods of maximum pessimism.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Consider keeping a small amount of cash reserves specifically to take advantage of major market declines through additional investments.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Successful investing isn't about avoiding volatility—it's about staying disciplined and focused on long-term goals while markets fluctuate around you.
+      </p>
+    </div>
+  );
+
+case "credit-card-rewards-optimization":
+  return (
+    <div className="prose prose-lg max-w-4xl mx-auto">
+      <p className="text-lg text-emerald-700 mb-6">
+        Credit card rewards can add hundreds or thousands of dollars to your budget annually, but only if you use them strategically without falling into debt traps.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Have you ever wondered how some people seem to travel for free or earn significant cash back on everyday purchases? The secret lies in understanding reward structures and optimizing your spending strategy.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">The Foundation: Pay in Full Every Month</h3>
+
+      <p className="mb-6 text-foreground">
+        Credit card rewards only benefit you if you never pay interest. A single month of interest charges can wipe out a year's worth of rewards earnings.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        If you carry balances or struggle with credit card debt, focus on debt payoff before pursuing rewards optimization. The highest guaranteed "return" is avoiding 18%+ interest charges.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Understanding Reward Structures</h3>
+
+      <div className="mb-6 text-foreground">
+        <p className="mb-4"><em>Flat-rate cards:</em> Offer the same reward percentage on all purchases, typically 1.5-2% cash back with no category restrictions.</p>
+        
+        <p className="mb-4"><em>Category cards:</em> Provide higher rewards (3-5%) in specific spending categories like gas, groceries, or dining, often with quarterly rotations.</p>
+        
+        <p className="mb-4"><em>Travel cards:</em> Focus on airline miles or hotel points, often with bonus categories and travel-specific benefits.</p>
+      </div>
+
+      <h4 className="text-lg font-medium mb-3 text-white">The Multi-Card Strategy</h4>
+
+      <p className="mb-6 text-foreground">
+        Using multiple cards strategically can maximize rewards across different spending categories. A grocery card for food, a gas card for fuel, and a flat-rate card for everything else.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        However, this strategy requires excellent organization and discipline. More cards mean more bills to track and more opportunities for missed payments.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Annual Fee Considerations</h4>
+
+      <p className="mb-6 text-foreground">
+        Cards with annual fees often provide higher reward rates and valuable perks. Calculate whether the additional rewards and benefits exceed the fee cost.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        A $95 annual fee is justified if you earn an extra $200 in rewards or receive benefits worth more than the fee, such as airport lounge access or travel insurance.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Sign-Up Bonuses: The Biggest Opportunity</h4>
+
+      <p className="mb-6 text-foreground">
+        Sign-up bonuses often provide the highest reward value—$500-$1,000 worth of cash or travel rewards for meeting spending requirements within the first few months.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Time new card applications with large planned expenses like home improvements or wedding costs to easily meet spending requirements without changing habits.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Avoiding Reward Pitfalls</h4>
+
+      <div className="mb-6 text-foreground">
+        <p className="mb-4"><em>Overspending for rewards:</em> Don't make unnecessary purchases just to earn rewards or meet spending thresholds.</p>
+        
+        <p className="mb-4"><em>Ignoring expiration dates:</em> Many rewards expire if not used within specific timeframes.</p>
+        
+        <p className="mb-4"><em>Focusing only on earning rate:</em> Consider redemption flexibility and value when choosing cards.</p>
+      </div>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Maximizing Redemption Value</h4>
+
+      <p className="mb-6 text-foreground">
+        Cash back provides the most flexibility, while travel rewards often offer higher value when redeemed for flights or hotels rather than cash.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Research redemption options before earning rewards. Some programs offer better value for specific redemptions or transfer partners.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Credit card rewards are a bonus for responsible spending, not a reason to spend more. Focus on optimizing rewards from expenses you'd make anyway while maintaining excellent payment habits.
+      </p>
+    </div>
+  );
+
+case "student-loan-strategies":
+  return (
+    <div className="prose prose-lg max-w-4xl mx-auto">
+      <p className="text-lg text-emerald-700 mb-6">
+        Student loans don't have to control your financial future—understanding repayment options and optimization strategies can save you thousands while building wealth.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Have you ever felt overwhelmed by student loan payments that seem to barely touch the principal balance? You're not alone—the average graduate leaves college with over $30,000 in debt, but smart strategies can accelerate payoff and minimize total interest.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Federal vs. Private Loans: Know Your Options</h3>
+
+      <p className="mb-6 text-foreground">
+        Federal loans offer protections and repayment options unavailable with private loans: income-driven repayment plans, forgiveness programs, and forbearance during financial hardship.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Private loans typically offer fewer protections but may have lower interest rates for borrowers with excellent credit. Never refinance federal loans into private loans unless you're certain you won't need federal protections.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Income-Driven Repayment Plans</h3>
+
+      <p className="mb-6 text-foreground">
+        These plans cap monthly payments at a percentage of discretionary income, potentially reducing payments significantly for new graduates or those with lower incomes.
+      </p>
+
+      <div className="mb-6 text-foreground">
+        <p className="mb-4"><em>Income-Based Repayment (IBR):</em> Payments capped at 15% of discretionary income with loan forgiveness after 25 years.</p>
+        
+        <p className="mb-4"><em>Pay As You Earn (PAYE):</em> Payments capped at 10% of discretionary income with forgiveness after 20 years.</p>
+        
+        <p className="mb-4"><em>Revised Pay As You Earn (REPAYE):</em> 10% of discretionary income with forgiveness after 20-25 years depending on loan type.</p>
+      </div>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Public Service Loan Forgiveness (PSLF)</h4>
+
+      <p className="mb-6 text-foreground">
+        PSLF forgives remaining federal loan balances after 120 qualifying payments while working for qualifying public service employers.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        This program works best for high-debt, lower-income public servants. Ensure you're in the right repayment plan and submit annual employment certification forms.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Refinancing Considerations</h4>
+
+      <p className="mb-6 text-foreground">
+        Refinancing can lower interest rates and reduce total interest paid, but you lose federal loan protections. Only consider if you have stable income and won't need income-driven repayment or forgiveness programs.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Shop around with multiple lenders for the best rates. Even a 1% rate reduction can save thousands over the loan term.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Acceleration Strategies</h4>
+
+      <div className="mb-6 text-foreground">
+        <p className="mb-4"><em>Target highest-rate loans first:</em> Apply extra payments to loans with the highest interest rates while making minimums on others.</p>
+        
+        <p className="mb-4"><em>Biweekly payments:</em> Split monthly payments in half and pay every two weeks, resulting in 26 payments yearly instead of 12.</p>
+        
+        <p className="mb-4"><em>Use windfalls wisely:</em> Apply tax refunds, bonuses, and raises directly to loan principal rather than lifestyle inflation.</p>
+      </div>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Tax Benefits and Considerations</h4>
+
+      <p className="mb-6 text-foreground">
+        The student loan interest deduction allows you to deduct up to $2,500 in student loan interest annually, even if you don't itemize deductions.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Loan forgiveness through income-driven repayment plans may create taxable income in the forgiveness year, so plan for potential tax liability.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Balancing Loans with Other Goals</h4>
+
+      <p className="mb-6 text-foreground">
+        Don't sacrifice all other financial goals for aggressive loan payoff. Contribute enough to get employer 401(k) matching and build a small emergency fund first.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        For low-rate loans (under 4%), consider investing extra money rather than accelerating payoff, especially in tax-advantaged accounts.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Your student loan strategy should align with your overall financial goals and risk tolerance. There's no single "best" approach—choose the strategy that fits your situation and gives you peace of mind.
+      </p>
+    </div>
+  );
+
+case "building-business-credit":
+  return (
+    <div className="prose prose-lg max-w-4xl mx-auto">
+      <p className="text-lg text-emerald-700 mb-6">
+        Separating your business and personal credit protects your personal finances while opening doors to better funding options and higher credit limits.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Have you ever wondered how successful business owners access large lines of credit without putting their personal assets at risk? The answer lies in building strong business credit separate from personal credit.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Why Business Credit Matters</h3>
+
+      <p className="mb-6 text-foreground">
+        Business credit protects your personal credit score and assets from business financial decisions. It also provides access to higher credit limits and better terms than personal credit alone.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Established business credit makes it easier to qualify for business loans, equipment financing, and investor funding by demonstrating your company's financial responsibility.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Foundation Steps for Business Credit</h3>
+
+      <div className="mb-6 text-foreground">
+        <p className="mb-4"><em>Business entity formation:</em> Establish an LLC or corporation to create legal separation between personal and business finances.</p>
+        
+        <p className="mb-4"><em>Employer Identification Number (EIN):</em> Obtain an EIN from the IRS, even if you have no employees. This becomes your business credit identifier.</p>
+        
+        <p className="mb-4"><em>Business bank account:</em> Open dedicated business checking and savings accounts using your EIN, never mixing personal and business funds.</p>
+      </div>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Building Credit Relationships</h4>
+
+      <p className="mb-6 text-foreground">
+        Start with vendors and suppliers that report payment history to business credit bureaus. Office supply stores, telecommunications companies, and fuel card providers often report business payment data.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Pay all business bills on time and maintain consistent business address and phone number across all applications and accounts.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Business Credit Cards Strategy</h4>
+
+      <p className="mb-6 text-foreground">
+        Apply for business credit cards using your EIN and business income, even as a sole proprietor. Start with cards from banks where you have existing business relationships.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Use business credit cards only for business expenses and pay balances in full each month. This builds positive payment history while maintaining separation from personal credit.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Monitoring Business Credit</h4>
+
+      <p className="mb-6 text-foreground">
+        The three major business credit bureaus are Dun & Bradstreet, Experian Business, and Equifax Business. Monitor reports from all three since they may contain different information.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Dispute any inaccurate information immediately and ensure your business information is consistent across all three bureaus.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Building Vendor Relationships</h4>
+
+      <div className="mb-6 text-foreground">
+        <p className="mb-4"><em>Net-30 accounts:</em> Establish accounts with suppliers offering 30-day payment terms. Pay early or on time to build positive payment history.</p>
+        
+        <p className="mb-4"><em>Trade references:</em> Ask current vendors to serve as references for new credit applications. Strong trade references accelerate credit building.</p>
+        
+        <p className="mb-4"><em>Gradual increase:</em> Start with small credit lines and gradually request increases as you establish payment history.</p>
+      </div>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Avoiding Personal Guarantees</h4>
+
+      <p className="mb-6 text-foreground">
+        Initially, you may need to provide personal guarantees for business credit. As your business credit strengthens, negotiate to remove personal guarantees from existing accounts.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Focus on building relationships with lenders and vendors who eventually offer credit based solely on business creditworthiness.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Advanced Business Credit Strategies</h4>
+
+      <p className="mb-6 text-foreground">
+        Once established, use business credit for equipment financing, inventory purchases, and working capital needs while preserving personal credit for personal goals.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Consider business credit lines for cash flow management, especially if your business has seasonal revenue patterns or uneven receivables.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Building business credit takes time and consistency, but it's one of the most valuable assets you can create for your company's long-term financial health and growth potential.
+      </p>
+    </div>
+  );
+
+case "e-commerce-business-models":
+  return (
+    <div className="prose prose-lg max-w-4xl mx-auto">
+      <p className="text-lg text-emerald-700 mb-6">
+        E-commerce offers unprecedented access to global markets, but choosing the right business model determines whether your online venture thrives or struggles.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Have you ever browsed online stores and wondered how they make money beyond just selling products? Modern e-commerce encompasses diverse business models, each with unique advantages and challenges.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Dropshipping: Low-Risk Entry Point</h3>
+
+      <p className="mb-6 text-foreground">
+        Dropshipping allows you to sell products without holding inventory. When customers order, you purchase from suppliers who ship directly to customers.
+      </p>
+
+      <div className="mb-6 text-foreground">
+        <p className="mb-4"><em>Advantages:</em> Low startup costs, no inventory risk, location independence, and wide product selection without upfront investment.</p>
+        
+        <p className="mb-4"><em>Challenges:</em> Lower profit margins, limited quality control, supplier dependency, and intense competition.</p>
+      </div>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Private Label and Manufacturing</h3>
+
+      <p className="mb-6 text-foreground">
+        Creating your own branded products through private labeling or manufacturing offers higher margins and brand control but requires more capital and expertise.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Start by identifying gaps in existing markets, then work with manufacturers to create improved versions of existing products under your brand.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Subscription Commerce Models</h4>
+
+      <p className="mb-6 text-foreground">
+        Subscription boxes and recurring delivery services create predictable revenue streams and higher customer lifetime value than one-time purchases.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Success requires excellent customer retention strategies and continuous value delivery. High churn rates can quickly destroy subscription businesses.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Digital Products and Services</h4>
+
+      <div className="mb-6 text-foreground">
+        <p className="mb-4"><em>Online courses:</em> Package your expertise into video courses, templates, or coaching programs with high profit margins.</p>
+        
+        <p className="mb-4"><em>Software as a Service (SaaS):</em> Create tools that solve recurring problems for monthly subscription fees.</p>
+        
+        <p className="mb-4"><em>Digital downloads:</em> Sell templates, graphics, music, or other digital assets that can be delivered instantly.</p>
+      </div>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Marketplace vs. Standalone Stores</h4>
+
+      <p className="mb-6 text-foreground">
+        Selling on Amazon, eBay, or Etsy provides immediate access to large audiences but limits brand control and customer relationships.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Standalone stores (Shopify, WooCommerce) offer complete control but require building traffic and trust from scratch. Many successful businesses use both approaches.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Affiliate and Influencer Models</h4>
+
+      <p className="mb-6 text-foreground">
+        Affiliate marketing promotes other companies' products for commissions, requiring no inventory or customer service but depending on affiliate program terms.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Building audience trust and providing genuine value is crucial for long-term affiliate success. Focus on products you actually use and recommend.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Print on Demand</h4>
+
+      <p className="mb-6 text-foreground">
+        Print-on-demand services handle production and shipping of custom designs on t-shirts, mugs, books, and other products when orders are placed.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        This model works well for creative professionals but requires strong design skills and effective marketing to stand out in crowded markets.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Choosing Your E-Commerce Model</h4>
+
+      <p className="mb-6 text-foreground">
+        Consider your available capital, risk tolerance, skills, and time commitment when selecting a business model. Start simple and evolve as you gain experience.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Many successful e-commerce entrepreneurs combine multiple models over time, using profits from simpler models to fund more complex ventures.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        The best e-commerce model is the one that aligns with your strengths, resources, and goals while solving real problems for your target customers.
+      </p>
+    </div>
+  );
+
+case "business-funding-options":
+  return (
+    <div className="prose prose-lg max-w-4xl mx-auto">
+      <p className="text-lg text-emerald-700 mb-6">
+        Understanding diverse funding options empowers entrepreneurs to choose the right capital sources for their business stage, growth plans, and risk tolerance.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Have you ever had a great business idea but weren't sure how to fund it? The funding landscape offers more options than ever, from traditional bank loans to modern crowdfunding platforms.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Bootstrapping: Self-Funded Growth</h3>
+
+      <p className="mb-6 text-foreground">
+        Bootstrapping means funding your business through personal savings, revenue reinvestment, and careful cash flow management without external investment.
+      </p>
+
+      <div className="mb-6 text-foreground">
+        <p className="mb-4"><em>Advantages:</em> Complete ownership control, no debt obligations, forces efficiency, and builds strong financial discipline.</p>
+        
+        <p className="mb-4"><em>Challenges:</em> Slower growth, limited resources, personal financial risk, and potential missed opportunities.</p>
+      </div>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Traditional Bank Lending</h3>
+
+      <p className="mb-6 text-foreground">
+        Bank loans offer predictable terms and lower costs than alternative funding, but require strong credit, collateral, and detailed business plans.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        SBA loans provide government backing that reduces bank risk, enabling better terms for qualified small businesses. The application process is extensive but worthwhile for significant funding needs.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Angel Investors and Venture Capital</h4>
+
+      <p className="mb-6 text-foreground">
+        Angel investors are high-net-worth individuals who invest personal funds in early-stage companies, often providing mentorship alongside capital.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Venture capital firms invest institutional money in high-growth potential businesses, typically requiring significant ownership stakes and board representation.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Alternative Lending Platforms</h4>
+
+      <div className="mb-6 text-foreground">
+        <p className="mb-4"><em>Peer-to-peer lending:</em> Platforms connect borrowers directly with individual lenders, often with faster approval than traditional banks.</p>
+        
+        <p className="mb-4"><em>Revenue-based financing:</em> Investors provide capital in exchange for a percentage of future revenue until a predetermined amount is repaid.</p>
+        
+        <p className="mb-4"><em>Merchant cash advances:</em> Quick funding based on credit card processing history, but with high effective interest rates.</p>
+      </div>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Crowdfunding Models</h4>
+
+      <p className="mb-6 text-foreground">
+        Reward-based crowdfunding (Kickstarter, Indiegogo) allows pre-selling products to fund production, validating market demand while raising capital.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Equity crowdfunding platforms enable small investors to buy ownership stakes in startups, democratizing access to early-stage investing.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Equipment and Inventory Financing</h4>
+
+      <p className="mb-6 text-foreground">
+        Equipment loans use the purchased equipment as collateral, enabling businesses to acquire necessary tools without large upfront payments.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Inventory financing provides working capital secured by existing inventory, helping businesses manage seasonal fluctuations and growth periods.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Government Grants and Programs</h4>
+
+      <p className="mb-6 text-foreground">
+        Federal, state, and local governments offer grants for businesses in specific industries, underserved areas, or disadvantaged owner categories.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Research available programs thoroughly, as grant applications are competitive and time-consuming but provide non-dilutive funding.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Funding Strategy Considerations</h4>
+
+      <p className="mb-6 text-foreground">
+        Match funding sources to business stage: bootstrapping for early validation, angel investment for growth, venture capital for scaling, and debt for mature businesses.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Consider the total cost of capital, including interest rates, equity dilution, and control requirements when evaluating funding options.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        The right funding strategy balances capital needs with acceptable costs and control trade-offs, supporting sustainable business growth without overwhelming financial obligations.
+      </p>
+    </div>
+  );
+
+case "intellectual-property-basics":
+  return (
+    <div className="prose prose-lg max-w-4xl mx-auto">
+      <p className="text-lg text-emerald-700 mb-6">
+        Protecting your intellectual property creates valuable business assets and competitive advantages, but understanding IP basics helps you avoid costly mistakes.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Have you ever created something unique for your business and wondered how to protect it from competitors? Intellectual property law provides powerful tools for safeguarding your innovations and creative work.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Types of Intellectual Property</h3>
+
+      <div className="mb-6 text-foreground">
+        <p className="mb-4"><em>Trademarks:</em> Protect brand names, logos, and slogans that identify your business in the marketplace.</p>
+        
+        <p className="mb-4"><em>Copyrights:</em> Protect original creative works like writing, music, art, and software code.</p>
+        
+        <p className="mb-4"><em>Patents:</em> Protect inventions and innovative processes, providing exclusive rights for limited periods.</p>
+        
+        <p className="mb-4"><em>Trade secrets:</em> Protect confidential business information that provides competitive advantages.</p>
+      </div>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Trademark Protection for Businesses</h3>
+
+      <p className="mb-6 text-foreground">
+        Trademarks prevent competitors from using confusingly similar names or logos. Registration provides nationwide protection and legal advantages in disputes.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Conduct thorough trademark searches before selecting business names or developing branding to avoid costly conflicts with existing marks.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Copyright in Business Contexts</h4>
+
+      <p className="mb-6 text-foreground">
+        Copyright automatically protects original creative works upon creation. Registration provides additional legal benefits and is required before filing infringement lawsuits.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Business materials like websites, marketing copy, training materials, and software often qualify for copyright protection.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Patent Considerations</h4>
+
+      <p className="mb-6 text-foreground">
+        Patents are expensive and time-consuming to obtain but provide strong protection for truly innovative products or processes.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Consider whether patent protection is worth the investment based on your product's competitive advantage and market potential.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Trade Secret Protection</h4>
+
+      <p className="mb-6 text-foreground">
+        Trade secrets protect valuable confidential information like customer lists, formulas, processes, and business strategies.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Maintain trade secret protection through confidentiality agreements, access controls, and clear policies about handling sensitive information.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">International IP Considerations</h4>
+
+      <p className="mb-6 text-foreground">
+        IP protection is generally territorial—U.S. registrations don't automatically provide international protection.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        File for protection in key markets where you plan to do business or where counterfeiting might be problematic.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">IP Strategy for Small Businesses</h4>
+
+      <p className="mb-6 text-foreground">
+        Start with basic trademark protection for your business name and key product names. Add other IP protections as your business grows and resources allow.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Document creation dates and maintain records of your IP development process to support future protection efforts.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Common IP Mistakes</h4>
+
+      <div className="mb-6 text-foreground">
+        <p className="mb-4"><em>Using others' IP without permission:</em> Always verify you have rights to use images, music, text, or other creative works.</p>
+        
+        <p className="mb-4"><em>Inadequate employee agreements:</em> Ensure contracts clearly assign IP rights created by employees to the company.</p>
+        
+        <p className="mb-4"><em>Poor record keeping:</em> Document IP creation dates and development processes to support future legal claims.</p>
+      </div>
+
+      <p className="mb-6 text-foreground">
+        IP protection isn't just about preventing others from copying your work—it's about building valuable business assets that can be licensed, sold, or used to attract investors and partners.
+      </p>
+    </div>
+  );
+
+case "networking-for-career-growth":
+  return (
+    <div className="prose prose-lg max-w-4xl mx-auto">
+      <p className="text-lg text-emerald-700 mb-6">
+        Strategic networking accelerates career growth more than any other single factor, yet most people approach it wrong and miss valuable opportunities.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Have you ever wondered how some people seem to effortlessly land great opportunities while others with similar qualifications struggle? The difference is often their professional network and how they nurture relationships.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Networking Isn't About Using People</h3>
+
+      <p className="mb-6 text-foreground">
+        Effective networking focuses on building genuine relationships and providing value to others, not just asking for favors. The best networkers are generous connectors who help others succeed.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Shift from "What can this person do for me?" to "How can I help this person?" This mindset change transforms networking from awkward small talk into meaningful relationship building.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Building Your Network Before You Need It</h3>
+
+      <p className="mb-6 text-foreground">
+        The best time to network is when you don't need anything. Building relationships during stable times creates a foundation of trust and mutual support.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        People can sense desperation and self-interest. Networking from a position of strength and genuine interest in others creates more authentic connections.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Quality Over Quantity</h4>
+
+      <p className="mb-6 text-foreground">
+        Maintain meaningful relationships with 50-100 people rather than collecting thousands of superficial connections. Deep relationships provide more value than extensive contact lists.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Regularly nurture existing relationships through check-ins, sharing relevant articles, and making introductions between contacts who could benefit from knowing each other.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Online and Offline Networking Strategies</h4>
+
+      <div className="mb-6 text-foreground">
+        <p className="mb-4"><em>LinkedIn optimization:</em> Create a compelling profile and regularly share valuable content in your industry. Engage meaningfully with others' posts.</p>
+        
+        <p className="mb-4"><em>Industry events:</em> Attend conferences, meetups, and professional association gatherings with specific goals and follow-up plans.</p>
+        
+        <p className="mb-4"><em>Informational interviews:</em> Request brief conversations with people in roles or companies you find interesting, focusing on learning rather than job hunting.</p>
+      </div>
+
+      <h4 className="text-lg font-medium mb-3 text-white">The Follow-Up Framework</h4>
+
+      <p className="mb-6 text-foreground">
+        Most networking fails in the follow-up. Within 24 hours of meeting someone, send a personalized message referencing your conversation and suggesting a specific next step.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Create a simple system for tracking contacts and their interests. Set reminders to reach out periodically with relevant opportunities or information.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Becoming a Valuable Network Node</h4>
+
+      <p className="mb-6 text-foreground">
+        Position yourself as a connector by introducing people who could benefit from knowing each other. This builds your reputation as someone who adds value to others' networks.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Share industry insights, job opportunities, and relevant resources with your network. Being helpful makes others more likely to help you when needed.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Internal Networking Matters Too</h4>
+
+      <p className="mb-6 text-foreground">
+        Build relationships across departments and levels within your current organization. Internal connections often lead to promotions and new opportunities.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Volunteer for cross-functional projects and seek mentorship relationships with senior colleagues. These connections provide career guidance and advancement opportunities.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Measuring Networking Success</h4>
+
+      <p className="mb-6 text-foreground">
+        Track networking effectiveness through relationship depth, not just contact quantity. Success metrics include: referrals made and received, new opportunities discovered, and meaningful career advice obtained.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        The best networkers are remembered for how they made others feel and the value they provided, not just what they achieved for themselves.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Strategic networking is a long-term investment in your career that pays dividends through opportunities, advice, and support throughout your professional journey.
+      </p>
+    </div>
+  );
+
+case "skills-based-career-pivoting":
+  return (
+    <div className="prose prose-lg max-w-4xl mx-auto">
+      <p className="text-lg text-emerald-700 mb-6">
+        Career transitions don't require starting from scratch—identifying transferable skills and strategic positioning can accelerate moves into new industries or roles.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Have you ever felt trapped in your current career path, wondering if it's too late to change directions? The modern economy rewards adaptability, and many skills transfer across industries more than you might expect.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Identifying Your Transferable Skills</h3>
+
+      <p className="mb-6 text-foreground">
+        Most professionals underestimate their transferable skills because they focus on job titles rather than underlying capabilities. Project management, communication, problem-solving, and analytical thinking apply across industries.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Create a comprehensive skills inventory including technical abilities, soft skills, and industry knowledge. Then research how these skills apply in target industries or roles.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">The Strategic Skill Gap Analysis</h3>
+
+      <p className="mb-6 text-foreground">
+        Compare your current skills with requirements for target roles to identify gaps. Focus on acquiring 2-3 critical missing skills rather than trying to learn everything at once.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Prioritize skills that are in high demand, difficult to automate, and build on your existing strengths. This creates the fastest path to career transition success.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Building Bridge Experience</h4>
+
+      <p className="mb-6 text-foreground">
+        Look for opportunities within your current role to gain relevant experience for your target career. Volunteer for projects that align with your desired direction.
+      </p>
+
+      <div className="mb-6 text-foreground">
+        <p className="mb-4"><em>Internal transfers:</em> Move to different departments or roles within your current company to gain new experience.</p>
+        
+        <p className="mb-4"><em>Freelance projects:</em> Take on side work in your target field to build experience and portfolio pieces.</p>
+        
+        <p className="mb-4"><em>Volunteer opportunities:</em> Nonprofit work often provides chances to develop new skills and demonstrate capabilities.</p>
+      </div>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Strategic Learning and Certification</h4>
+
+      <p className="mb-6 text-foreground">
+        Invest in learning that provides credible evidence of your new capabilities. Industry certifications, online courses with portfolios, and recognized training programs signal serious commitment.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Choose learning opportunities that result in tangible proof of competency: certificates, portfolio projects, or measurable outcomes you can discuss in interviews.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Repositioning Your Professional Brand</h4>
+
+      <p className="mb-6 text-foreground">
+        Update your LinkedIn profile, resume, and professional materials to emphasize skills and experiences relevant to your target career rather than your current industry.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Craft a compelling narrative explaining your career transition that focuses on how your unique background provides value in the new role.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">The Gradual Transition Strategy</h4>
+
+      <p className="mb-6 text-foreground">
+        Consider intermediate steps that bridge your current and target careers. Sometimes a lateral move or hybrid role provides easier entry than a complete career change.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Industries adjacent to your current field often provide the smoothest transition paths while still achieving your career change goals.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Networking for Career Transitions</h4>
+
+      <p className="mb-6 text-foreground">
+        Build relationships in your target industry through informational interviews, industry events, and online communities. Insider knowledge accelerates transition success.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Join professional associations and attend meetups in your target field. Visibility and relationships often matter more than perfect qualifications.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Managing Transition Risks</h4>
+
+      <p className="mb-6 text-foreground">
+        Plan your financial runway carefully. Career transitions often involve temporary income reduction, so build savings and reduce expenses before making major moves.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Test your new career direction through side projects or consulting before leaving your current position. This reduces risk and provides valuable market feedback.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Career pivots require patience and strategic thinking, but your existing skills provide a foundation that makes transitions faster and more successful than starting from zero.
+      </p>
+    </div>
+  );
+
+case "freelancing-business-fundamentals":
+  return (
+    <div className="prose prose-lg max-w-4xl mx-auto">
+      <p className="text-lg text-emerald-700 mb-6">
+        Freelancing offers unprecedented flexibility and earning potential, but treating it like a business—not a hobby—determines your long-term success and financial stability.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Have you ever considered freelancing but worried about inconsistent income or finding clients? The freelance economy has matured into a legitimate career path with proven strategies for building sustainable businesses.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Positioning Yourself in the Market</h3>
+
+      <p className="mb-6 text-foreground">
+        Successful freelancers solve specific problems for defined client types rather than being generalists. Specialization allows premium pricing and reduces competition.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Identify the intersection of your skills, market demand, and personal interests. This sweet spot becomes your freelance positioning and differentiates you from competitors.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-4 text-white">Pricing Your Services Strategically</h3>
+
+      <p className="mb-6 text-foreground">
+        Most new freelancers underprice their services, competing on cost rather than value. Research market rates and price based on client outcomes, not just your time.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Consider value-based pricing for projects with measurable business impact. A website that generates $50,000 in new revenue is worth more than the hours spent building it.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Building Your Client Acquisition System</h4>
+
+      <div className="mb-6 text-foreground">
+        <p className="mb-4"><em>Referral programs:</em> Incentivize existing clients to refer new business through formal referral rewards or simply excellent service.</p>
+        
+        <p className="mb-4"><em>Content marketing:</em> Share your expertise through blog posts, videos, or social media to attract clients searching for solutions.</p>
+        
+        <p className="mb-4"><em>Strategic partnerships:</em> Build relationships with complementary service providers who can refer clients needing your services.</p>
+      </div>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Managing Irregular Income</h4>
+
+      <p className="mb-6 text-foreground">
+        Create financial stability through diversified income streams, recurring revenue relationships, and careful cash flow management.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Maintain 3-6 months of expenses in emergency funds and set aside 25-30% of gross income for taxes. Treat your freelance business like the business it is.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Client Relationship Management</h4>
+
+      <p className="mb-6 text-foreground">
+        Develop systems for onboarding new clients, managing project communications, and delivering consistent quality. Professional systems justify premium pricing.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Use contracts for every project, no matter how small or how well you know the client. Clear expectations prevent misunderstandings and scope creep.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Scaling Beyond Your Time</h4>
+
+      <p className="mb-6 text-foreground">
+        Create passive income streams through digital products, courses, or templates that generate revenue without direct time investment.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Consider subcontracting overflow work to other freelancers, taking a management fee while building relationships for larger projects.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Professional Development Investment</h4>
+
+      <p className="mb-6 text-foreground">
+        Continuously upgrade your skills to command higher rates and access better opportunities. Invest 10-15% of revenue in learning and professional development.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Stay current with industry trends and tools. Clients pay premium rates for freelancers who bring cutting-edge knowledge to their projects.
+      </p>
+
+      <h4 className="text-lg font-medium mb-3 text-white">Building Long-Term Relationships</h4>
+
+      <p className="mb-6 text-foreground">
+        Focus on becoming a trusted advisor rather than just a service provider. Long-term client relationships provide predictable income and valuable referrals.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Proactively suggest improvements and new projects rather than waiting for clients to assign work. Strategic thinking distinguishes successful freelancers from order-takers.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Freelancing success requires entrepreneurial thinking, professional systems, and continuous relationship building—but offers unmatched flexibility and earning potential for those who master the fundamentals.
+      </p>
+    </div>
+  );
 
 default:
   return (
@@ -1351,29 +2753,3 @@ default:
       </div>
     </div>
   );
-}
-};
-
-return (
-  <div className="min-h-screen bg-background">
-    <ThemeToggle />
-    <Header />
-    
-    <section className="pt-32 pb-16">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center mb-16">
-          <h1 className="text-3xl md:text-4xl font-bold mb-8 text-foreground animate-fade-in">
-            {post.title}
-          </h1>
-        </div>
-
-        {renderContent()}
-      </div>
-    </section>
-    
-    <Footer />
-  </div>
-);
-};
-
-export default BlogPost;
