@@ -142,7 +142,7 @@ const BlogPost = () => {
           <h4 className="text-lg font-medium mb-3 text-white">Making Your Budget Work</h4>
 
           <p className="mb-6 text-foreground">
-            Set realistic targets—don't try to cut your grocery budget from $600 to $300 overnight. Start with small, achievable changes like reducing it to $550.
+            Set realistic targets, and don't try to cut your grocery budget from $600 to $300 overnight. Start with small, achievable changes like reducing it to $550.
           </p>
 
           <p className="mb-6 text-foreground">
@@ -173,7 +173,7 @@ const BlogPost = () => {
           </p>
 
           <p className="mb-6 text-foreground">
-            Retailers understand this better than most consumers do. Every aspect of store design—from lighting to music to product placement—is calculated to influence your spending behavior.
+            Retailers understand this better than most consumers do. Every aspect of store design, from lighting to music to product placement is calculated to influence your spending behavior.
           </p>
 
           <h3 className="text-xl font-semibold mb-4 text-white">The Emotional Triggers Behind Spending</h3>
