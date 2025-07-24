@@ -85,7 +85,7 @@ const BlogPost = () => {
           </p>
 
           <p className="mb-6 text-foreground">
-            Have you ever reached the end of the month wondering where all your money went? You're not alone—most people struggle with this exact problem.
+            Have you ever reached the end of the month wondering where all your money went? You're not alone, most people struggle with this exact problem.
           </p>
 
           <p className="mb-6 text-foreground">
@@ -109,7 +109,7 @@ const BlogPost = () => {
           </p>
 
           <p className="mb-6 text-foreground">
-            This doesn't mean you spend every penny. Money assigned to savings or emergency funds is still "assigned"—it's just assigned to your future self.
+            This doesn't mean you spend every penny. Money assigned to savings or emergency funds is still "assigned" but just to your future self. 
           </p>
 
           <h4 className="text-lg font-medium mb-3 text-white">Getting Started: Track Before You Budget</h4>
