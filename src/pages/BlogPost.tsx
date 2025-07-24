@@ -2796,20 +2796,45 @@ case "freelancing-business-fundamentals":
     </div>
   );
 
-default:
-  return (
-    <div className="prose prose-lg max-w-4xl mx-auto">
-      <div className="text-center py-16">
-        <h2 className="text-2xl font-bold mb-4 text-white">Blog Post Not Found</h2>
-        <p className="text-lg text-foreground mb-8">
-          The blog post you're looking for doesn't exist or hasn't been published yet.
-        </p>
-        <a 
-          href="/" 
-          className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
-        >
-          Return to Home
-        </a>
+    default:
+      return (
+        <div className="prose prose-lg max-w-4xl mx-auto">
+          <div className="text-center py-16">
+            <h2 className="text-2xl font-bold mb-4 text-white">Blog Post Not Found</h2>
+            <p className="text-lg text-foreground mb-8">
+              The blog post you're looking for doesn't exist or hasn't been published yet.
+            </p>
+            <a 
+              href="/" 
+              className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
+            >
+              Return to Home
+            </a>
+          </div>
+        </div>
+      );
+  }
+}; 
+
+return (
+  <div className="min-h-screen bg-background">
+    <ThemeToggle />
+    <Header />
+    
+    <section className="pt-32 pb-16">
+      <div className="container mx-auto px-4">
+        <div className="max-w-4xl mx-auto text-center mb-16">
+          <h1 className="text-3xl md:text-4xl font-bold mb-8 text-foreground animate-fade-in">
+            {post.title}
+          </h1>
+        </div>
+
+        {renderContent()}
       </div>
-    </div>
-  );
+    </section>
+    
+    <Footer />
+  </div>
+);
+}; 
+export default BlogPost; 
