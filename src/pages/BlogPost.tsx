@@ -73,7 +73,7 @@ const blogPosts = {
     category: "Budgeting"
   },
   "budgeting-for-irregular-income": {
-    title: "Budgeting for Irregular Income: Thriving with Unpredictable Paychecks",
+    title: "Budgeting with Irregular Income: A Practical Guide",
     category: "Budgeting"
   },
   "investment-portfolio-basics": {
