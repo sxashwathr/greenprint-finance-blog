@@ -31,8 +31,34 @@ const investingBlogs = [
     date: "2024-01-22",
     readTime: "9 min read",
     categoryColor: "bg-sage-green"
+  },
+  {
+    id: "investment-portfolio-basics",
+    title: "Investment Portfolio Basics: Building Your Wealth Foundation",
+    excerpt: "Learn fundamental portfolio construction and asset allocation principles.",
+    category: "Investing",
+    date: "2024-01-22",
+    readTime: "8 min read",
+    categoryColor: "bg-sage-green"
+  },
+  {
+    id: "tax-advantaged-investing",
+    title: "Tax-Advantaged Investing: Maximize Returns While Minimizing Taxes",
+    excerpt: "Navigate 401(k)s, IRAs, and other accounts to keep more of your gains.",
+    category: "Investing",
+    date: "2024-01-22",
+    readTime: "9 min read",
+    categoryColor: "bg-sage-green"
+  },
+  {
+    id: "market-volatility-strategies",
+    title: "Market Volatility Strategies: Staying Calm When Markets Go Crazy",
+    excerpt: "Develop strategies to navigate market ups and downs without panic",
+    category: "Investing",
+    date: "2024-01-22",
+    readTime: "7 min read",
+    categoryColor: "bg-sage-green"
   }
-  
 ];
 
 const Investing = () => {
