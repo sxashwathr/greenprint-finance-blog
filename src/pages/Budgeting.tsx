@@ -52,7 +52,7 @@ const budgetingBlogs = [
   },
   {
     id: "budgeting-for-irregular-income",
-    title: "Budgeting for Irregular Income: Thriving with Unpredictable Paychecks",
+    title: "Budgeting with Irregular Income: A Practical Guide",
     excerpt: "Master budgeting strategies for freelancers and anyone with variable income.",
     category: "Budgeting",
     date: "2024-01-20",
