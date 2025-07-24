@@ -272,7 +272,7 @@ const BlogPost = () => {
           <h3 className="text-xl font-semibold mb-4 text-white">Time Is Your Greatest Asset</h3>
 
           <p className="mb-6 text-foreground">
-            The most important factor in building wealth through investing isn't how much money you start with—it's how much time you give your investments to grow.
+            The most important factor in building wealth through investing isn't how much money you start with,it's how much time you give your investments to grow.
           </p>
 
           <p className="mb-6 text-foreground">
@@ -941,7 +941,7 @@ case "remote-work-mastery":
       <h3 className="text-xl font-semibold mb-4 text-white">Replenishing After Use</h3>
 
       <p className="mb-6 text-foreground">
-        When you do use your emergency fund—and you will—make replenishing it a top priority. Treat it like any other essential bill that must be paid.
+        When you do use your emergency fund,and you will,make replenishing it a top priority. Treat it like any other essential bill that must be paid.
       </p>
 
       <p className="mb-6 text-foreground">
@@ -949,7 +949,7 @@ case "remote-work-mastery":
       </p>
 
       <p className="mb-6 text-foreground">
-        Your emergency fund isn't money sitting idle—it's working 24/7 to protect your financial future and give you the confidence to navigate life's uncertainties.
+        Your emergency fund isn't money sitting idle, it's working 24/7 to protect your financial future and give you the confidence to navigate life's uncertainties.
       </p>
     </div>
   );
