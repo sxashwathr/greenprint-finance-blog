@@ -39,24 +39,51 @@
  <body>
    <div id="root"></div>
    
-   <div id="visitor-count" style="display: none;" data-total="0"></div>
+   <div id="visitor-count" style="display: none;" data-total="1500"></div>
    
    <script>
-     try {
-       var visits = localStorage.getItem('totalVisits');
-       var newCount = visits ? parseInt(visits) + 1 : 1000;
-       localStorage.setItem('totalVisits', newCount.toString());
-       
-       // Update hidden div
-       var counterDiv = document.getElementById('visitor-count');
-       if (counterDiv) {
-         counterDiv.setAttribute('data-total', newCount);
+     // Universal visitor counter using CountAPI
+     async function updateUniversalCounter() {
+       try {
+         // Check if counter exists, if not initialize to 1500
+         const checkResponse = await fetch('https://api.countapi.xyz/get/greenprintfinanceblog.org/visits');
+         const checkData = await checkResponse.json();
+         
+         if (checkData.value === undefined || checkData.value < 1500) {
+           // Set initial value to 1500
+           await fetch('https://api.countapi.xyz/set/greenprintfinanceblog.org/visits?value=1500');
+           console.log('Counter initialized to 1500');
+           
+           // Update display
+           var counterDiv = document.getElementById('visitor-count');
+           if (counterDiv) {
+             counterDiv.setAttribute('data-total', '1500');
+           }
+         } else {
+           // Increment the counter by 1
+           const response = await fetch('https://api.countapi.xyz/hit/greenprintfinanceblog.org/visits');
+           const data = await response.json();
+           
+           console.log('Total Visits:', data.value);
+           
+           // Update display
+           var counterDiv = document.getElementById('visitor-count');
+           if (counterDiv) {
+             counterDiv.setAttribute('data-total', data.value);
+           }
+         }
+       } catch (error) {
+         console.log('Counter error:', error);
+         // Fallback to display 1500 if API fails
+         var counterDiv = document.getElementById('visitor-count');
+         if (counterDiv) {
+           counterDiv.setAttribute('data-total', '1500');
+         }
        }
-       
-       console.log('Total Visits:', newCount);
-     } catch (e) {
-       console.log('Counter error:', e);
      }
+     
+     // Run the counter update
+     updateUniversalCounter();
    </script>
    
    <script type="module" src="/src/main.tsx"></script>
