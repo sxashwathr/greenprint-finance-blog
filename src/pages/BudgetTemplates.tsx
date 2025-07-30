@@ -25,7 +25,6 @@ function BudgetTemplateTile({ template }: { template: BudgetTemplate }) {
     }
   };
 
-  // Get topics for the oval badges (some templates have multiple topics)
   const getTopics = (category: string) => {
     switch (category.toLowerCase()) {
       case 'beginner':
@@ -35,7 +34,7 @@ function BudgetTemplateTile({ template }: { template: BudgetTemplate }) {
       case 'debt management':
         return ['Debt Management'];
       case 'investing':
-        return ['Budgeting', 'Investing']; // Both topics for investment tracker
+        return ['Budgeting', 'Investing'];
       default:
         return ['Budgeting'];
     }
@@ -57,16 +56,14 @@ function BudgetTemplateTile({ template }: { template: BudgetTemplate }) {
   const topics = getTopics(template.category);
 
   return (
-    <div className="bg-background rounded-2xl border-2 border-orange-200 p-6 hover:shadow-lg transition-all duration-300 hover:border-orange-300 relative flex flex-col h-full">
-      {/* Category badge - top right, not color coordinated */}
+    <div className="bg-background rounded-2xl border-2 border-orange-200 p-6 hover:shadow-lg transition-all duration-300 hover:border-orange-300 relative h-[400px] flex flex-col">
       <div className="absolute top-4 right-4">
-        <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-muted text-muted-foreground border">
+        <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-muted border" style={{ color: '#6B5B47' }}>
           {getIcon(template.type)}
           <span className="ml-1.5">{template.category}</span>
         </span>
       </div>
 
-      {/* Topic oval badges - same as blog tiles */}
       <div className="mb-4 flex gap-2">
         {topics.map((topic, index) => (
           <span 
@@ -78,17 +75,14 @@ function BudgetTemplateTile({ template }: { template: BudgetTemplate }) {
         ))}
       </div>
 
-      {/* Title */}
-      <h3 className="text-xl font-bold mb-3 leading-tight pr-16" style={{ color: '#8B7355' }}>
+      <h3 className="text-xl font-bold mb-3 leading-tight pr-16" style={{ color: '#6B5B47' }}>
         {template.name}
       </h3>
 
-      {/* Description */}
-      <p className="mb-6 leading-relaxed flex-grow" style={{ color: '#8B7355' }}>
+      <p className="mb-6 leading-relaxed flex-grow" style={{ color: '#6B5B47' }}>
         {template.description}
       </p>
 
-      {/* Download button - aligned to bottom */}
       <div className="mt-auto">
         <button
           onClick={handleDownload}
@@ -111,10 +105,10 @@ export function BudgetTemplates() {
       <section className="pt-32 pb-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-16">
-            <h1 className="text-3xl md:text-4xl font-bold mb-8 text-foreground">
+            <h1 className="text-3xl md:text-4xl font-bold mb-8" style={{ color: '#6B5B47' }}>
               Budget Templates
             </h1>
-            <p className="text-lg text-foreground mb-8 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-lg mb-8 leading-relaxed max-w-2xl mx-auto" style={{ color: '#6B5B47' }}>
               Free, downloadable budget templates to help you manage your finances and achieve your goals
             </p>
           </div>
