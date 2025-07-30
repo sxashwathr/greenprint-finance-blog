@@ -52,7 +52,7 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Quick Links - Orange only on hover */}
+          {/* Quick Links */}
           <div>
             <h3 className="text-lg font-bold mb-4 text-foreground">Quick Links</h3>
             <ul className="space-y-2">
@@ -64,7 +64,7 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Resources - Now with working Links instead of # */}
+          {/* Resources */}
           <div>
             <h3 className="text-lg font-bold mb-4 text-foreground">Resources</h3>
             <ul className="space-y-2">
