@@ -26,16 +26,15 @@ export function FAQ() {
       <section className="pt-32 pb-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-16">
-            <h1 className="text-3xl md:text-4xl font-bold mb-8 text-foreground">
+            <h1 className="text-3xl md:text-4xl font-bold mb-8" style={{ color: '#6B5B47' }}>
               Frequently Asked Questions
             </h1>
-            <p className="text-lg text-foreground mb-8">
+            <p className="text-lg mb-8 leading-relaxed max-w-2xl mx-auto" style={{ color: '#6B5B47' }}>
               Find answers to common financial questions
             </p>
             
             <FAQSearch searchTerm={searchTerm} onSearchChange={setSearchTerm} />
             
-            {/* Category Filter */}
             <div className="flex flex-wrap justify-center gap-2 mb-8">
               {faqCategories.map((category) => (
                 <button
@@ -44,8 +43,9 @@ export function FAQ() {
                   className={`px-4 py-2 rounded-lg transition-colors ${
                     selectedCategory === category
                       ? 'bg-primary text-primary-foreground'
-                      : 'bg-muted text-muted-foreground hover:bg-muted/80'
+                      : 'bg-muted hover:bg-muted/80'
                   }`}
+                  style={{ color: selectedCategory === category ? 'white' : '#6B5B47' }}
                 >
                   {category}
                 </button>
@@ -60,7 +60,7 @@ export function FAQ() {
               ))
             ) : (
               <div className="text-center py-8">
-                <p className="text-muted-foreground">No FAQs found matching your search.</p>
+                <p style={{ color: '#6B5B47' }}>No FAQs found matching your search.</p>
               </div>
             )}
           </div>
