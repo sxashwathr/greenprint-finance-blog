@@ -64,15 +64,15 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Resources - Orange only on hover */}
+          {/* Resources - Now with working Links instead of # */}
           <div>
             <h3 className="text-lg font-bold mb-4 text-foreground">Resources</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-foreground hover:text-orange-500 transition-colors">Financial Calculator</a></li>
-              <li><a href="#" className="text-foreground hover:text-orange-500 transition-colors">Budget Templates</a></li>
-              <li><a href="#" className="text-foreground hover:text-orange-500 transition-colors">Investment Guide</a></li>
-              <li><a href="#" className="text-foreground hover:text-orange-500 transition-colors">Newsletter Archive</a></li>
-              <li><a href="#" className="text-foreground hover:text-orange-500 transition-colors">FAQ</a></li>
+              <li><Link to="/financial-calculators" onClick={handleNavClick} className="text-foreground hover:text-orange-500 transition-colors">Financial Calculators</Link></li>
+              <li><Link to="/budget-templates" onClick={handleNavClick} className="text-foreground hover:text-orange-500 transition-colors">Budget Templates</Link></li>
+              <li><Link to="/investment-guide" onClick={handleNavClick} className="text-foreground hover:text-orange-500 transition-colors">Investment Guide</Link></li>
+              <li><Link to="/newsletter-archive" onClick={handleNavClick} className="text-foreground hover:text-orange-500 transition-colors">Newsletter Archive</Link></li>
+              <li><Link to="/faq" onClick={handleNavClick} className="text-foreground hover:text-orange-500 transition-colors">FAQ</Link></li>
             </ul>
           </div>
 
