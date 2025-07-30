@@ -10,7 +10,10 @@ export function NewsletterArchive() {
   const [selectedNewsletter, setSelectedNewsletter] = useState<Newsletter | null>(null);
   const [selectedTopic, setSelectedTopic] = useState<string>('All');
 
-  const allTopics = ['All', ...new Set(newsletters.flatMap(n => n.topics))];
+  // Fix: Only create allTopics if newsletters exist
+  const allTopics = newsletters.length > 0 
+    ? ['All', ...new Set(newsletters.flatMap(n => n.topics))]
+    : ['All'];
   
   const filteredNewsletters = selectedTopic === 'All' 
     ? newsletters 
