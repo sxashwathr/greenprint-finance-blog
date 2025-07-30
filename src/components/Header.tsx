@@ -32,20 +32,16 @@ export function Header() {
 
   const handleLogoError = (e: React.SyntheticEvent<HTMLImageElement>) => {
     console.error("Logo failed to load:", e);
-    console.log("Attempted logo path:", e.currentTarget.src);
-    console.log("Base URL:", window.location.origin);
-    console.log("Current pathname:", window.location.pathname);
     setLogoError(true);
   };
 
   const handleLogoLoad = () => {
-    console.log("Logo loaded successfully");
     setLogoError(false);
   };
 
- const getLogoPath = () => {
-  return '/favico.png';
-};
+  const getLogoPath = () => {
+    return '/favico.png';
+  };
 
   return (
     <>
@@ -71,7 +67,7 @@ export function Header() {
         </Link>
       </div>
 
-      <header className={`fixed w-full top-2 z-40 flex justify-center transition-all duration-300`}>
+      <header className="fixed w-full top-2 z-40 flex justify-center transition-all duration-300">
         <nav className={`bg-background/95 backdrop-blur-sm border border-primary/30 rounded-full shadow-lg transition-all duration-300 ${
           isScrolled ? 'h-7 px-2' : 'h-10 px-4'
         }`}>
@@ -122,3 +118,10 @@ export function Header() {
                   return (
                     <Link
                       key={item.name}
+                      to={item.href}
+                      className={`text-foreground transition-all duration-200 font-medium px-2.5 py-1.5 rounded-full hover:bg-primary/20 hover:shadow-md flex items-center space-x-1.5 text-sm ${
+                        location.pathname === item.href ? 'bg-primary/5' : ''
+                      }`}
+                      onClick={() => {
+                        setIsMobileMenuOpen(false);
+                        handleNavClick();
