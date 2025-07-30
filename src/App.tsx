@@ -37,6 +37,11 @@ const App = () => {
             <Route path="/career-income" element={<CareerIncome />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/financial-calculators" element={<FinancialCalculators />} />
+            <Route path="/budget-templates" element={<BudgetTemplates />} />
+            <Route path="/investment-guide" element={<InvestmentGuide />} />
+            <Route path="/newsletter-archive" element={<NewsletterArchive />} />
+            <Route path="/faq" element={<FAQ />} />
           </Routes>
         </BrowserRouter>
       </TooltipProvider>
