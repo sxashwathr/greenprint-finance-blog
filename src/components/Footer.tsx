@@ -25,7 +25,6 @@ export function Footer() {
     <footer className="bg-muted py-16">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* About Section */}
           <div>
             <h3 className="text-lg font-bold mb-4 text-foreground">About Greenprint</h3>
             <p className="text-foreground mb-4 leading-relaxed">
@@ -51,8 +50,6 @@ export function Footer() {
               <span className="font-semibold text-foreground">Greenprint</span>
             </div>
           </div>
-
-          {/* Quick Links */}
           <div>
             <h3 className="text-lg font-bold mb-4 text-foreground">Quick Links</h3>
             <ul className="space-y-2">
@@ -63,8 +60,6 @@ export function Footer() {
               <li><Link to="/career-income" onClick={handleNavClick} className="text-foreground hover:text-orange-500 transition-colors">Career & Income</Link></li>
             </ul>
           </div>
-
-          {/* Resources */}
           <div>
             <h3 className="text-lg font-bold mb-4 text-foreground">Resources</h3>
             <ul className="space-y-2">
@@ -75,8 +70,6 @@ export function Footer() {
               <li><Link to="/faq" onClick={handleNavClick} className="text-foreground hover:text-orange-500 transition-colors">FAQ</Link></li>
             </ul>
           </div>
-
-          {/* Contact Us */}
           <div>
             <h3 className="text-lg font-bold mb-4 text-foreground">Contact Us</h3>
             <div className="space-y-4">
