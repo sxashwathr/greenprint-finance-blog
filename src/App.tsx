@@ -11,6 +11,11 @@ import Entrepreneurship from "./pages/Entrepreneurship";
 import CareerIncome from "./pages/CareerIncome";
 import BlogPost from "./pages/BlogPost";
 import NotFound from "./pages/NotFound";
+import { FinancialCalculators } from './pages/FinancialCalculators';
+import { BudgetTemplates } from './pages/BudgetTemplates';
+import { InvestmentGuide } from './pages/InvestmentGuide';
+import { NewsletterArchive } from './pages/NewsletterArchive';
+import { FAQ } from './pages/FAQ';
 
 const queryClient = new QueryClient();
 
