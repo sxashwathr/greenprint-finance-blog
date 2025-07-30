@@ -1,68 +1,76 @@
 import { useState } from 'react';
-import { Header } from '@/components/Header';
-import { Footer } from '@/components/Footer';
-import { ThemeToggle } from '@/components/ThemeToggle';
-import { InvestmentGuideNav } from '@/components/InvestmentGuideNav';
-import { investmentGuideData } from '@/data/investmentGuide';
+import { ChevronRight, ChevronDown } from 'lucide-react';
+import { GuideSection } from '@/data/investmentGuide';
 
-export function InvestmentGuide() {
-  const [activeSection, setActiveSection] = useState(investmentGuideData[0].id);
+interface GuideNavProps {
+  sections: GuideSection[];
+  activeSection: string;
+  onSectionChange: (sectionId: string) => void;
+}
 
-  const getActiveContent = () => {
-    for (const section of investmentGuideData) {
-      if (section.id === activeSection) {
-        return { title: section.title, content: section.content };
-      }
-      if (section.subsections) {
-        for (const subsection of section.subsections) {
-          if (subsection.id === activeSection) {
-            return { title: subsection.title, content: subsection.content };
-          }
-        }
-      }
-    }
-    return { title: '', content: '' };
+export function InvestmentGuideNav({ sections, activeSection, onSectionChange }: GuideNavProps) {
+  const [expandedSections, setExpandedSections] = useState<string[]>([]);
+
+  const toggleSection = (sectionId: string) => {
+    setExpandedSections(prev => 
+      prev.includes(sectionId) 
+        ? prev.filter(id => id !== sectionId)
+        : [...prev, sectionId]
+    );
   };
 
-  const activeContent = getActiveContent();
-
   return (
-    <div className="min-h-screen bg-background">
-      <ThemeToggle />
-      <Header />
+    <nav className="bg-card p-4 rounded-lg border">
+      <h3 className="font-semibold mb-4" style={{ color: '#6B5B47' }}>Guide Contents</h3>
       
-      <section className="pt-32 pb-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <h1 className="text-3xl md:text-4xl font-bold mb-8 text-foreground text-center">
-              Complete Investment Guide
-            </h1>
-            
-            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-              <div className="lg:col-span-1">
-                <InvestmentGuideNav
-                  sections={investmentGuideData}
-                  activeSection={activeSection}
-                  onSectionChange={setActiveSection}
-                />
+      {sections.map((section) => (
+        <div key={section.id} className="mb-2">
+          <button
+            onClick={() => {
+              toggleSection(section.id);
+              onSectionChange(section.id);
+            }}
+            className={`w-full text-left p-2 rounded flex items-center justify-between transition-all duration-200 ${
+              activeSection === section.id 
+                ? 'bg-orange-100 border border-orange-300' 
+                : 'hover:bg-muted'
+            }`}
+            style={{ color: activeSection === section.id ? '#D97706' : '#6B5B47' }}
+          >
+            <span className="font-medium">{section.title}</span>
+            {section.subsections && (
+              <div className="transition-transform duration-200" style={{
+                transform: expandedSections.includes(section.id) ? 'rotate(90deg)' : 'rotate(0deg)'
+              }}>
+                <ChevronRight className="h-4 w-4" />
               </div>
-              
-              <div className="lg:col-span-3">
-                <div className="bg-card p-8 rounded-lg border">
-                  <h2 className="text-2xl font-bold mb-6 text-foreground">
-                    {activeContent.title}
-                  </h2>
-                  <div className="prose prose-lg max-w-none text-foreground whitespace-pre-line">
-                    {activeContent.content}
-                  </div>
-                </div>
+            )}
+          </button>
+          
+          <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
+            expandedSections.includes(section.id) ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+          }`}>
+            {section.subsections && (
+              <div className="ml-4 mt-2 space-y-1">
+                {section.subsections.map((subsection) => (
+                  <button
+                    key={subsection.id}
+                    onClick={() => onSectionChange(subsection.id)}
+                    className={`block w-full text-left p-2 text-sm rounded transition-all duration-200 ${
+                      activeSection === subsection.id 
+                        ? 'bg-orange-100 border border-orange-300' 
+                        : 'hover:bg-muted'
+                    }`}
+                    style={{ color: activeSection === subsection.id ? '#D97706' : '#6B5B47' }}
+                  >
+                    {subsection.title}
+                  </button>
+                ))}
               </div>
-            </div>
+            )}
           </div>
         </div>
-      </section>
-      
-      <Footer />
-    </div>
+      ))}
+    </nav>
   );
 }
