@@ -1,7 +1,6 @@
-
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, DollarSign, TrendingUp, CreditCard, Briefcase, Users, House } from "lucide-react";
+import { Menu, X, DollarSign, TrendingUp, CreditCard, Briefcase, Users, House, Calculator, FileText, BookOpen, Mail, HelpCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function Header() {
@@ -24,7 +23,12 @@ export function Header() {
     { name: "Investing", href: "/investing", icon: TrendingUp },
     { name: "Credit & Debt", href: "/credit-debt", icon: CreditCard },
     { name: "Entrepreneurship", href: "/entrepreneurship", icon: Briefcase },
-    { name: "Career & Income", href: "/career-income", icon: Users }
+    { name: "Career & Income", href: "/career-income", icon: Users },
+    { name: "Calculators", href: "/financial-calculators", icon: Calculator },
+    { name: "Templates", href: "/budget-templates", icon: FileText },
+    { name: "Investment Guide", href: "/investment-guide", icon: BookOpen },
+    { name: "Newsletter", href: "/newsletter-archive", icon: Mail },
+    { name: "FAQ", href: "/faq", icon: HelpCircle }
   ];
 
   const handleNavClick = () => {
