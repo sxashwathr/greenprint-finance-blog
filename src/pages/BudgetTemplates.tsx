@@ -25,38 +25,19 @@ function BudgetTemplateTile({ template }: { template: BudgetTemplate }) {
     }
   };
 
-  // Color coordination based on template category
-  const getCategoryColor = (category: string) => {
-    switch (category.toLowerCase()) {
-      case 'beginner':
-      case 'budgeting':
-        return 'bg-forest-green';
-      case 'advanced':
-      case 'debt management':
-        return 'bg-red-600';
-      case 'simple':
-        return 'bg-sage-green';
-      case 'investing':
-        return 'bg-blue-600';
-      default:
-        return 'bg-gray-600';
-    }
-  };
-
-  // Get topic for the oval badge (map categories to topics)
-  const getTopic = (category: string) => {
+  // Get topics for the oval badges (some templates have multiple topics)
+  const getTopics = (category: string) => {
     switch (category.toLowerCase()) {
       case 'beginner':
       case 'simple':
-        return 'Budgeting';
       case 'advanced':
-        return 'Budgeting';
+        return ['Budgeting'];
       case 'debt management':
-        return 'Debt Management';
+        return ['Debt Management'];
       case 'investing':
-        return 'Investing';
+        return ['Budgeting', 'Investing']; // Both topics for investment tracker
       default:
-        return 'Budgeting';
+        return ['Budgeting'];
     }
   };
 
@@ -73,8 +54,10 @@ function BudgetTemplateTile({ template }: { template: BudgetTemplate }) {
     }
   };
 
+  const topics = getTopics(template.category);
+
   return (
-    <div className="bg-background rounded-2xl border-2 border-orange-200 p-6 hover:shadow-lg transition-all duration-300 hover:border-orange-300 relative">
+    <div className="bg-background rounded-2xl border-2 border-orange-200 p-6 hover:shadow-lg transition-all duration-300 hover:border-orange-300 relative flex flex-col h-full">
       {/* Category badge - top right, not color coordinated */}
       <div className="absolute top-4 right-4">
         <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-muted text-muted-foreground border">
@@ -83,20 +66,25 @@ function BudgetTemplateTile({ template }: { template: BudgetTemplate }) {
         </span>
       </div>
 
-      {/* Topic oval badge - same as blog tiles */}
-      <div className="mb-4">
-        <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-medium text-white ${getTopicColor(getTopic(template.category))}`}>
-          {getTopic(template.category)}
-        </span>
+      {/* Topic oval badges - same as blog tiles */}
+      <div className="mb-4 flex gap-2">
+        {topics.map((topic, index) => (
+          <span 
+            key={index}
+            className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-medium text-white ${getTopicColor(topic)}`}
+          >
+            {topic}
+          </span>
+        ))}
       </div>
 
       {/* Title */}
-      <h3 className="text-xl font-bold mb-3 text-foreground leading-tight pr-16">
+      <h3 className="text-xl font-bold mb-3 leading-tight pr-16" style={{ color: '#8B7355' }}>
         {template.name}
       </h3>
 
       {/* Description */}
-      <p className="text-foreground mb-6 leading-relaxed">
+      <p className="mb-6 leading-relaxed flex-grow" style={{ color: '#8B7355' }}>
         {template.description}
       </p>
 
