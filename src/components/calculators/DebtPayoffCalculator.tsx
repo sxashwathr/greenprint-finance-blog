@@ -37,7 +37,7 @@ export function DebtPayoffCalculator() {
     parseFloat(balance) > 0 && 
     parseFloat(rate) >= 0 && 
     parseFloat(payment) > 0 &&
-    parseFloat(payment) > (parseFloat(balance) * parseFloat(rate) / 100 / 12); // Payment must be higher than monthly interest
+    parseFloat(payment) > (parseFloat(balance) * parseFloat(rate) / 100 / 12);
 
   return (
     <div className="bg-gradient-to-br from-card to-card/80 p-8 rounded-2xl border border-border/50 shadow-lg hover:shadow-xl transition-all duration-300">
