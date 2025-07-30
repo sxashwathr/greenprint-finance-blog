@@ -10,14 +10,9 @@ export function NewsletterArchive() {
   const [selectedNewsletter, setSelectedNewsletter] = useState<Newsletter | null>(null);
   const [selectedTopic, setSelectedTopic] = useState<string>('All');
 
-  // Fix: Only create allTopics if newsletters exist
-  const allTopics = newsletters.length > 0 
-    ? ['All', ...new Set(newsletters.flatMap(n => n.topics))]
-    : ['All'];
+  const allTopics = ['All'];
   
-  const filteredNewsletters = selectedTopic === 'All' 
-    ? newsletters 
-    : newsletters.filter(n => n.topics.includes(selectedTopic));
+  const filteredNewsletters = newsletters || [];
 
   return (
     <div className="min-h-screen bg-background">
@@ -34,52 +29,24 @@ export function NewsletterArchive() {
               Browse our past newsletters full of financial tips and insights
             </p>
             
-            {newsletters.length === 0 ? (
-              <div className="bg-card p-8 rounded-2xl border border-border/50">
-                <p className="text-muted-foreground mb-4">
-                  No newsletters available yet. Check back soon for valuable financial insights!
-                </p>
-                <p className="text-sm text-muted-foreground">
-                  In the meantime, explore our calculators and investment guide to start your financial journey.
-                </p>
-              </div>
-            ) : (
-              <>
-                <div className="flex flex-wrap justify-center gap-2 mb-8">
-                  {allTopics.map((topic) => (
-                    <button
-                      key={topic}
-                      onClick={() => setSelectedTopic(topic)}
-                      className={`px-4 py-2 rounded-lg transition-colors ${
-                        selectedTopic === topic
-                          ? 'bg-primary text-primary-foreground'
-                          : 'bg-muted text-muted-foreground hover:bg-muted/80'
-                      }`}
-                    >
-                      {topic}
-                    </button>
-                  ))}
-                </div>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {filteredNewsletters.map((newsletter) => (
-                    <NewsletterCard
-                      key={newsletter.id}
-                      newsletter={newsletter}
-                      onClick={setSelectedNewsletter}
-                    />
-                  ))}
-                </div>
-              </>
-            )}
+            <div className="bg-card p-8 rounded-2xl border border-border/50">
+              <p className="text-muted-foreground mb-4">
+                No newsletters available yet. Check back soon for valuable financial insights!
+              </p>
+              <p className="text-sm text-muted-foreground">
+                In the meantime, explore our calculators and investment guide to start your financial journey.
+              </p>
+            </div>
           </div>
         </div>
       </section>
       
-      <NewsletterModal
-        newsletter={selectedNewsletter}
-        onClose={() => setSelectedNewsletter(null)}
-      />
+      {selectedNewsletter && (
+        <NewsletterModal
+          newsletter={selectedNewsletter}
+          onClose={() => setSelectedNewsletter(null)}
+        />
+      )}
       
       <Footer />
     </div>
