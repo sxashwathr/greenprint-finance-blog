@@ -30,8 +30,7 @@ export function Header() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const handleLogoError = (e: React.SyntheticEvent<HTMLImageElement>) => {
-    console.error("Logo failed to load:", e);
+  const handleLogoError = () => {
     setLogoError(true);
   };
 
@@ -45,7 +44,6 @@ export function Header() {
 
   return (
     <>
-      {/* Greenprint Brand - Fixed position for all pages */}
       <div className="fixed top-2 left-2 z-50">
         <Link to="/" className="flex items-center space-x-1.5" onClick={handleNavClick}>
           <div className="w-8 h-8 bg-background rounded-lg flex items-center justify-center shadow-md border border-primary/20">
@@ -66,13 +64,9 @@ export function Header() {
           <span className="font-bold text-sm text-foreground">Greenprint</span>
         </Link>
       </div>
-
       <header className="fixed w-full top-2 z-40 flex justify-center transition-all duration-300">
-        <nav className={`bg-background/95 backdrop-blur-sm border border-primary/30 rounded-full shadow-lg transition-all duration-300 ${
-          isScrolled ? 'h-7 px-2' : 'h-10 px-4'
-        }`}>
+        <nav className={`bg-background/95 backdrop-blur-sm border border-primary/30 rounded-full shadow-lg transition-all duration-300 ${isScrolled ? 'h-7 px-2' : 'h-10 px-4'}`}>
           <div className="h-full flex items-center justify-center">
-            {/* Desktop Navigation - Centered */}
             <div className="hidden md:flex items-center space-x-1">
               {navigation.map((item) => {
                 const IconComponent = item.icon;
@@ -82,23 +76,15 @@ export function Header() {
                     key={item.name}
                     to={item.href}
                     onClick={handleNavClick}
-                    className={`relative text-foreground transition-all duration-300 font-medium rounded-full group flex items-center justify-center space-x-1 ${
-                      isScrolled ? 'text-xs px-3 py-1' : 'text-sm px-3.5 py-1.5'
-                    }`}
+                    className={`relative text-foreground transition-all duration-300 font-medium rounded-full group flex items-center justify-center space-x-1 ${isScrolled ? 'text-xs px-3 py-1' : 'text-sm px-3.5 py-1.5'}`}
                   >
                     <IconComponent className={isScrolled ? "h-2.5 w-2.5" : "h-3.5 w-3.5"} />
                     <span className="relative z-10">{item.name}</span>
-                    <div className={`absolute inset-0 rounded-full transition-all duration-300 ${
-                      isActive 
-                        ? 'bg-primary/10' 
-                        : 'bg-transparent group-hover:bg-primary/15 group-hover:shadow-md group-hover:shadow-primary/15'
-                    }`} />
+                    <div className={`absolute inset-0 rounded-full transition-all duration-300 ${isActive ? 'bg-primary/10' : 'bg-transparent group-hover:bg-primary/15 group-hover:shadow-md group-hover:shadow-primary/15'}`} />
                   </Link>
                 );
               })}
             </div>
-
-            {/* Mobile Menu Button */}
             <Button
               variant="ghost"
               size="sm"
@@ -108,8 +94,6 @@ export function Header() {
               {isMobileMenuOpen ? <X className="h-3.5 w-3.5" /> : <Menu className="h-3.5 w-3.5" />}
             </Button>
           </div>
-
-          {/* Mobile Navigation */}
           {isMobileMenuOpen && (
             <div className="absolute top-full left-0 w-full bg-background border border-primary/30 rounded-xl shadow-lg md:hidden mt-1">
               <div className="flex flex-col space-y-1 p-2">
@@ -119,9 +103,22 @@ export function Header() {
                     <Link
                       key={item.name}
                       to={item.href}
-                      className={`text-foreground transition-all duration-200 font-medium px-2.5 py-1.5 rounded-full hover:bg-primary/20 hover:shadow-md flex items-center space-x-1.5 text-sm ${
-                        location.pathname === item.href ? 'bg-primary/5' : ''
-                      }`}
+                      className={`text-foreground transition-all duration-200 font-medium px-2.5 py-1.5 rounded-full hover:bg-primary/20 hover:shadow-md flex items-center space-x-1.5 text-sm ${location.pathname === item.href ? 'bg-primary/5' : ''}`}
                       onClick={() => {
                         setIsMobileMenuOpen(false);
                         handleNavClick();
+                      }}
+                    >
+                      <IconComponent className="h-3 w-3" />
+                      <span>{item.name}</span>
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+        </nav>
+      </header>
+    </>
+  );
+}
