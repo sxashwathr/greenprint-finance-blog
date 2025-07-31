@@ -59,15 +59,15 @@ export function FinancialCalculators() {
                       <button
                         key={calc.id}
                         onClick={() => setActiveCalculator(calc.id)}
-                        className={`w-full text-left p-3 rounded flex items-center space-x-3 mb-2 transition-all duration-200 ${
+                        className={`w-full text-left p-3 rounded flex items-center space-x-3 mb-2 transition-all duration-300 ${
                           activeCalculator === calc.id 
-                            ? 'bg-orange-100 border border-orange-300' 
+                            ? 'bg-orange-100 border border-orange-300 shadow-sm' 
                             : 'hover:bg-muted'
                         }`}
                         style={{ color: activeCalculator === calc.id ? '#D97706' : '#6B5B47' }}
                       >
                         <IconComponent 
-                          className="h-5 w-5" 
+                          className="h-5 w-5 transition-colors duration-300" 
                           style={{ color: activeCalculator === calc.id ? calc.color : '#6B5B47' }}
                         />
                         <span className="font-medium">{calc.name}</span>
@@ -78,7 +78,7 @@ export function FinancialCalculators() {
               </div>
               
               <div className="lg:col-span-3">
-                <div className="transition-all duration-300 ease-in-out">
+                <div className="transition-opacity duration-300 ease-in-out">
                   {renderCalculator()}
                 </div>
               </div>
