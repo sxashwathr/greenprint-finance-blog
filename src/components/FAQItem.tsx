@@ -16,7 +16,7 @@ export function FAQItem({ faq }: FAQItemProps) {
       case 'investing':
         return 'bg-sage-green';
       case 'credit':
-        return 'bg-blue-600';
+        return 'bg-green-600';
       case 'debt':
         return 'bg-red-600';
       case 'career':
