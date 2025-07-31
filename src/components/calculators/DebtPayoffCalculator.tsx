@@ -8,12 +8,17 @@ export function DebtPayoffCalculator() {
   const [result, setResult] = useState<{months: number, totalInterest: number} | null>(null);
   const [isCalculating, setIsCalculating] = useState(false);
 
+  const handleNumberInput = (value: string, setter: (value: string) => void) => {
+    const numbersOnly = value.replace(/[^0-9.]/g, '');
+    setter(numbersOnly);
+  };
+
   const calculate = async () => {
     setIsCalculating(true);
     await new Promise(resolve => setTimeout(resolve, 300));
     
     const b = parseFloat(balance);
-    const r = parseFloat(rate) / 100 / 12; // Monthly interest rate
+    const r = parseFloat(rate) / 100 / 12;
     const p = parseFloat(payment);
     
     if (r === 0) {
@@ -40,67 +45,69 @@ export function DebtPayoffCalculator() {
     parseFloat(payment) > (parseFloat(balance) * parseFloat(rate) / 100 / 12);
 
   return (
-    <div className="bg-gradient-to-br from-card to-card/80 p-8 rounded-2xl border border-border/50 shadow-lg hover:shadow-xl transition-all duration-300">
+    <div className="bg-white p-8 rounded-2xl border border-border shadow-lg hover:shadow-xl transition-all duration-300">
       <div className="flex items-center mb-6">
-        <div className="p-3 bg-red-500/10 rounded-xl mr-4">
+        <div className="p-3 bg-red-100 rounded-xl mr-4">
           <CreditCard className="h-6 w-6 text-red-500" />
         </div>
         <div>
-          <h3 className="text-xl font-bold text-foreground">Debt Payoff Calculator</h3>
-          <p className="text-sm text-muted-foreground">Plan your path to debt freedom</p>
+          <h3 className="text-xl font-bold" style={{ color: '#6B5B47' }}>Debt Payoff Calculator</h3>
+          <p className="text-sm" style={{ color: '#6B5B47' }}>Plan your path to debt freedom</p>
         </div>
       </div>
       
       <div className="grid grid-cols-1 gap-6 mb-6">
         <div className="space-y-2">
-          <label className="flex items-center text-sm font-medium text-foreground mb-2">
+          <label className="flex items-center text-sm font-medium mb-2" style={{ color: '#6B5B47' }}>
             <CreditCard className="h-4 w-4 mr-2 text-red-500" />
             Current Balance
           </label>
           <div className="relative">
             <input
-              type="number"
+              type="text"
               value={balance}
-              onChange={(e) => setBalance(e.target.value)}
-              className="w-full px-4 py-3 pl-8 border border-border rounded-xl bg-background/50 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all duration-200"
+              onChange={(e) => handleNumberInput(e.target.value, setBalance)}
+              className="w-full px-4 py-3 pl-8 border border-border rounded-xl bg-white focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all duration-200"
               placeholder="5,000"
+              style={{ color: '#6B5B47' }}
             />
-            <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground">$</span>
+            <span className="absolute left-3 top-1/2 transform -translate-y-1/2" style={{ color: '#6B5B47' }}>$</span>
           </div>
         </div>
         
         <div className="space-y-2">
-          <label className="flex items-center text-sm font-medium text-foreground mb-2">
+          <label className="flex items-center text-sm font-medium mb-2" style={{ color: '#6B5B47' }}>
             <Percent className="h-4 w-4 mr-2 text-red-500" />
             Annual Interest Rate
           </label>
           <div className="relative">
             <input
-              type="number"
-              step="0.01"
+              type="text"
               value={rate}
-              onChange={(e) => setRate(e.target.value)}
-              className="w-full px-4 py-3 pr-8 border border-border rounded-xl bg-background/50 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all duration-200"
+              onChange={(e) => handleNumberInput(e.target.value, setRate)}
+              className="w-full px-4 py-3 pr-8 border border-border rounded-xl bg-white focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all duration-200"
               placeholder="18.00"
+              style={{ color: '#6B5B47' }}
             />
-            <Percent className="absolute right-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+            <Percent className="absolute right-3 top-1/2 transform -translate-y-1/2 h-4 w-4" style={{ color: '#6B5B47' }} />
           </div>
         </div>
         
         <div className="space-y-2">
-          <label className="flex items-center text-sm font-medium text-foreground mb-2">
+          <label className="flex items-center text-sm font-medium mb-2" style={{ color: '#6B5B47' }}>
             <Target className="h-4 w-4 mr-2 text-red-500" />
             Monthly Payment
           </label>
           <div className="relative">
             <input
-              type="number"
+              type="text"
               value={payment}
-              onChange={(e) => setPayment(e.target.value)}
-              className="w-full px-4 py-3 pl-8 border border-border rounded-xl bg-background/50 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all duration-200"
+              onChange={(e) => handleNumberInput(e.target.value, setPayment)}
+              className="w-full px-4 py-3 pl-8 border border-border rounded-xl bg-white focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all duration-200"
               placeholder="200"
+              style={{ color: '#6B5B47' }}
             />
-            <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground">$</span>
+            <span className="absolute left-3 top-1/2 transform -translate-y-1/2" style={{ color: '#6B5B47' }}>$</span>
           </div>
         </div>
       </div>
@@ -124,28 +131,28 @@ export function DebtPayoffCalculator() {
       </button>
       
       {result && (
-        <div className="mt-6 p-6 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 rounded-xl border border-green-200 dark:border-green-800 animate-in fade-in-50 duration-500">
+        <div className="mt-6 p-6 bg-green-50 rounded-xl border border-green-200">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="text-center md:text-left">
-              <p className="text-sm font-medium text-muted-foreground mb-1">Payoff Time</p>
-              <p className="text-2xl font-bold text-foreground">
+              <p className="text-sm font-medium mb-1" style={{ color: '#6B5B47' }}>Payoff Time</p>
+              <p className="text-2xl font-bold" style={{ color: '#6B5B47' }}>
                 {result.months} months
               </p>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm" style={{ color: '#6B5B47' }}>
                 ({Math.floor(result.months / 12)} years, {result.months % 12} months)
               </p>
             </div>
             <div className="text-center md:text-right">
-              <p className="text-sm font-medium text-muted-foreground mb-1">Total Interest</p>
-              <p className="text-2xl font-bold text-red-600 dark:text-red-400">
+              <p className="text-sm font-medium mb-1" style={{ color: '#6B5B47' }}>Total Interest</p>
+              <p className="text-2xl font-bold text-red-600">
                 ${result.totalInterest.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
               </p>
             </div>
           </div>
-          <div className="mt-4 pt-4 border-t border-green-200 dark:border-green-800">
-            <div className="flex justify-between items-center text-sm text-muted-foreground">
+          <div className="mt-4 pt-4 border-t border-green-200">
+            <div className="flex justify-between items-center text-sm" style={{ color: '#6B5B47' }}>
               <span>Debt-Free Date</span>
-              <span className="font-semibold text-green-600 dark:text-green-400">
+              <span className="font-semibold text-green-600">
                 {new Date(Date.now() + result.months * 30 * 24 * 60 * 60 * 1000).toLocaleDateString('en-US', { 
                   month: 'long', 
                   year: 'numeric' 
