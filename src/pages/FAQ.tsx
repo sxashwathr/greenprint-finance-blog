@@ -19,19 +19,19 @@ export function FAQ() {
   });
 
   const getCategoryColor = (category: string) => {
-    switch (category.toLowerCase()) {
-      case 'budgeting':
-        return 'bg-forest-green text-white';
-      case 'investing':
-        return 'bg-sage-green text-white';
-      case 'credit':
-        return 'bg-green-600 text-white';
-      case 'debt':
-        return 'bg-red-600 text-white';
-      case 'career':
-        return 'bg-teal-600 text-white';
-      case 'all':
+    switch (category) {
+      case 'All':
         return 'bg-orange-500 text-white';
+      case 'Budgeting':
+        return 'bg-forest-green text-white';
+      case 'Investing':
+        return 'bg-sage-green text-white';
+      case 'Credit & Debt':
+        return 'bg-green-600 text-white';
+      case 'Entrepreneurship':
+        return 'bg-emerald-green text-white';
+      case 'Career & Income':
+        return 'bg-teal-600 text-white';
       default:
         return 'bg-gray-600 text-white';
     }
