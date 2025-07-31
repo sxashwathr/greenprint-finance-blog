@@ -7,53 +7,53 @@ export interface FAQItem {
 
 export const faqData: FAQItem[] = [
   {
-    id: 'faq-1',
+    id: 'emergency-fund',
     question: 'How much should I save for an emergency fund?',
     answer: 'Generally, aim for 3-6 months of living expenses. If you have stable employment, 3 months may suffice. If you have irregular income or work in a volatile industry, consider saving 6-12 months of expenses.',
     category: 'Budgeting'
   },
   {
-    id: 'faq-2',
+    id: 'start-investing',
     question: 'When should I start investing?',
-    answer: 'Start investing as soon as you have an emergency fund and have paid off high-interest debt. The earlier you start, the more time your money has to compound and grow.',
+    answer: 'Start investing as soon as you have a stable emergency fund and have paid off high-interest debt. The earlier you start, the more time compound interest has to work in your favor.',
     category: 'Investing'
   },
   {
-    id: 'faq-3',
+    id: 'credit-score-house',
     question: 'What credit score do I need to buy a house?',
-    answer: 'While you can get approved with a score as low as 580 for FHA loans, a score of 740+ will get you the best interest rates. Focus on building your credit before applying for a mortgage.',
-    category: 'Credit'
+    answer: 'Most lenders prefer a credit score of at least 620 for conventional loans. However, FHA loans may be available with scores as low as 580. Higher scores typically mean better interest rates.',
+    category: 'Credit & Debt'
   },
   {
-    id: 'faq-4',
+    id: 'pay-off-debt',
     question: 'Should I pay off debt or invest first?',
     answer: 'Pay off high-interest debt (above 6-7%) first, then invest. For low-interest debt like mortgages, you can often invest while making minimum payments for better long-term returns.',
-    category: 'Debt'
+    category: 'Credit & Debt'
   },
   {
-    id: 'faq-5',
-    question: 'What percentage of income should I save?',
-    answer: 'Aim to save at least 20% of your income. This includes 10-15% for retirement and 5-10% for other goals. Start with whatever you can and gradually increase.',
+    id: 'budget-method',
+    question: 'What budgeting method works best?',
+    answer: 'The 50/30/20 rule is a good starting point: 50% for needs, 30% for wants, 20% for savings and debt repayment. However, the best budget is one you can stick to consistently.',
     category: 'Budgeting'
   },
   {
-    id: 'faq-6',
-    question: 'How do I start investing with little money?',
-    answer: 'Start with low-cost index funds or ETFs. Many brokers offer fractional shares with no minimums. Consider robo-advisors for automated investing with small amounts.',
+    id: 'retirement-savings',
+    question: 'How much should I save for retirement?',
+    answer: 'Aim to save at least 10-15% of your income for retirement. Start with your employer 401k match, then consider IRAs and additional 401k contributions.',
     category: 'Investing'
   },
   {
-    id: 'faq-7',
-    question: 'What is the best way to build credit?',
-    answer: 'Pay bills on time, keep credit utilization below 30%, maintain old accounts, and avoid opening too many new accounts quickly. Consider becoming an authorized user on someone else\'s account.',
-    category: 'Credit'
+    id: 'side-hustle',
+    question: 'How do I start a profitable side hustle?',
+    answer: 'Start with skills you already have, validate demand before investing heavily, and focus on problems you can solve for others. Popular options include freelancing, tutoring, or selling products online.',
+    category: 'Entrepreneurship'
   },
   {
-    id: 'faq-8',
-    question: 'Should I refinance my mortgage?',
-    answer: 'Consider refinancing if you can lower your rate by at least 0.5-1%, plan to stay in the home for several years, and the closing costs make financial sense.',
-    category: 'Debt'
+    id: 'salary-negotiation',
+    question: 'How do I negotiate a higher salary?',
+    answer: 'Research market rates, document your achievements, practice your pitch, and timing matters - ask during performance reviews or after completing major projects. Always negotiate respectfully and professionally.',
+    category: 'Career & Income'
   }
 ];
 
-export const faqCategories = ['All', 'Budgeting', 'Investing', 'Credit', 'Debt', 'Career'];
+export const faqCategories = ['All', 'Budgeting', 'Investing', 'Credit & Debt', 'Entrepreneurship', 'Career & Income'];
