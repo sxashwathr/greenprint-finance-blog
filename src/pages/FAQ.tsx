@@ -18,6 +18,21 @@ export function FAQ() {
     return matchesSearch && matchesCategory;
   });
 
+  const getCategoryColor = (category: string) => {
+    switch (category.toLowerCase()) {
+      case 'budgeting':
+        return 'bg-forest-green';
+      case 'investing':
+        return 'bg-sage-green';
+      case 'credit':
+        return 'bg-blue-600';
+      case 'debt':
+        return 'bg-red-600';
+      default:
+        return 'bg-gray-600';
+    }
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <ThemeToggle />
@@ -42,7 +57,7 @@ export function FAQ() {
                   onClick={() => setSelectedCategory(category)}
                   className={`px-4 py-2 rounded-lg transition-colors ${
                     selectedCategory === category
-                      ? 'bg-primary text-primary-foreground'
+                      ? `text-white ${getCategoryColor(category)}`
                       : 'bg-muted hover:bg-muted/80'
                   }`}
                   style={{ color: selectedCategory === category ? 'white' : '#6B5B47' }}
