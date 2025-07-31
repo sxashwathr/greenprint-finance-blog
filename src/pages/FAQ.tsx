@@ -21,15 +21,19 @@ export function FAQ() {
   const getCategoryColor = (category: string) => {
     switch (category.toLowerCase()) {
       case 'budgeting':
-        return 'bg-forest-green';
+        return 'bg-forest-green text-white';
       case 'investing':
-        return 'bg-sage-green';
+        return 'bg-sage-green text-white';
       case 'credit':
-        return 'bg-blue-600';
+        return 'bg-green-600 text-white';
       case 'debt':
-        return 'bg-red-600';
+        return 'bg-red-600 text-white';
+      case 'career':
+        return 'bg-teal-600 text-white';
+      case 'all':
+        return 'bg-orange-500 text-white';
       default:
-        return 'bg-gray-600';
+        return 'bg-gray-600 text-white';
     }
   };
 
@@ -55,9 +59,9 @@ export function FAQ() {
                 <button
                   key={category}
                   onClick={() => setSelectedCategory(category)}
-                  className={`px-4 py-2 rounded-lg transition-colors ${
+                  className={`px-4 py-2 rounded-lg transition-colors font-medium ${
                     selectedCategory === category
-                      ? `text-white ${getCategoryColor(category)}`
+                      ? getCategoryColor(category)
                       : 'bg-muted hover:bg-muted/80'
                   }`}
                   style={{ color: selectedCategory === category ? 'white' : '#6B5B47' }}
