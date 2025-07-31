@@ -12,16 +12,16 @@ export function NewsletterCard({ newsletter, onClick }: NewsletterCardProps) {
       className="bg-card p-6 rounded-lg border hover:shadow-lg transition-shadow cursor-pointer"
       onClick={() => onClick(newsletter)}
     >
-      <div className="flex items-center text-sm text-muted-foreground mb-2">
+      <div className="flex items-center text-sm mb-2" style={{ color: '#A0917A' }}>
         <Calendar className="h-4 w-4 mr-2" />
         {new Date(newsletter.date).toLocaleDateString()}
       </div>
       
-      <h3 className="text-xl font-semibold mb-3 text-foreground">
+      <h3 className="text-xl font-semibold mb-3" style={{ color: '#6B5B47' }}>
         {newsletter.title}
       </h3>
       
-      <p className="text-muted-foreground mb-4">
+      <p className="mb-4" style={{ color: '#6B5B47' }}>
         {newsletter.excerpt}
       </p>
       
