@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ChevronDown, ChevronUp } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 import { FAQItem as FAQItemType } from '@/data/faq';
 
 interface FAQItemProps {
@@ -10,16 +10,16 @@ export function FAQItem({ faq }: FAQItemProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const getCategoryColor = (category: string) => {
-    switch (category.toLowerCase()) {
-      case 'budgeting':
+    switch (category) {
+      case 'Budgeting':
         return 'bg-forest-green';
-      case 'investing':
+      case 'Investing':
         return 'bg-sage-green';
-      case 'credit':
+      case 'Credit & Debt':
         return 'bg-green-600';
-      case 'debt':
-        return 'bg-red-600';
-      case 'career':
+      case 'Entrepreneurship':
+        return 'bg-emerald-green';
+      case 'Career & Income':
         return 'bg-teal-600';
       default:
         return 'bg-gray-600';
