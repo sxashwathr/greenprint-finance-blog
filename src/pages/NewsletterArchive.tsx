@@ -21,18 +21,18 @@ export function NewsletterArchive() {
       <section className="pt-32 pb-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-16">
-            <h1 className="text-3xl md:text-4xl font-bold mb-8" style={{ color: '#8B7355' }}>
+            <h1 className="text-3xl md:text-4xl font-bold mb-8" style={{ color: '#6B5B47' }}>
               Newsletter Archive
             </h1>
-            <p className="text-lg mb-8 leading-relaxed max-w-2xl mx-auto" style={{ color: '#8B7355' }}>
+            <p className="text-lg mb-8 leading-relaxed max-w-2xl mx-auto" style={{ color: '#6B5B47' }}>
               Browse our past newsletters full of financial tips and insights
             </p>
             
             <div className="bg-card p-8 rounded-2xl border border-border/50">
-              <p className="mb-4" style={{ color: '#8B7355' }}>
+              <p className="mb-4 font-medium text-lg" style={{ color: '#6B5B47' }}>
                 No newsletters available yet. Check back soon for valuable financial insights!
               </p>
-              <p className="text-sm" style={{ color: '#A0917A' }}>
+              <p className="text-base" style={{ color: '#6B5B47' }}>
                 In the meantime, explore our calculators and investment guide to start your financial journey.
               </p>
             </div>
