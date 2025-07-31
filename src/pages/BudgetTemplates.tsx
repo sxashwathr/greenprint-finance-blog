@@ -56,7 +56,7 @@ function BudgetTemplateTile({ template }: { template: BudgetTemplate }) {
   const topics = getTopics(template.category);
 
   return (
-    <div className="bg-background rounded-2xl border-2 border-orange-200 p-6 hover:shadow-lg transition-all duration-300 hover:border-orange-300 relative h-[400px] flex flex-col">
+    <div className="bg-background rounded-2xl border-2 border-orange-200 p-6 hover:shadow-lg transition-all duration-300 hover:border-orange-300 relative h-[420px] flex flex-col">
       <div className="absolute top-4 right-4">
         <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-muted border" style={{ color: '#6B5B47' }}>
           {getIcon(template.type)}
