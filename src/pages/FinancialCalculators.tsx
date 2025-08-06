@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { ThemeToggle } from '@/components/ThemeToggle';
+
 import { TrendingUp, CreditCard, Shield, Home } from 'lucide-react';
 import { CompoundInterestCalculator } from '@/components/calculators/CompoundInterestCalculator';
 import { DebtPayoffCalculator } from '@/components/calculators/DebtPayoffCalculator';
@@ -35,7 +35,7 @@ export function FinancialCalculators() {
 
   return (
     <div className="min-h-screen bg-background">
-      <ThemeToggle />
+      
       <Header />
       
       <section className="pt-32 pb-16">

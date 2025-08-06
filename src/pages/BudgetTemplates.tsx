@@ -1,7 +1,7 @@
 import { Download, FileText, Grid3X3 } from 'lucide-react';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { ThemeToggle } from '@/components/ThemeToggle';
+
 import { budgetTemplates, BudgetTemplate } from '@/data/budgetTemplates';
 
 function BudgetTemplateTile({ template }: { template: BudgetTemplate }) {
@@ -99,7 +99,7 @@ function BudgetTemplateTile({ template }: { template: BudgetTemplate }) {
 export function BudgetTemplates() {
   return (
     <div className="min-h-screen bg-background">
-      <ThemeToggle />
+      
       <Header />
       
       <section className="pt-32 pb-16">

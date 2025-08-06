@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { ThemeToggle } from '@/components/ThemeToggle';
+
 import { NewsletterCard } from '@/components/NewsletterCard';
 import { NewsletterModal } from '@/components/NewsletterModal';
 import { newsletters, Newsletter } from '@/data/newsletters';
@@ -15,7 +15,7 @@ export function NewsletterArchive() {
 
   return (
     <div className="min-h-screen bg-background">
-      <ThemeToggle />
+      
       <Header />
       
       <section className="pt-32 pb-16">

@@ -64,7 +64,7 @@ const creditDebtBlogs = [
 const CreditDebt = () => {
   return (
     <div className="min-h-screen bg-background">
-      <ThemeToggle />
+      
       <Header />
       
       <section className="pt-32 pb-16">

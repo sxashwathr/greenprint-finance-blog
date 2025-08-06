@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { ThemeToggle } from '@/components/ThemeToggle';
+
 import { FAQItem } from '@/components/FAQItem';
 import { FAQSearch } from '@/components/FAQSearch';
 import { faqData, faqCategories } from '@/data/faq';
@@ -39,7 +39,7 @@ export function FAQ() {
 
   return (
     <div className="min-h-screen bg-background">
-      <ThemeToggle />
+      
       <Header />
       
       <section className="pt-32 pb-16">
