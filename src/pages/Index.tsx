@@ -35,7 +35,7 @@ const Index = () => {
           </div>
           
           <div className="w-2/5">
-            <div className="w-full bg-card p-8 rounded-2xl border border-border/50 shadow-lg">
+            <div className="bg-background rounded-2xl border-2 border-orange-200 p-6 hover:shadow-lg transition-all duration-300 hover:border-orange-300 h-[560px] flex flex-col justify-center">
               <h2 className="text-3xl font-bold text-center mb-6 animate-fade-in" style={{ color: '#6B5B47' }}>
                 Our Mission
               </h2>
