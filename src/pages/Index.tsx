@@ -14,7 +14,6 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Header />
       
-      {/* Hero Section */}
       <section className="pt-24 pb-8">
         <div className="container mx-auto px-3">
           <div className="text-center mb-8">
@@ -29,18 +28,15 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Featured Slideshow - Left Side with Our Mission */}
       <div className="container mx-auto px-4 py-16">
         <div className="flex gap-8">
-          {/* Slideshow - Left Side (60% width) */}
           <div className="w-3/5 animate-fade-in">
             <BlogSlideshow />
           </div>
           
-          {/* Our Mission - Right Side (40% width) */}
           <div className="w-2/5 flex items-center">
-            <div className="w-full">
-              <h2 className="text-3xl font-bold text-center mb-12 text-foreground animate-fade-in" style={{ color: '#6B5B47' }}>
+            <div className="w-full bg-card p-8 rounded-2xl border border-border/50 shadow-lg">
+              <h2 className="text-3xl font-bold text-center mb-6 animate-fade-in" style={{ color: '#6B5B47' }}>
                 Our Mission
               </h2>
               <p className="text-lg leading-relaxed" style={{ color: '#6B5B47' }}>
@@ -51,15 +47,12 @@ const Index = () => {
         </div>
       </div>
 
-      {/* Recent Blog Tiles */}
       <div className="py-8">
         <BlogTiles />
       </div>
 
-      {/* Newsletter Signup */}
       <NewsletterSignup />
 
-      {/* Footer */}
       <Footer />
     </div>
   );
