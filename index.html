@@ -1,108 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-   <meta charset="UTF-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Greenprint - Your Blueprint to Financial Success</title>
-   <link rel="icon" type="image/png" href="/favico.png" />
-   <meta name="description" content="Your blueprint to achieving proficient financial literacy. Master budgeting, investing, credit management, and more with expert guidance." />
-   <meta name="author" content="Greenprint" />
-   <meta property="og:title" content="Greenprint - Your Blueprint to Financial Success" />
-   <meta property="og:description" content="Your blueprint to achieving proficient financial literacy. Master budgeting, investing, credit management, and more with expert guidance." />
-   <meta property="og:type" content="website" />
-   <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-   <meta name="twitter:card" content="summary_large_image" />
-   <meta name="twitter:site" content="@greenprint_blog" />
-   <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-   <script type="text/javascript">
-     // Single Page Apps for GitHub Pages
-     (function(l) {
-       if (l.search[1] === '/') {
-         var decoded = l.search.slice(1).split('&').map(function(s) { 
-           return s.replace(/~and~/g, '&')
-         }).join('?');
-         window.history.replaceState(null, null,
-             l.pathname.slice(0, -1) + decoded + l.hash
-         );
-       }
-     }(window.location));
-     
-     (function() {
-       var redirectPath = sessionStorage.getItem('redirectPath');
-       if (redirectPath && redirectPath !== '/') {
-         sessionStorage.removeItem('redirectPath');
-         window.history.replaceState(null, null, redirectPath);
-       }
-     })();
-   </script>
- </head>
- <body>
-   <div id="root"></div>
-   
-   <div id="visitor-count" style="display: none;" data-total="1500"></div>
-   
-   <!-- Load main app FIRST -->
-   <script type="module" src="/src/main.tsx"></script>
-   
-   <!-- Firebase Counter loads AFTER app loads -->
-   <script type="module">
-     // Wait for page to be ready
-     document.addEventListener('DOMContentLoaded', async function() {
-       try {
-         // Import Firebase modules
-         const { initializeApp } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js');
-         const { getFirestore, doc, getDoc, setDoc, updateDoc, increment } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Greenprint - Your Blueprint to Financial Success</title>
+  <link rel="icon" type="image/png" href="/favico.png" />
+  <meta name="description" content="Your blueprint to achieving proficient financial literacy. Master budgeting, investing, credit management, and more with expert guidance." />
+  <meta name="author" content="Greenprint" />
+  <meta property="og:title" content="Greenprint - Your Blueprint to Financial Success" />
+  <meta property="og:description" content="Your blueprint to achieving proficient financial literacy. Master budgeting, investing, credit management, and more with expert guidance." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@greenprint_blog" />
+  <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-25BNKDNFJ4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-25BNKDNFJ4');
+  </script>
+  <script type="text/javascript">
+    (function(l) {
+      if (l.search[1] === '/') {
+        var decoded = l.search.slice(1).split('&').map(function(s) { 
+          return s.replace(/~and~/g, '&')
+        }).join('?');
+        window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    }(window.location));
+    
+    (function() {
+      var redirectPath = sessionStorage.getItem('redirectPath');
+      if (redirectPath && redirectPath !== '/') {
+        sessionStorage.removeItem('redirectPath');
+        window.history.replaceState(null, null, redirectPath);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <div id="root"></div>
+  
+  <div id="visitor-count" style="display: none;" data-total="1500"></div>
+  
+  <script type="module" src="/src/main.tsx"></script>
+  
+  <script type="module">
+    document.addEventListener('DOMContentLoaded', async function() {
+      try {
+        const { initializeApp } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js');
+        const { getFirestore, doc, getDoc, setDoc, updateDoc, increment } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
 
-         // Your Firebase config
-         const firebaseConfig = {
-           apiKey: "AIzaSvB9Bsv3ied_HwH_cx3LvmHogSXw7SjWBko",
-           authDomain: "greenprint-counter.firebaseapp.com",
-           projectId: "greenprint-counter",
-           storageBucket: "greenprint-counter.firebasestorage.app",
-           messagingSenderId: "925717094070",
-           appId: "1:925717094070:web:651cfb6875f8f45b5e9017"
-         };
+        const firebaseConfig = {
+          apiKey: "AIzaSvB9Bsv3ied_HwH_cx3LvmHogSXw7SjWBko",
+          authDomain: "greenprint-counter.firebaseapp.com",
+          projectId: "greenprint-counter",
+          storageBucket: "greenprint-counter.firebasestorage.app",
+          messagingSenderId: "925717094070",
+          appId: "1:925717094070:web:651cfb6875f8f45b5e9017"
+        };
 
-         const app = initializeApp(firebaseConfig);
-         const db = getFirestore(app);
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
 
-         async function updateUniversalCounter() {
-           try {
-             const counterRef = doc(db, 'stats', 'visitors');
-             const counterSnap = await getDoc(counterRef);
-             
-             if (!counterSnap.exists()) {
-               // Initialize with 1500
-               await setDoc(counterRef, { count: 1500 });
-               console.log('Universal Visits: 1500 (initialized)');
-               updateDisplay(1500);
-             } else {
-               // Increment by 1
-               await updateDoc(counterRef, { count: increment(1) });
-               const currentData = await getDoc(counterRef);
-               const newCount = currentData.data().count;
-               console.log('Universal Visits:', newCount);
-               updateDisplay(newCount);
-             }
-           } catch (error) {
-             console.log('Firebase counter error:', error);
-           }
-         }
+        async function updateUniversalCounter() {
+          try {
+            const counterRef = doc(db, 'stats', 'visitors');
+            const counterSnap = await getDoc(counterRef);
+            
+            if (!counterSnap.exists()) {
+              await setDoc(counterRef, { count: 1500 });
+              console.log('Universal Visits: 1500 (initialized)');
+              updateDisplay(1500);
+            } else {
+              await updateDoc(counterRef, { count: increment(1) });
+              const currentData = await getDoc(counterRef);
+              const newCount = currentData.data().count;
+              console.log('Universal Visits:', newCount);
+              updateDisplay(newCount);
+            }
+          } catch (error) {
+            console.log('Firebase counter error:', error);
+          }
+        }
 
-         function updateDisplay(count) {
-           var counterDiv = document.getElementById('visitor-count');
-           if (counterDiv) {
-             counterDiv.setAttribute('data-total', count);
-           }
-         }
+        function updateDisplay(count) {
+          var counterDiv = document.getElementById('visitor-count');
+          if (counterDiv) {
+            counterDiv.setAttribute('data-total', count);
+          }
+        }
 
-         // Update counter
-         updateUniversalCounter();
+        updateUniversalCounter();
 
-       } catch (error) {
-         console.log('Firebase loading error:', error);
-       }
-     });
-   </script>
- </body>
+      } catch (error) {
+        console.log('Firebase loading error:', error);
+      }
+    });
+  </script>
+</body>
 </html>
