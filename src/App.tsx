@@ -42,6 +42,7 @@ const App = () => {
             <Route path="/investment-guide" element={<InvestmentGuide />} />
             <Route path="/newsletter-archive" element={<NewsletterArchive />} />
             <Route path="/faq" element={<FAQ />} />
+            <Route path="/local/:slug" element={<LocalPost />} />
           </Routes>
         </BrowserRouter>
       </TooltipProvider>
