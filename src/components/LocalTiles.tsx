@@ -22,7 +22,7 @@ export function LocalTiles() {
         </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {localBlogs.map((blog) => (
-            <BlogTile key={blog.id} {...blog} />
+            <BlogTile key={blog.id} {...blog} type="local" />
           ))}
         </div>
       </div>
