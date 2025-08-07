@@ -48,9 +48,25 @@ const Index = () => {
         </div>
       </div>
 
-      <LocalTiles />
+      <div className="container mx-auto px-4 py-8">
+        <hr className="border-0 h-px bg-transparent" style={{ 
+          borderTop: '2px dotted #8B7355',
+          width: '100%'
+        }} />
+      </div>
 
-      <div className="py-2">
+      <div className="py-8">
+        <LocalTiles />
+      </div>
+
+      <div className="container mx-auto px-4 py-8">
+        <hr className="border-0 h-px bg-transparent" style={{ 
+          borderTop: '2px dotted #8B7355',
+          width: '100%'
+        }} />
+      </div>
+
+      <div className="py-8">
         <BlogTiles />
       </div>
 
