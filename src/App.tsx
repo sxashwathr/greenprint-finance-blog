@@ -16,6 +16,8 @@ import { BudgetTemplates } from './pages/BudgetTemplates';
 import { InvestmentGuide } from './pages/InvestmentGuide';
 import { NewsletterArchive } from './pages/NewsletterArchive';
 import { FAQ } from './pages/FAQ';
+import LocalPost from "./pages/LocalPost";
+
 
 const queryClient = new QueryClient();
 
