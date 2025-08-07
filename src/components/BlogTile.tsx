@@ -9,13 +9,15 @@ interface BlogTileProps {
   date: string;
   readTime: string;
   categoryColor: string;
+  type?: string;
 }
 
-export function BlogTile({ id, title, excerpt, category, date, readTime, categoryColor }: BlogTileProps) {
+export function BlogTile({ id, title, excerpt, category, date, readTime, categoryColor, type = "blog" }: BlogTileProps) {
   const navigate = useNavigate();
-
+  
   const handleTileClick = () => {
-    navigate(`/blog/${id}`);
+    const route = type === "local" ? `/local/${id}` : `/blog/${id}`;
+    navigate(route);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -30,18 +32,14 @@ export function BlogTile({ id, title, excerpt, category, date, readTime, categor
             {category}
           </span>
         </div>
-        {/* CHANGED: Title now uses text-foreground (dark slate in light mode) */}
         <h3 className="text-lg font-bold mb-1 group-hover:text-primary transition-colors text-foreground">
           {title}
         </h3>
-        {/* CHANGED: Description now uses text-foreground (same as title) */}
         <p className="text-foreground mb-4 text-sm leading-relaxed">
           {excerpt}
         </p>
         <div className="flex items-center justify-between">
-          {/* CHANGED: Read time now uses orange color */}
           <span className="text-xs text-orange-500">{readTime}</span>
-          {/* CHANGED: "Click to read more" now uses orange color */}
           <span className="text-xs text-orange-500 font-medium">
             Click to read more →
           </span>
