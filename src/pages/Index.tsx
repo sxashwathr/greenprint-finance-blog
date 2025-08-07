@@ -51,20 +51,26 @@ const Index = () => {
       </section>
 
       <div className="container mx-auto px-4 py-8">
-        <div className="w-full h-px" style={{ backgroundColor: '#8B7355' }}></div>
+        <hr style={{ 
+          border: 'none',
+          height: '1px',
+          backgroundColor: '#8B7355',
+          margin: '0'
+        }} />
       </div>
 
-      <div className="pb-16">
-        <LocalTiles />
-      </div>
+      <LocalTiles />
 
       <div className="container mx-auto px-4 py-8">
-        <div className="w-full h-px" style={{ backgroundColor: '#8B7355' }}></div>
+        <hr style={{ 
+          border: 'none',
+          height: '1px',
+          backgroundColor: '#8B7355',
+          margin: '0'
+        }} />
       </div>
 
-      <div className="pb-16">
-        <BlogTiles />
-      </div>
+      <BlogTiles />
 
       <NewsletterSignup />
 
