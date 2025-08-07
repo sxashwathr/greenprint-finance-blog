@@ -29,7 +29,7 @@ const Index = () => {
         </div>
       </section>
 
-      <div className="container mx-auto px-4 py-6">
+      <div className="container mx-auto px-4 pb-8">
         <div className="flex gap-8 items-start">
           <div className="w-3/5 animate-fade-in">
             <BlogSlideshow />
@@ -48,27 +48,21 @@ const Index = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-8">
-        <hr className="border-0 h-px bg-transparent" style={{ 
-          borderTop: '2px dotted #8B7355',
-          width: '100%'
-        }} />
+      <div className="container mx-auto px-4 py-6">
+        <div className="w-full h-0.5" style={{ 
+          background: 'repeating-linear-gradient(to right, #8B7355 0px, #8B7355 8px, transparent 8px, transparent 16px)'
+        }}></div>
       </div>
 
-      <div className="py-8">
-        <LocalTiles />
+      <LocalTiles />
+
+      <div className="container mx-auto px-4 py-6">
+        <div className="w-full h-0.5" style={{ 
+          background: 'repeating-linear-gradient(to right, #8B7355 0px, #8B7355 8px, transparent 8px, transparent 16px)'
+        }}></div>
       </div>
 
-      <div className="container mx-auto px-4 py-8">
-        <hr className="border-0 h-px bg-transparent" style={{ 
-          borderTop: '2px dotted #8B7355',
-          width: '100%'
-        }} />
-      </div>
-
-      <div className="py-8">
-        <BlogTiles />
-      </div>
+      <BlogTiles />
 
       <NewsletterSignup />
 
