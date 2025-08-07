@@ -59,9 +59,9 @@ const recentBlogs = [
 
 export function BlogTiles() {
   return (
-    <section className="py-16">
+    <section className="py-8">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12 text-foreground animate-fade-in">Recently Published</h2>
+        <h2 className="text-3xl font-bold text-center mb-6 text-foreground animate-fade-in">Recently Published</h2>
         <p className="text-lg text-foreground mb-8 leading-relaxed max-w-2xl mx-auto">
   Stay informed with our latest insights on budgeting, investing, and building wealth
 </p>
