@@ -51,9 +51,7 @@ const Index = () => {
       </section>
 
       <div className="container mx-auto px-4 py-8">
-        <div className="w-full h-0.5" style={{ 
-          background: 'repeating-linear-gradient(to right, #8B7355 0px, #8B7355 8px, transparent 8px, transparent 16px)'
-        }}></div>
+        <div className="w-full h-px" style={{ backgroundColor: '#8B7355' }}></div>
       </div>
 
       <div className="pb-16">
@@ -61,9 +59,7 @@ const Index = () => {
       </div>
 
       <div className="container mx-auto px-4 py-8">
-        <div className="w-full h-0.5" style={{ 
-          background: 'repeating-linear-gradient(to right, #8B7355 0px, #8B7355 8px, transparent 8px, transparent 16px)'
-        }}></div>
+        <div className="w-full h-px" style={{ backgroundColor: '#8B7355' }}></div>
       </div>
 
       <div className="pb-16">
