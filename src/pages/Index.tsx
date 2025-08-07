@@ -15,7 +15,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Header />
       
-      <section className="pt-20 pb-1">
+      <section className="pt-20 pb-12">
         <div className="container mx-auto px-3">
           <div className="text-center">
             <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-forest-green via-emerald-green via-sage-green to-forest-green bg-[length:200%_200%] animate-gradient-x bg-clip-text text-transparent mb-8 animate-fade-in">
@@ -29,40 +29,46 @@ const Index = () => {
         </div>
       </section>
 
-      <div className="container mx-auto px-4 pb-8">
-        <div className="flex gap-8 items-start">
-          <div className="w-3/5 animate-fade-in">
-            <BlogSlideshow />
-          </div>
-          
-          <div className="w-2/5">
-            <div className="bg-white rounded-2xl border-2 p-6 h-[560px] flex flex-col hover:shadow-lg transition-all duration-300" style={{ borderColor: '#fed7aa' }}>
-              <h2 className="text-3xl font-bold text-center mb-6 animate-fade-in" style={{ color: '#6B5B47' }}>
-                Our Mission
-              </h2>
-              <p className="text-lg leading-relaxed" style={{ color: '#6B5B47' }}>
-                TEXTHERE
-              </p>
+      <section className="pb-16">
+        <div className="container mx-auto px-4">
+          <div className="flex gap-8 items-start">
+            <div className="w-3/5 animate-fade-in">
+              <BlogSlideshow />
+            </div>
+            
+            <div className="w-2/5">
+              <div className="bg-white rounded-2xl border-2 p-6 h-[560px] flex flex-col hover:shadow-lg transition-all duration-300" style={{ borderColor: '#fed7aa' }}>
+                <h2 className="text-3xl font-bold text-center mb-6 animate-fade-in" style={{ color: '#6B5B47' }}>
+                  Our Mission
+                </h2>
+                <p className="text-lg leading-relaxed" style={{ color: '#6B5B47' }}>
+                  TEXTHERE
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="container mx-auto px-4 py-6">
+      <div className="container mx-auto px-4 py-8">
         <div className="w-full h-0.5" style={{ 
           background: 'repeating-linear-gradient(to right, #8B7355 0px, #8B7355 8px, transparent 8px, transparent 16px)'
         }}></div>
       </div>
 
-      <LocalTiles />
+      <div className="pb-16">
+        <LocalTiles />
+      </div>
 
-      <div className="container mx-auto px-4 py-6">
+      <div className="container mx-auto px-4 py-8">
         <div className="w-full h-0.5" style={{ 
           background: 'repeating-linear-gradient(to right, #8B7355 0px, #8B7355 8px, transparent 8px, transparent 16px)'
         }}></div>
       </div>
 
-      <BlogTiles />
+      <div className="pb-16">
+        <BlogTiles />
+      </div>
 
       <NewsletterSignup />
 
