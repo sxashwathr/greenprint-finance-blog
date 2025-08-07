@@ -73,9 +73,10 @@
             const counterSnap = await getDoc(counterRef);
             
             if (!counterSnap.exists()) {
-              await setDoc(counterRef, { count: 1500 });
-              console.log('Universal Visits: 1500 (initialized)');
-              updateDisplay(1500);
+              await setDoc(counterRef, { count: 1 });
+              console.log('Universal Visits: 1 (initialized)');
+              updateDisplay(1);
+
             } else {
               await updateDoc(counterRef, { count: increment(1) });
               const currentData = await getDoc(counterRef);
