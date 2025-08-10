@@ -42,7 +42,7 @@ const Index = () => {
                   Our Mission
                 </h2>
                 <p className="text-lg leading-relaxed" style={{ color: '#6B5B47' }}>
-                  TEXTHERE
+                  At Greenprint, our mission is to empower Texas teens to take control of their financial future by providing clear, practical, and engaging resources on money management, investing, and entrepreneurship. We aim to break down complex financial concepts into simple, actionable steps that fit real-life situations, helping young people build confidence, make informed decisions, and create their own “greenprint” for long-term success.
                 </p>
               </div>
             </div>
