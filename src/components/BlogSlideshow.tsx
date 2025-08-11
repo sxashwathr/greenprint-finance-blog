@@ -1,28 +1,40 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const mockBlogs = [
+  {
+    id: 4,
+    title: "Investment Portfolio Basics: Building Your Wealth Foundation",
+    excerpt: "Learn fundamental portfolio construction and asset allocation principles.",
+    image: "/portfolio.png",
+    category: "Investing",
+    link: "/investment-guide"
+  },
   {
     id: 1,
     title: "5 Essential Budgeting Tips for Beginners",
     excerpt: "Learn how to create and stick to a budget that actually works for your lifestyle.",
     image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=500&fit=crop",
-    category: "Budgeting"
+    category: "Budgeting",
+    link: null
   },
   {
     id: 2,
     title: "Understanding Investment Basics: A Complete Guide",
     excerpt: "Start your investment journey with these fundamental principles and strategies.",
     image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&h=500&fit=crop",
-    category: "Investing"
+    category: "Investing",
+    link: null
   },
   {
     id: 3,
     title: "How to Build Credit from Scratch",
     excerpt: "Practical steps to establish and improve your credit score for better financial health.",
     image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=500&fit=crop",
-    category: "Credit & Debt"
+    category: "Credit & Debt",
+    link: null
   }
 ];
 
@@ -33,7 +45,6 @@ export function BlogSlideshow() {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % mockBlogs.length);
     }, 5000);
-
     return () => clearInterval(interval);
   }, []);
 
@@ -43,6 +54,12 @@ export function BlogSlideshow() {
 
   const prevSlide = () => {
     setCurrentSlide((prev) => (prev - 1 + mockBlogs.length) % mockBlogs.length);
+  };
+
+  const handleSlideClick = (blog) => {
+    if (blog.link) {
+      window.location.href = blog.link;
+    }
   };
 
   return (
@@ -55,8 +72,11 @@ export function BlogSlideshow() {
           }`}
         >
           <div
-            className="w-full h-full bg-cover bg-center relative"
+            className={`w-full h-full bg-cover bg-center relative ${
+              blog.link ? 'cursor-pointer' : ''
+            }`}
             style={{ backgroundImage: `url(${blog.image})` }}
+            onClick={() => handleSlideClick(blog)}
           >
             <div className="absolute inset-0 bg-black/50" />
             <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
@@ -65,12 +85,16 @@ export function BlogSlideshow() {
               </span>
               <h3 className="text-2xl md:text-3xl font-bold mb-4">{blog.title}</h3>
               <p className="text-lg opacity-90">{blog.excerpt}</p>
+              {blog.link && (
+                <div className="mt-4">
+                  <span className="text-sm opacity-75">Click to explore →</span>
+                </div>
+              )}
             </div>
           </div>
         </div>
       ))}
-
-      {/* Navigation Buttons */}
+      
       <Button
         variant="secondary"
         size="sm"
@@ -87,8 +111,7 @@ export function BlogSlideshow() {
       >
         <ChevronRight className="h-4 w-4" />
       </Button>
-
-      {/* Dots Indicator */}
+      
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {mockBlogs.map((_, index) => (
           <button
