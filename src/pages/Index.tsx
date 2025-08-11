@@ -42,7 +42,7 @@ const Index = () => {
                   <img 
                     src="/texas.png" 
                     alt="Texas" 
-                    className="w-64 h-64 object-contain opacity-15"
+                    className="w-64 h-64 object-contain opacity-25"
                   />
                 </div>
                 
@@ -50,7 +50,7 @@ const Index = () => {
                   <h2 className="text-3xl font-bold text-center mb-8 animate-fade-in font-mono" style={{ color: '#6B5B47' }}>
                     Our Mission
                   </h2>
-                  <p className="text-lg leading-relaxed text-center font-mono animate-fade-in" style={{ color: '#6B5B47', animationDelay: '0.2s' }}>
+                  <p className="text-lg leading-relaxed text-center font-mono animate-fade-in" style={{ color: '#6B5B47' }}>
                     At <strong>Greenprint</strong>, our mission is to empower Texas teens to take control of their financial future by providing clear, practical, and engaging resources on money management, investing, and entrepreneurship. We aim to break down complex financial concepts into simple, actionable steps that fit real-life situations, helping young people build confidence, make informed decisions, and create their own "greenprint" for long-term success.
                   </p>
                 </div>
