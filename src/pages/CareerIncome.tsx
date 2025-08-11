@@ -11,7 +11,7 @@ const careerIncomeBlogs = [
     excerpt: "Proven strategies to negotiate higher compensation with confidence.",
     category: "Career & Income",
     date: "2024-01-30",
-    readTime: "14 min read",
+    readTime: "9 min read",
     categoryColor: "bg-teal-600"  
   },
   {
@@ -29,7 +29,7 @@ const careerIncomeBlogs = [
     excerpt: "Diversify income sources to reduce risk and accelerate financial independence.",
     category: "Career & Income",
     date: "2024-01-30",
-    readTime: "11 min read",
+    readTime: "7 min read",
     categoryColor: "bg-teal-600"  
   },
   {
@@ -56,7 +56,7 @@ const careerIncomeBlogs = [
     excerpt: "Master the business side of freelancing from pricing to scaling.",
     category: "Career & Income",
     date: "2024-01-30",
-    readTime: "9 min read",
+    readTime: "8 min read",
     categoryColor: "bg-teal-600"  
   }
 ];
