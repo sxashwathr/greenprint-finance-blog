@@ -37,13 +37,25 @@ const Index = () => {
             </div>
             
             <div className="w-2/5">
-              <div className="bg-white rounded-2xl border-2 p-8 h-[560px] flex flex-col justify-center hover:shadow-lg transition-all duration-300" style={{ borderColor: '#fed7aa' }}>
-                <h2 className="text-3xl font-bold text-center mb-8 animate-fade-in font-mono" style={{ color: '#6B5B47' }}>
-                  Our Mission
-                </h2>
-                <p className="text-lg leading-relaxed text-center font-mono" style={{ color: '#6B5B47' }}>
-                  At <strong>Greenprint</strong>, our mission is to empower Texas teens to take control of their financial future by providing clear, practical, and engaging resources on money management, investing, and entrepreneurship. We aim to break down complex financial concepts into simple, actionable steps that fit real-life situations, helping young people build confidence, make informed decisions, and create their own "greenprint" for long-term success.
-                </p>
+              <div className="bg-white rounded-2xl border-2 p-8 h-[560px] flex flex-col justify-center hover:shadow-lg transition-all duration-300 relative overflow-hidden" style={{ borderColor: '#fed7aa' }}>
+                {/* Texas Logo Background */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <img 
+                    src="/texas-logo.png" 
+                    alt="Texas" 
+                    className="w-64 h-64 object-contain opacity-10"
+                  />
+                </div>
+                
+                {/* Content */}
+                <div className="relative z-10">
+                  <h2 className="text-3xl font-bold text-center mb-8 animate-fade-in font-mono" style={{ color: '#6B5B47' }}>
+                    Our Mission
+                  </h2>
+                  <p className="text-lg leading-relaxed text-center font-mono" style={{ color: '#6B5B47' }}>
+                    At <strong>Greenprint</strong>, our mission is to empower Texas teens to take control of their financial future by providing clear, practical, and engaging resources on money management, investing, and entrepreneurship. We aim to break down complex financial concepts into simple, actionable steps that fit real-life situations, helping young people build confidence, make informed decisions, and create their own "greenprint" for long-term success.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
