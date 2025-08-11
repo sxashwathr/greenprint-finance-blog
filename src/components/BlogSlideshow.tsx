@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const mockBlogs = [
   {
@@ -39,6 +40,7 @@ const mockBlogs = [
 
 export function BlogSlideshow() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -55,6 +57,12 @@ export function BlogSlideshow() {
     setCurrentSlide((prev) => (prev - 1 + mockBlogs.length) % mockBlogs.length);
   };
 
+  const handleSlideClick = (blog) => {
+    if (blog.slug) {
+      navigate(`/blog/${blog.slug}`);
+    }
+  };
+
   return (
     <div className="relative w-full h-[560px] overflow-hidden rounded-xl shadow-2xl">
       {mockBlogs.map((blog, index) => (
@@ -64,37 +72,22 @@ export function BlogSlideshow() {
             index === currentSlide ? 'opacity-100' : 'opacity-0'
           }`}
         >
-          {blog.slug ? (
-            <a href={`/blog/${blog.slug}`} className="block w-full h-full cursor-pointer">
-              <div
-                className="w-full h-full bg-cover bg-center relative"
-                style={{ backgroundImage: `url(${blog.image})` }}
-              >
-                <div className="absolute inset-0 bg-black/50" />
-                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                  <span className="inline-block px-4 py-2 bg-gradient-to-r from-forest-green to-emerald-green text-white text-sm font-bold rounded-full mb-4 shadow-lg border-2 border-white/20 backdrop-blur-sm">
-                    {blog.category}
-                  </span>
-                  <h3 className="text-2xl md:text-3xl font-bold mb-4">{blog.title}</h3>
-                  <p className="text-lg opacity-90">{blog.excerpt}</p>
-                </div>
-              </div>
-            </a>
-          ) : (
-            <div
-              className="w-full h-full bg-cover bg-center relative"
-              style={{ backgroundImage: `url(${blog.image})` }}
-            >
-              <div className="absolute inset-0 bg-black/50" />
-              <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                <span className="inline-block px-4 py-2 bg-gradient-to-r from-forest-green to-emerald-green text-white text-sm font-bold rounded-full mb-4 shadow-lg border-2 border-white/20 backdrop-blur-sm">
-                  {blog.category}
-                </span>
-                <h3 className="text-2xl md:text-3xl font-bold mb-4">{blog.title}</h3>
-                <p className="text-lg opacity-90">{blog.excerpt}</p>
-              </div>
+          <div
+            className={`w-full h-full bg-cover bg-center relative ${
+              blog.slug ? 'cursor-pointer' : ''
+            }`}
+            style={{ backgroundImage: `url(${blog.image})` }}
+            onClick={() => handleSlideClick(blog)}
+          >
+            <div className="absolute inset-0 bg-black/50" />
+            <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+              <span className="inline-block px-4 py-2 bg-gradient-to-r from-forest-green to-emerald-green text-white text-sm font-bold rounded-full mb-4 shadow-lg border-2 border-white/20 backdrop-blur-sm">
+                {blog.category}
+              </span>
+              <h3 className="text-2xl md:text-3xl font-bold mb-4">{blog.title}</h3>
+              <p className="text-lg opacity-90">{blog.excerpt}</p>
             </div>
-          )}
+          </div>
         </div>
       ))}
       
