@@ -48,9 +48,19 @@ export function FAQ() {
             <h1 className="text-3xl md:text-4xl font-bold mb-8" style={{ color: '#6B5B47' }}>
               Frequently Asked Questions
             </h1>
-            <p className="text-lg mb-8 leading-relaxed max-w-2xl mx-auto" style={{ color: '#6B5B47' }}>
-              Find answers to common financial questions
-            </p>
+<p className="text-lg mb-8 leading-relaxed max-w-2xl mx-auto" style={{ color: '#6B5B47' }}>
+  Find answers to common financial questions. Submit your own FAQ{' '}
+  <a 
+    href="https://forms.gle/txssoPempXubV4UE7" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="underline hover:no-underline transition-all duration-200"
+    style={{ color: '#D97706' }}
+  >
+    here
+  </a>
+  .
+</p>
             
             <FAQSearch searchTerm={searchTerm} onSearchChange={setSearchTerm} />
             
