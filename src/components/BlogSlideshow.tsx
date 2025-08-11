@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 
 const mockBlogs = [
   {
@@ -10,7 +9,7 @@ const mockBlogs = [
     excerpt: "Learn fundamental portfolio construction and asset allocation principles.",
     image: "/portfolio.png",
     category: "Investing",
-    link: "/investment-guide"
+    slug: "investment-portfolio-basics"
   },
   {
     id: 1,
@@ -18,7 +17,7 @@ const mockBlogs = [
     excerpt: "Learn how to create and stick to a budget that actually works for your lifestyle.",
     image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=500&fit=crop",
     category: "Budgeting",
-    link: null
+    slug: null
   },
   {
     id: 2,
@@ -26,7 +25,7 @@ const mockBlogs = [
     excerpt: "Start your investment journey with these fundamental principles and strategies.",
     image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&h=500&fit=crop",
     category: "Investing",
-    link: null
+    slug: null
   },
   {
     id: 3,
@@ -34,7 +33,7 @@ const mockBlogs = [
     excerpt: "Practical steps to establish and improve your credit score for better financial health.",
     image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=500&fit=crop",
     category: "Credit & Debt",
-    link: null
+    slug: null
   }
 ];
 
@@ -57,8 +56,8 @@ export function BlogSlideshow() {
   };
 
   const handleSlideClick = (blog) => {
-    if (blog.link) {
-      window.location.href = blog.link;
+    if (blog.slug) {
+      window.location.href = `/blog/${blog.slug}`;
     }
   };
 
@@ -73,7 +72,7 @@ export function BlogSlideshow() {
         >
           <div
             className={`w-full h-full bg-cover bg-center relative ${
-              blog.link ? 'cursor-pointer' : ''
+              blog.slug ? 'cursor-pointer' : ''
             }`}
             style={{ backgroundImage: `url(${blog.image})` }}
             onClick={() => handleSlideClick(blog)}
@@ -85,11 +84,6 @@ export function BlogSlideshow() {
               </span>
               <h3 className="text-2xl md:text-3xl font-bold mb-4">{blog.title}</h3>
               <p className="text-lg opacity-90">{blog.excerpt}</p>
-              {blog.link && (
-                <div className="mt-4">
-                  <span className="text-sm opacity-75">Click to explore →</span>
-                </div>
-              )}
             </div>
           </div>
         </div>
