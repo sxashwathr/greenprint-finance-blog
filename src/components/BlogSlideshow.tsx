@@ -35,6 +35,14 @@ const mockBlogs = [
     image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=500&fit=crop",
     category: "Credit & Debt",
     slug: null
+  },
+  {
+    id: 5,
+    title: "Starting Your First Business: A Teen's Guide to Entrepreneurship",
+    excerpt: "Essential steps and strategies for young entrepreneurs to launch their first venture.",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=500&fit=crop",
+    category: "Entrepreneurship",
+    slug: null
   }
 ];
 
@@ -63,6 +71,23 @@ export function BlogSlideshow() {
     }
   };
 
+  const getCategoryColor = (category) => {
+    switch (category.toLowerCase()) {
+      case 'investing':
+        return 'bg-sage-green';
+      case 'budgeting':
+        return 'bg-forest-green';
+      case 'career & income':
+        return 'bg-teal-600';
+      case 'entrepreneurship':
+        return 'bg-emerald-green';
+      case 'credit & debt':
+        return 'bg-green-700';
+      default:
+        return 'bg-sage-green';
+    }
+  };
+
   return (
     <div className="relative w-full h-[560px] overflow-hidden rounded-xl shadow-2xl">
       {mockBlogs.map((blog, index) => (
@@ -81,7 +106,7 @@ export function BlogSlideshow() {
           >
             <div className="absolute inset-0 bg-black/50" />
             <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-              <span className="inline-block px-4 py-2 bg-gradient-to-r from-forest-green to-emerald-green text-white text-sm font-bold rounded-full mb-4 shadow-lg border-2 border-white/20 backdrop-blur-sm">
+              <span className={`inline-block px-4 py-2 ${getCategoryColor(blog.category)} text-white text-sm font-bold rounded-full mb-4 shadow-lg border-2 border-white/20 backdrop-blur-sm`}>
                 {blog.category}
               </span>
               <h3 className="text-2xl md:text-3xl font-bold mb-4">{blog.title}</h3>
