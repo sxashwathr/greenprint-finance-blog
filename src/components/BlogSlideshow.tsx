@@ -5,9 +5,9 @@ import { Button } from "@/components/ui/button";
 const mockBlogs = [
   {
     id: 1,
-    title: "5 Essential Budgeting Tips for Beginners",
-    excerpt: "Learn how to create and stick to a budget that actually works for your lifestyle.",
-    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=500&fit=crop",
+    title: "The Psychology of Money: Why We Spend and How to Change It",
+    excerpt: "Discover the triggers that drive spending habits and learn useful strategies to overcome them.",
+    image: "/psych.png",
     category: "Budgeting"
   },
   {
