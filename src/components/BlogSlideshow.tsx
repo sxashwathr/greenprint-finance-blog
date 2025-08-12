@@ -19,24 +19,24 @@ const mockBlogs = [
   },
   {
     id: 3,
-    title: "How to Build Credit from Scratch",
-    excerpt: "Practical steps to establish and improve your credit score for better financial health.",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=500&fit=crop",
+    title: "Debt Payoff Strategies: Finding Your Path to Freedom",
+    excerpt: "Explore proven methods to eliminate debt and regain control of your financial future.",
+    image: "/debt.png",
     category: "Credit & Debt"
   },
   {
     id: 4,
-    title: "Understanding Investment Basics: A Complete Guide",
-    excerpt: "Start your investment journey with these fundamental principles and strategies.",
-    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&h=500&fit=crop",
-    category: "Career & Income"
+    title: "Scaling Your Business: From Solo Act to Sustainable Growth",
+    excerpt: "Learn key strategies and tools needed to grow your business beyond what you can handle alone.",
+    image: "entrepreneurship.png",
+    category: "Entrepreneurship"
   },
   {
     id: 5,
-    title: "Starting Your First Business: A Teen's Guide to Entrepreneurship",
-    excerpt: "Essential steps and strategies for young entrepreneurs to launch their first venture.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=500&fit=crop",
-    category: "Entrepreneurship"
+    title: "Networking for Career Growth: Building Relationships That Pay",
+    excerpt: "Transform networking into genuine relationship building that accelerates careers.",
+    image: "/networking.png",
+    category: "Career & Income"
   }
 ];
 
