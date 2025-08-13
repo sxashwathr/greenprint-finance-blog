@@ -30,10 +30,10 @@ export function NewsletterArchive() {
             
             <div className="bg-card p-8 rounded-2xl border border-border/50">
               <p className="mb-4 font-medium text-lg" style={{ color: '#6B5B47' }}>
-                No newsletters available yet. Check back soon for valuable financial insights!
+                Past newsletters will be posted soon on a regular basis thereafter. 
               </p>
               <p className="text-base" style={{ color: '#6B5B47' }}>
-                In the meantime, explore our calculators and investment guide to start your financial journey.
+                In the meantime, explore our calculators, guides, and sign up for our newsletter to start your financial journey.
               </p>
             </div>
           </div>
