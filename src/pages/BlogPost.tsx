@@ -1294,7 +1294,7 @@ case "scaling-your-business":
       </p>
 
       <p className="mb-6 text-foreground">
-        The best marketing doesn't convince; it clarifies and sells itself.
+        The best marketing doesn't convince; it sells itself through clarity..
       </p>
     </div>
   );
