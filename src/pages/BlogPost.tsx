@@ -179,7 +179,7 @@ const BlogPost = () => {
           </p>
 
           <p className="mb-6 text-foreground">
-            Don't judge your spending during this phase—just observe. You might discover you're spending $150 monthly on subscription services you forgot about.
+            Don't judge your spending during this phase. Just observe. You might discover you're spending $150 monthly on subscription services you forgot about.
           </p>
 
           <h4 className="text-lg font-medium mb-3 text-white">The Four Budget Categories</h4>
@@ -342,7 +342,7 @@ const BlogPost = () => {
           <h4 className="text-lg font-medium mb-3 text-white">Understanding Risk and Return</h4>
 
           <p className="mb-6 text-foreground">
-            All investments involve some level of risk—the possibility that you might lose money or earn less than expected. Generally, investments with higher potential returns also carry higher risks.
+            All investments involve some level of risk; the possibility that you might lose money or earn less than expected. Generally, investments with higher potential returns also carry higher risks.
           </p>
 
           <p className="mb-6 text-foreground">
@@ -484,7 +484,7 @@ const BlogPost = () => {
             
             <p className="mb-4"><em>Length of Credit History (15%):</em> Longer credit histories generally result in higher scores. This is why closing old credit cards can sometimes hurt your score.</p>
             
-            <p className="mb-4"><em>Types of Credit (10%):</em> Having a mix of credit types—credit cards, car loans, mortgages—can slightly improve your score.</p>
+            <p className="mb-4"><em>Types of Credit (10%):</em> Having a mix of credit types (credit cards, car loans, mortgages) can slightly improve your score.</p>
             
             <p className="mb-4"><em>New Credit Inquiries (10%):</em> Applying for lots of credit in a short time can temporarily lower your score.</p>
           </div>
@@ -530,7 +530,7 @@ const BlogPost = () => {
           </p>
 
           <p className="mb-6 text-foreground">
-            Closing it would reduce your total available credit and potentially shorten your average account age—both factors that can lower your score.
+            Closing it would reduce your total available credit and potentially shorten your average account age; both factors that can lower your score.
           </p>
 
           <p className="mb-6 text-foreground">
@@ -547,7 +547,7 @@ const BlogPost = () => {
           </p>
 
           <p className="mb-6 text-foreground">
-            Have you ever felt overwhelmed by multiple debts, unsure which one to tackle first? You're facing a challenge that millions of Americans navigate daily—the average household carries over $6,000 in credit card debt alone.
+            Have you ever felt overwhelmed by multiple debts, unsure which one to tackle first? You're facing a challenge that millions of Americans navigate daily: the average household carries over $6,000 in credit card debt alone.
           </p>
 
           <h3 className="text-xl font-semibold mb-4 text-white">The Psychology of Debt Payoff</h3>
@@ -579,7 +579,7 @@ const BlogPost = () => {
           </p>
 
           <div className="mb-6 text-foreground">
-            <p className="mb-4"><em>Advantages:</em> Mathematically optimal—you'll pay the least interest overall and become debt-free faster.</p>
+            <p className="mb-4"><em>Advantages:</em> Mathematically optimal;you'll pay the least interest overall and become debt-free faster.</p>
             
             <p className="mb-4"><em>Disadvantages:</em> It may take longer to see the first debt disappear, which can be discouraging.</p>
           </div>
@@ -632,7 +632,7 @@ const BlogPost = () => {
   return (
     <div className="prose prose-lg max-w-4xl mx-auto">
       <p className="text-lg text-emerald-700 mb-6">
-        Starting a business doesn't require a huge investment or years of planning—sometimes the best opportunities are hiding in plain sight.
+        Starting a business doesn't require a huge investment or years of planning. Sometimes the best opportunities are hiding in plain sight.
       </p>
 
       <p className="mb-6 text-foreground">
@@ -686,7 +686,7 @@ const BlogPost = () => {
       </p>
 
       <p className="mb-6 text-foreground">
-        Don't assume you know what customers want—ask them directly and be prepared to adjust your approach.
+        Don't assume you know what customers want. Ask them directly and be prepared to adjust your approach based on their response.
       </p>
 
       <h4 className="text-lg font-medium mb-3 text-white">Common Mistakes to Avoid</h4>
@@ -700,7 +700,7 @@ const BlogPost = () => {
       </div>
 
       <p className="mb-6 text-foreground">
-        The most successful entrepreneurs are those who start before they feel ready. You don't need unlimited funding or a perfect plan—you need to take the first step and learn as you go.
+        The most successful entrepreneurs are those who start before they feel ready. You don't need unlimited funding or a perfect plan; you need to take the first step and learn as you go.
       </p>
     </div>
   );
@@ -747,7 +747,7 @@ case "side-hustle-revolution":
       </p>
 
       <p className="mb-6 text-foreground">
-        Consider your hobbies too—photography, crafting, writing, or fitness knowledge can all become income sources.
+        Consider your hobbies too: photography, crafting, writing, or fitness knowledge can all become income sources.
       </p>
 
       <h4 className="text-lg font-medium mb-3 text-white">Time Management Is Critical</h4>
@@ -763,7 +763,7 @@ case "side-hustle-revolution":
       <h4 className="text-lg font-medium mb-3 text-white">Financial Considerations</h4>
 
       <p className="mb-6 text-foreground">
-        Keep receipts for business expenses and set aside money for taxes—a good rule of thumb is 25-30% of your side hustle income.
+        Keep receipts for business expenses and set aside money for taxes. A good rule of thumb is 25-30% of your side hustle income.
       </p>
 
       <p className="mb-6 text-foreground">
@@ -777,7 +777,7 @@ case "side-hustle-revolution":
       </p>
 
       <p className="mb-6 text-foreground">
-        Treat your extra income strategically—either reinvest in growing your business or put it toward long-term financial goals like retirement or real estate.
+        Treat your extra income strategically. Either reinvest in growing your business or put it toward long-term financial goals like retirement or real estate.
       </p>
 
       <p className="mb-6 text-foreground">
@@ -790,7 +790,7 @@ case "career-growth":
   return (
     <div className="prose prose-lg max-w-4xl mx-auto">
       <p className="text-lg text-emerald-700 mb-6">
-        Your income potential isn't fixed—with the right approach, you can significantly increase your earnings throughout your career.
+        Your income potential isn't fixed; with the right approach, you can significantly increase your earnings throughout your career.
       </p>
 
       <p className="mb-6 text-foreground">
@@ -824,7 +824,7 @@ case "career-growth":
       </p>
 
       <p className="mb-6 text-foreground">
-        Quantify your impact whenever possible—numbers speak louder than general statements about your contributions.
+        Quantify your impact whenever possible; numbers speak louder than general statements about your contributions.
       </p>
 
       <h3 className="text-xl font-semibold mb-4 text-white">Beyond Base Salary</h3>
@@ -867,7 +867,7 @@ case "remote-work-mastery":
   return (
     <div className="prose prose-lg max-w-4xl mx-auto">
       <p className="text-lg text-emerald-700 mb-6">
-        Remote work isn't just a temporary trend—it's reshaping how we think about careers, location independence, and work-life balance.
+        Remote work isn't just a temporary trend: it's reshaping how we think about careers, location independence, and work-life balance.
       </p>
 
       <p className="mb-6 text-foreground">
@@ -933,7 +933,7 @@ case "remote-work-mastery":
       </p>
 
       <p className="mb-6 text-foreground">
-        Remote work isn't just about location independence—it's about developing the discipline, communication skills, and self-management abilities that are valuable in any professional context.
+        Remote work isn't just about location independence, but rather about developing the discipline, communication skills, and self-management abilities that are valuable in any professional context.
       </p>
     </div>
   );
@@ -941,7 +941,7 @@ case "remote-work-mastery":
   return (
     <div className="prose prose-lg max-w-4xl mx-auto">
       <p className="text-lg text-emerald-700 mb-6">
-        An emergency fund isn't just a nice-to-have—it's the foundation that prevents temporary setbacks from becoming permanent financial disasters.
+        An emergency fund isn't just a nice-to-have: it's the foundation that prevents temporary setbacks from becoming permanent financial disasters.
       </p>
 
       <p className="mb-6 text-foreground">
@@ -1401,7 +1401,7 @@ case "expense-tracking-mastery":
       </p>
 
       <p className="mb-6 text-foreground">
-        Have you ever tried tracking every expense for a month, only to abandon the effort because it felt overwhelming and tedious? The problem isn't your willpower—it's your approach.
+        Have you ever tried tracking every expense for a month, only to abandon the effort because it felt overwhelming and tedious? The problem isn't your willpower; it's your approach.
       </p>
 
       <h3 className="text-xl font-semibold mb-4 text-white">Why Traditional Expense Tracking Fails</h3>
@@ -1465,7 +1465,7 @@ case "expense-tracking-mastery":
       </p>
 
       <p className="mb-6 text-foreground">
-        Effective expense tracking isn't about recording every transaction—it's about gathering enough information to make informed financial decisions while maintaining a system you can sustain long-term.
+        Effective expense tracking isn't about recording every transaction: it's about gathering enough information to make informed financial decisions while maintaining a system you can sustain long-term.
       </p>
     </div>
   );
@@ -1474,7 +1474,7 @@ case "subscription-audit-guide":
   return (
     <div className="prose prose-lg max-w-4xl mx-auto">
       <p className="text-lg text-emerald-700 mb-6">
-        Hidden subscription costs are silently draining hundreds of dollars from your budget every year—money that could be building your financial future instead.
+        Hidden subscription costs are silently draining hundreds of dollars from your budget every year: money that could be building your financial future instead.
       </p>
 
       <p className="mb-6 text-foreground">
@@ -1522,7 +1522,7 @@ case "subscription-audit-guide":
       <div className="mb-6 text-foreground">
         <p className="mb-4"><em>Keep:</em> Services you use regularly and that provide clear value relative to their cost.</p>
         
-        <p className="mb-4"><em>Pause:</em> Services you use seasonally or occasionally—cancel now and resubscribe when needed.</p>
+        <p className="mb-4"><em>Pause:</em> Services you use seasonally or occasionally; cancel now and resubscribe when needed.</p>
         
         <p className="mb-4"><em>Cancel:</em> Services you rarely use, duplicate functionalities, or no longer need.</p>
       </div>
@@ -1554,7 +1554,7 @@ case "subscription-audit-guide":
       </p>
 
       <p className="mb-6 text-foreground">
-        If you save $100 monthly from subscription audits and invest it earning 7% annually, you'll have over $17,000 in 10 years—all from money that was silently disappearing from your budget.
+        If you save $100 monthly from subscription audits and invest it earning 7% annually, you'll have over $17,000 in 10 years: all from money that was silently disappearing from your budget.
       </p>
     </div>
   );
@@ -1577,7 +1577,7 @@ case "budgeting-for-irregular-income":
       </p>
 
       <p className="mb-6 text-foreground">
-        The solution isn't trying to smooth out your income—it's building flexibility into your financial system while maintaining control over spending.
+        The solution isn't trying to smooth out your income: it's building flexibility into your financial system while maintaining control over spending.
       </p>
 
       <h3 className="text-xl font-semibold mb-4 text-white">The Minimum Viable Budget Approach</h3>
@@ -1617,7 +1617,7 @@ case "budgeting-for-irregular-income":
       </p>
 
       <p className="mb-6 text-foreground">
-        During low-income months, draw from buffers without guilt. This is exactly what these accounts are designed for—smoothing income volatility.
+        During low-income months, draw from buffers without guilt. This is exactly what these accounts are designed for: smoothing income volatility.
       </p>
 
       <h4 className="text-lg font-medium mb-3 text-white">Tracking and Forecasting</h4>
@@ -1650,7 +1650,7 @@ case "investment-portfolio-basics":
   return (
     <div className="prose prose-lg max-w-4xl mx-auto">
       <p className="text-lg text-emerald-700 mb-6">
-        Building a well-balanced investment portfolio doesn't require complex strategies or expensive advisors—just understanding a few key principles about risk and diversification.
+        Building a well-balanced investment portfolio doesn't require complex strategies or expensive advisors: just understanding a few key principles about risk and diversification.
       </p>
 
       <p className="mb-6 text-foreground">
@@ -1660,7 +1660,7 @@ case "investment-portfolio-basics":
       <h3 className="text-xl font-semibold mb-4 text-white">Asset Allocation: Your Portfolio's Foundation</h3>
 
       <p className="mb-6 text-foreground">
-        Asset allocation—how you divide money between stocks, bonds, and other investments—matters more than individual security selection for long-term returns.
+        Asset allocation, how you divide money between stocks, bonds, and other investments, matters more than individual security selection for long-term returns.
       </p>
 
       <p className="mb-6 text-foreground">
@@ -1670,7 +1670,7 @@ case "investment-portfolio-basics":
       <h3 className="text-xl font-semibold mb-4 text-white">Understanding Investment Risk</h3>
 
       <p className="mb-6 text-foreground">
-        Risk in investing isn't just about losing money—it's about volatility and uncertainty. Stocks fluctuate more but historically provide higher returns. Bonds are steadier but offer lower growth potential.
+        Risk in investing isn't just about losing money, but it's rather about volatility and uncertainty. Stocks fluctuate more but historically provide higher returns. Bonds are steadier but offer lower growth potential.
       </p>
 
       <p className="mb-6 text-foreground">
@@ -1708,7 +1708,7 @@ case "investment-portfolio-basics":
       </p>
 
       <p className="mb-6 text-foreground">
-        Consider tax-loss harvesting in taxable accounts—selling losing investments to offset gains and reduce tax liability.
+        Consider tax-loss harvesting in taxable accounts: selling losing investments to offset gains and reduce tax liability.
       </p>
 
       <h4 className="text-lg font-medium mb-3 text-white">Avoiding Common Portfolio Mistakes</h4>
@@ -1732,7 +1732,7 @@ case "investment-portfolio-basics":
       </p>
 
       <p className="mb-6 text-foreground">
-        A well-constructed portfolio isn't about maximizing returns—it's about maximizing the returns you can actually achieve by staying invested through all market conditions.
+        A well-constructed portfolio isn't about maximizing returns. It's about maximizing the returns you can actually achieve by staying invested through all market conditions.
       </p>
     </div>
   );
@@ -1741,7 +1741,7 @@ case "tax-advantaged-investing":
   return (
     <div className="prose prose-lg max-w-4xl mx-auto">
       <p className="text-lg text-emerald-700 mb-6">
-        Understanding tax-advantaged accounts can save you thousands in taxes while accelerating your wealth-building journey—yet most people underutilize these powerful tools.
+        Understanding tax-advantaged accounts can save you thousands in taxes while accelerating your wealth-building journey, yet most people underutilize these powerful tools.
       </p>
 
       <p className="mb-6 text-foreground">
@@ -1751,7 +1751,7 @@ case "tax-advantaged-investing":
       <h3 className="text-xl font-semibold mb-4 text-white">The Tax Advantage Explained</h3>
 
       <p className="mb-6 text-foreground">
-        Tax-advantaged accounts provide benefits unavailable in regular investment accounts: tax deductions, tax-free growth, or tax-free withdrawals—sometimes all three.
+        Tax-advantaged accounts provide benefits unavailable in regular investment accounts: tax deductions, tax-free growth, or tax-free withdrawals (sometimes all three).
       </p>
 
       <p className="mb-6 text-foreground">
@@ -1771,7 +1771,7 @@ case "tax-advantaged-investing":
       <h4 className="text-lg font-medium mb-3 text-white">Employer 401(k) Plans: Start Here</h4>
 
       <p className="mb-6 text-foreground">
-        Always contribute enough to get your full employer match—it's an immediate 100% return on investment that no other investment can guarantee.
+        Always contribute enough to get your full employer match: it's an immediate 100% return on investment that no other investment can guarantee.
       </p>
 
       <p className="mb-6 text-foreground">
@@ -1793,7 +1793,7 @@ case "tax-advantaged-investing":
       </p>
 
       <p className="mb-6 text-foreground">
-        After age 65, HSAs function like traditional IRAs for non-medical expenses while remaining tax-free for healthcare costs—making them powerful retirement accounts.
+        After age 65, HSAs function like traditional IRAs for non-medical expenses while remaining tax-free for healthcare costs, making them powerful retirement accounts.
       </p>
 
       <h4 className="text-lg font-medium mb-3 text-white">Contribution Prioritization Strategy</h4>
@@ -1827,7 +1827,7 @@ case "tax-advantaged-investing":
       </p>
 
       <p className="mb-6 text-foreground">
-        Tax-advantaged investing isn't just about saving money—it's about keeping more of your investment returns working for you over decades of compound growth.
+        Tax-advantaged investing isn't just about saving money. It's about keeping more of your investment returns working for you over decades of compound growth.
       </p>
     </div>
   );
@@ -1876,7 +1876,7 @@ case "market-volatility-strategies":
       <h4 className="text-lg font-medium mb-3 text-white">Building Volatility Tolerance</h4>
 
       <p className="mb-6 text-foreground">
-        Your risk tolerance isn't just theoretical—it's tested during real market stress. Start with conservative allocations and gradually increase stock exposure as you experience volatility firsthand.
+        Your risk tolerance isn't just theoretical. It's tested during real market stress. Start with conservative allocations and gradually increase stock exposure as you experience volatility firsthand.
       </p>
 
       <p className="mb-6 text-foreground">
@@ -1906,7 +1906,7 @@ case "market-volatility-strategies":
       <h4 className="text-lg font-medium mb-3 text-white">When to Adjust Your Strategy</h4>
 
       <p className="mb-6 text-foreground">
-        Change investment strategy due to life changes (new job, approaching retirement) or goal changes—not market movements.
+        Change investment strategy due to life changes (new job, approaching retirement) or goal changes. Not market movements.
       </p>
 
       <p className="mb-6 text-foreground">
@@ -1924,7 +1924,7 @@ case "market-volatility-strategies":
       </p>
 
       <p className="mb-6 text-foreground">
-        Successful investing isn't about avoiding volatility—it's about staying disciplined and focused on long-term goals while markets fluctuate around you.
+        Successful investing isn't about avoiding volatility. It's about staying disciplined and focused on long-term goals while markets fluctuate around you.
       </p>
     </div>
   );
@@ -1983,7 +1983,7 @@ case "credit-card-rewards-optimization":
       <h4 className="text-lg font-medium mb-3 text-white">Sign-Up Bonuses: The Biggest Opportunity</h4>
 
       <p className="mb-6 text-foreground">
-        Sign-up bonuses often provide the highest reward value—$500-$1,000 worth of cash or travel rewards for meeting spending requirements within the first few months.
+        Sign-up bonuses often provide the highest reward value: $500-$1,000 worth of cash or travel rewards for meeting spending requirements within the first few months.
       </p>
 
       <p className="mb-6 text-foreground">
@@ -2020,11 +2020,11 @@ case "student-loan-strategies":
   return (
     <div className="prose prose-lg max-w-4xl mx-auto">
       <p className="text-lg text-emerald-700 mb-6">
-        Student loans don't have to control your financial future—understanding repayment options and optimization strategies can save you thousands while building wealth.
+        Student loans don't have to control your financial future. Understanding repayment options and optimization strategies can save you thousands while building wealth.
       </p>
 
       <p className="mb-6 text-foreground">
-        Have you ever felt overwhelmed by student loan payments that seem to barely touch the principal balance? You're not alone—the average graduate leaves college with over $30,000 in debt, but smart strategies can accelerate payoff and minimize total interest.
+        Have you ever felt overwhelmed by student loan payments that seem to barely touch the principal balance? You're not alone: the average graduate leaves college with over $30,000 in debt, but smart strategies can accelerate payoff and minimize total interest.
       </p>
 
       <h3 className="text-xl font-semibold mb-4 text-white">Federal vs. Private Loans: Know Your Options</h3>
@@ -2102,7 +2102,7 @@ case "student-loan-strategies":
       </p>
 
       <p className="mb-6 text-foreground">
-        Your student loan strategy should align with your overall financial goals and risk tolerance. There's no single "best" approach—choose the strategy that fits your situation and gives you peace of mind.
+        Your student loan strategy should align with your overall financial goals and risk tolerance. There's no single "best" approach. Choose the strategy that fits your situation and gives you peace of mind.
       </p>
     </div>
   );
@@ -2468,7 +2468,7 @@ case "intellectual-property-basics":
       <h4 className="text-lg font-medium mb-3 text-white">International IP Considerations</h4>
 
       <p className="mb-6 text-foreground">
-        IP protection is generally territorial—U.S. registrations don't automatically provide international protection.
+        IP protection is generally territorial: U.S. registrations don't automatically provide international protection.
       </p>
 
       <p className="mb-6 text-foreground">
@@ -2496,7 +2496,7 @@ case "intellectual-property-basics":
       </div>
 
       <p className="mb-6 text-foreground">
-        IP protection isn't just about preventing others from copying your work—it's about building valuable business assets that can be licensed, sold, or used to attract investors and partners.
+        IP protection isn't just about preventing others from copying your work. It's about building valuable business assets that can be licensed, sold, or used to attract investors and partners.
       </p>
     </div>
   );
@@ -2602,7 +2602,7 @@ case "skills-based-career-pivoting":
   return (
     <div className="prose prose-lg max-w-4xl mx-auto">
       <p className="text-lg text-emerald-700 mb-6">
-        Career transitions don't require starting from scratch—identifying transferable skills and strategic positioning can accelerate moves into new industries or roles.
+        Career transitions don't require starting from scratch. Identifying transferable skills and strategic positioning can accelerate moves into new industries or roles.
       </p>
 
       <p className="mb-6 text-foreground">
@@ -2703,7 +2703,7 @@ case "freelancing-business-fundamentals":
   return (
     <div className="prose prose-lg max-w-4xl mx-auto">
       <p className="text-lg text-emerald-700 mb-6">
-        Freelancing offers unprecedented flexibility and earning potential, but treating it like a business—not a hobby—determines your long-term success and financial stability.
+        Freelancing offers unprecedented flexibility and earning potential, but treating it like a business, not a hobby, determines your long-term success and financial stability.
       </p>
 
       <p className="mb-6 text-foreground">
@@ -2791,7 +2791,7 @@ case "freelancing-business-fundamentals":
       </p>
 
       <p className="mb-6 text-foreground">
-        Freelancing success requires entrepreneurial thinking, professional systems, and continuous relationship building—but offers unmatched flexibility and earning potential for those who master the fundamentals.
+        Freelancing success requires entrepreneurial thinking, professional systems, and continuous relationship building, but offers unmatched flexibility and earning potential for those who master the fundamentals.
       </p>
     </div>
   );
