@@ -16,7 +16,7 @@ const entrepreneurshipBlogs = [
   },
   {
     id: "side-hustle-revolution",
-    title: "The Side Hustle Revolution: Building Income Outside the 9-to-5 ",
+    title: "The Side Hustle Revolution: Building Income Outside the 9-to-5",
     excerpt: "Transform your spare time into profitable income streams that fit around your schedule.",
     category: "Entrepreneurship",
     date: "2024-01-28",
@@ -34,7 +34,7 @@ const entrepreneurshipBlogs = [
   },
   {
     id: "e-commerce-business-models",
-    title: "E-Commerce Business Models: Finding Your Path to Online Succes",
+    title: "E-Commerce Business Models: Finding Your Path to Online Success",
     excerpt: "Explore different e-commerce approaches and find the right model for you.",
     category: "Entrepreneurship",
     date: "2024-01-28",
