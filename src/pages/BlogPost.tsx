@@ -1192,7 +1192,7 @@ case "scaling-your-business":
       </p>
 
       <p className="mb-6 text-foreground">
-        Have you ever felt trapped in your own business, working longer hours for diminishing returns while dreaming of the freedom entrepreneurship was supposed to provide? You're experiencing the classic scaling challenge.
+        Have you ever felt trapped in your own business, working longer hours for diminishing returns while dreaming of the freedom entrepreneurship was supposed to provide? You're experiencing the scaling challenge.
       </p>
 
       <h3 className="text-xl font-semibold mb-4 text-white">The Scaling Paradox</h3>
@@ -1275,8 +1275,26 @@ case "scaling-your-business":
         The entrepreneur who built the business isn't always the best person to manage its growth. Be honest about your strengths and consider bringing in management expertise when needed.
       </p>
 
+      <h3 className="text-xl font-semibold mb-4 text-white">Marketing</h3>
+
       <p className="mb-6 text-foreground">
-        Scaling successfully requires letting go of control while maintaining your vision. Focus on building systems, processes, and people that can execute your ideas without your constant oversight.
+        As you scale, your marketing strategy must evolve from manual outreach to systematic customer acquisition. Understanding your target audience deeply becomes critical—knowing not just demographics, but their pain points, motivations, and how they prefer to consume information.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Effective marketing at scale focuses on clarity over persuasion. Your messaging should make it immediately obvious who you serve, what problem you solve, and why you're the solution. Content marketing, influencer partnerships, and market positioning can often drive effective customer acquisition without requiring your constant involvement in every sale. Identifying a "target-market" before developing your go-to-market strategy is the most effective way to put your business out there. 
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Track metrics that matter: customer acquisition cost, conversion rates, and engagement. These numbers tell you which marketing channels work and which drain resources. Marketing automation tools can nurture leads while you focus on high-level strategy, turning your marketing efforts into a scalable system rather than a daily grind. This way, you eliminate what isn't working, and bring in more of the positive methods.
+      </p>
+
+      <p className="mb-6 text-foreground">
+        Scaling successfully requires letting go of control while maintaining your vision. Focus on building systems, processes, and people that can execute your ideas without your constant oversight. Build trust and over time, scaling a business comes without ask. 
+      </p>
+
+      <p className="mb-6 text-foreground">
+        The best marketing doesn't convince; it clarifies and sells itself.
       </p>
     </div>
   );
