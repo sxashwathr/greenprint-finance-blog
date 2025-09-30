@@ -43,7 +43,7 @@ const entrepreneurshipBlogs = [
   },
   {
     id: "business-funding-options",
-    title: "Business Funding Options: From Bootstrapping to Venture Capita",
+    title: "Business Funding Options: From Bootstrapping to Venture Capital",
     excerpt: "Understand funding sources and choose the right capital strategy.",
     category: "Entrepreneurship",
     date: "2024-01-28",
