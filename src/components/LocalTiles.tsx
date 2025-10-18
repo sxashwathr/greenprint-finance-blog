@@ -8,25 +8,25 @@ const localBlogs = [
     category: "Entrepreneurship",
     date: "2024-01-15",
     readTime: "6 min read",
-    categoryColor: "bg-teal-600"
+    categoryColor: "bg-emerald-green"
   },
   {
     id: "dfw-teens-money-moves",
     title: "Real Money Moves for DFW Teens: Paid Jobs and Finance Programs You Can Use Now",
-    excerpt: "If you live in the Dallas Fort Worth area, you don't have to wait until after high school to start earning money and building financial independence.",
+    excerpt: "Discover paid internship programs and financial literacy resources available for Dallas-Fort Worth teens.",
     category: "Career & Income",
     date: "2025-01-15",
     readTime: "8 min read",
-    categoryColor: "bg-purple-600"
+    categoryColor: "bg-teal-600"
   },
   {
     id: "dfw-teen-entrepreneurship",
     title: "From Classrooms to Cash Flow: Entrepreneurship Opportunities for Texas Teens in DFW",
-    excerpt: "The DFW area has real programs that help teens turn ideas into income through business basics, mentoring, and pitch competitions.",
+    excerpt: "Learn how DFW teens can access free mentoring, business workshops, and pitch competitions to launch their ventures.",
     category: "Entrepreneurship",
     date: "2025-01-16",
     readTime: "7 min read",
-    categoryColor: "bg-teal-600"
+    categoryColor: "bg-emerald-green"
   }
 ];
 
