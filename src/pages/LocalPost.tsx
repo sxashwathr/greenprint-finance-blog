@@ -85,15 +85,32 @@ export function LocalPost() {
               High school is not just about grades. It can be your first real step toward financial independence. Find an internship, open an account, or sign up for a finance workshop. Every experience adds to your "financial blueprint." The earlier you start, the stronger your future will be.
             </p>
             
-            <h4 className="text-lg font-medium mb-3 text-white">Works Cited</h4>
-            
-            <div className="mb-6 text-foreground text-sm">
-              <p className="mb-2">Dallas Works. "About." Dallas Works, 2025. https://www.dallassummerjobs.org/about</p>
-              <p className="mb-2">Dallas Works. "The Summer Internship." Dallas Works, 2025. https://www.dallassummerjobs.org/thesummerinternship</p>
-              <p className="mb-2">City of Fort Worth. "NextGen Ambassador Program." City of Fort Worth HR Careers, 2025. https://www.fortworthtexas.gov/departments/hr/careers/next-gen</p>
-              <p className="mb-2">Junior Achievement of Dallas. "Education Programs." https://www.jadallas.org/education-programs/</p>
-              <p className="mb-2">Credit Union of Texas. "Student Checking." https://www.cutx.org/checking/student</p>
-              <p className="mb-2">Dallas Independent School District. "Career Institutes." https://www.dallasisd.org/about-our-schools/career-institutes/home</p>
+            <div className="mt-12 mb-8 mx-auto" style={{ maxWidth: '85%' }}>
+              <div className="bg-white rounded-2xl border-2 p-8 hover:shadow-lg transition-all duration-300" style={{ borderColor: '#fed7aa' }}>
+                <h4 className="text-2xl font-bold text-center mb-6 font-mono" style={{ color: '#6B5B47' }}>
+                  Works Cited
+                </h4>
+                <ul className="space-y-3 text-left" style={{ color: '#6B5B47', listStyleType: 'disc', paddingLeft: '2rem' }}>
+                  <li className="font-mono text-sm leading-relaxed">
+                    Dallas Works. "About." Dallas Works, 2025. https://www.dallassummerjobs.org/about
+                  </li>
+                  <li className="font-mono text-sm leading-relaxed">
+                    Dallas Works. "The Summer Internship." Dallas Works, 2025. https://www.dallassummerjobs.org/thesummerinternship
+                  </li>
+                  <li className="font-mono text-sm leading-relaxed">
+                    City of Fort Worth. "NextGen Ambassador Program." City of Fort Worth HR Careers, 2025. https://www.fortworthtexas.gov/departments/hr/careers/next-gen
+                  </li>
+                  <li className="font-mono text-sm leading-relaxed">
+                    Junior Achievement of Dallas. "Education Programs." https://www.jadallas.org/education-programs/
+                  </li>
+                  <li className="font-mono text-sm leading-relaxed">
+                    Credit Union of Texas. "Student Checking." https://www.cutx.org/checking/student
+                  </li>
+                  <li className="font-mono text-sm leading-relaxed">
+                    Dallas Independent School District. "Career Institutes." https://www.dallasisd.org/about-our-schools/career-institutes/home
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         );
@@ -145,14 +162,29 @@ export function LocalPost() {
               You do not need to wait until college to take control of your financial future. The DFW area gives you the tools to learn, experiment, and grow. Attend a workshop, start a side hustle, or pitch your big idea. Every dollar you earn and every mistake you make now becomes part of your personal financial education.
             </p>
             
-            <h4 className="text-lg font-medium mb-3 text-white">Works Cited</h4>
-            
-            <div className="mb-6 text-foreground text-sm">
-              <p className="mb-2">Dallas Public Library. "Business & Technology Center." https://www.dallaslibrary.org/central-library</p>
-              <p className="mb-2">Collin Small Business Development Center. "Classes & Services." https://collinsbdc.com/</p>
-              <p className="mb-2">Dallas College. "Small Business & Entrepreneurship." https://www.dallascollege.edu/study/small-business/</p>
-              <p className="mb-2">The DEC Network. "Youth Entrepreneurship Events." https://www.facebook.com/thedecnetwork/</p>
-              <p className="mb-2">Credit Union of Texas. "Student Checking." https://www.cutx.org/checking/student</p>
+            <div className="mt-12 mb-8 mx-auto" style={{ maxWidth: '85%' }}>
+              <div className="bg-white rounded-2xl border-2 p-8 hover:shadow-lg transition-all duration-300" style={{ borderColor: '#fed7aa' }}>
+                <h4 className="text-2xl font-bold text-center mb-6 font-mono" style={{ color: '#6B5B47' }}>
+                  Works Cited
+                </h4>
+                <ul className="space-y-3 text-left" style={{ color: '#6B5B47', listStyleType: 'disc', paddingLeft: '2rem' }}>
+                  <li className="font-mono text-sm leading-relaxed">
+                    Dallas Public Library. "Business & Technology Center." https://www.dallaslibrary.org/central-library
+                  </li>
+                  <li className="font-mono text-sm leading-relaxed">
+                    Collin Small Business Development Center. "Classes & Services." https://collinsbdc.com/
+                  </li>
+                  <li className="font-mono text-sm leading-relaxed">
+                    Dallas College. "Small Business & Entrepreneurship." https://www.dallascollege.edu/study/small-business/
+                  </li>
+                  <li className="font-mono text-sm leading-relaxed">
+                    The DEC Network. "Youth Entrepreneurship Events." https://www.facebook.com/thedecnetwork/
+                  </li>
+                  <li className="font-mono text-sm leading-relaxed">
+                    Credit Union of Texas. "Student Checking." https://www.cutx.org/checking/student
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         );
