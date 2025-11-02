@@ -188,6 +188,168 @@ export function LocalPost() {
             </div>
           </div>
         );
+
+      case "dfw-top-trader-competition":
+        return (
+          <div className="prose prose-lg max-w-4xl mx-auto">
+            <p className="text-lg text-emerald-700 mb-6">
+              Most teens learn about money from TikTok or random YouTube videos. But if you live in the Dallas Fort Worth area, you can learn to invest through a real university-run program, compete for cash prizes, and add a huge asset to your college resume.
+            </p>
+            
+            <p className="mb-6 text-foreground">
+              The UT Dallas Top Trader Competition gives high school students a chance to manage a virtual one million dollar stock market portfolio. That might sound intimidating, but that is exactly why it is valuable. You get to make real investing decisions, track markets, and see what happens when you buy stocks, ETFs, or other assets.
+            </p>
+            
+            <h3 className="text-xl font-semibold mb-4 text-white">Why You Should Join</h3>
+            
+            <p className="mb-6 text-foreground">
+              This competition gives you an introduction to the stock market that most adults wish they had when they were teens. You learn how to research companies, follow market trends, and manage risk. Instead of guessing about investing, you get guided practice.
+            </p>
+            
+            <p className="mb-6 text-foreground">
+              There are also cash prizes for top finishers. The first-place winner can earn hundreds of dollars, and finalists get public recognition from a respected business school. That sets you apart when applying to colleges and scholarships.
+            </p>
+            
+            <h3 className="text-xl font-semibold mb-4 text-white">How to Prepare</h3>
+            
+            <p className="mb-6 text-foreground">
+              Every skill gets better with practice, and the same is true for investing. Before the competition begins, spend time learning basic terms like shares, dividends, ETFs, and index funds. Pay attention to companies you already know, such as Apple, Nike, or Tesla. Follow how their stock moves during the week.
+            </p>
+            
+            <p className="mb-6 text-foreground">
+              Create a simple journal where you write down your market ideas. This helps you think like an investor instead of a follower.
+            </p>
+            
+            <h3 className="text-xl font-semibold mb-4 text-white">Final Thoughts</h3>
+            
+            <p className="mb-6 text-foreground">
+              Investing is a long-term game. Starting now puts you ahead of almost everyone your age. This competition is your chance to try, make mistakes in a safe environment, and build confidence with money.
+            </p>
+            
+            <div className="mt-12 mb-8 mx-auto" style={{ maxWidth: '85%' }}>
+              <div className="bg-white rounded-2xl border-2 p-8 hover:shadow-lg transition-all duration-300" style={{ borderColor: '#fed7aa' }}>
+                <h4 className="text-2xl font-bold text-center mb-6 font-mono" style={{ color: '#6B5B47' }}>
+                  Works Cited
+                </h4>
+                <ul className="space-y-3 text-left" style={{ color: '#6B5B47', listStyleType: 'disc', paddingLeft: '2rem' }}>
+                  <li className="font-mono text-sm leading-relaxed">
+                    University of Texas at Dallas. "Top Trader Stock Market Competition." Jindal School of Management, 2025. https://jindal.utdallas.edu/top-trader-2
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        );
+
+      case "dfw-international-career-day":
+        return (
+          <div className="prose prose-lg max-w-4xl mx-auto">
+            <p className="text-lg text-emerald-700 mb-6">
+              You do not need a college degree to start thinking like a global professional. Every year, the World Affairs Council of Dallas Fort Worth brings together hundreds of high school students to learn about real careers in business, diplomacy, finance, technology, and international trade.
+            </p>
+            
+            <p className="mb-6 text-foreground">
+              This event is called International Career Day, and it gives you the chance to meet professionals from careers that take place across the world. You learn about jobs you may never have heard of, opportunities that involve travel, and modern careers in global finance and banking.
+            </p>
+            
+            <h3 className="text-xl font-semibold mb-4 text-white">Why It Matters for Your Future</h3>
+            
+            <p className="mb-6 text-foreground">
+              Most teens do not have access to high level career speakers. This event gives you direct insight from leaders who work in international industries. Not only will you build professional awareness, but you will gain confidence asking questions and talking to adults about your goals.
+            </p>
+            
+            <p className="mb-6 text-foreground">
+              This event also gives you networking moments. If you listen well, ask thoughtful questions, and introduce yourself, you can make a strong impression and possibly build your first professional connections.
+            </p>
+            
+            <h3 className="text-xl font-semibold mb-4 text-white">Tips to Make the Most of It</h3>
+            
+            <p className="mb-6 text-foreground">
+              Bring a notebook. Dress neatly. Think about questions in advance. For example:
+            </p>
+            
+            <ul className="list-disc pl-6 mb-6 text-foreground space-y-2">
+              <li>What skills do I need to work in finance or business?</li>
+              <li>How did you get your first internship?</li>
+              <li>What should a motivated high school student be doing right now?</li>
+            </ul>
+            
+            <p className="mb-6 text-foreground">
+              These questions show maturity and preparation. Afterward, record what you learned. This shows growth and gives you material for future essays or interviews.
+            </p>
+            
+            <h3 className="text-xl font-semibold mb-4 text-white">Final Thought</h3>
+            
+            <p className="mb-6 text-foreground">
+              International Career Day is not just a field trip. It is a preview of life after high school and a reminder that your path can go far beyond your neighborhood.
+            </p>
+            
+            <div className="mt-12 mb-8 mx-auto" style={{ maxWidth: '85%' }}>
+              <div className="bg-white rounded-2xl border-2 p-8 hover:shadow-lg transition-all duration-300" style={{ borderColor: '#fed7aa' }}>
+                <h4 className="text-2xl font-bold text-center mb-6 font-mono" style={{ color: '#6B5B47' }}>
+                  Works Cited
+                </h4>
+                <ul className="space-y-3 text-left" style={{ color: '#6B5B47', listStyleType: 'disc', paddingLeft: '2rem' }}>
+                  <li className="font-mono text-sm leading-relaxed">
+                    World Affairs Council of Dallas Fort Worth. "International Career Day." 2025. https://www.dfwworld.org/education/students/international-career-day
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        );
+
+      case "dallas-isd-financial-literacy":
+        return (
+          <div className="prose prose-lg max-w-4xl mx-auto">
+            <p className="text-lg text-emerald-700 mb-6">
+              While most high school classes teach history or algebra, Dallas ISD is now prioritizing personal finance and life-skills education for high school students. That means lessons in budgeting, saving, credit, banking, and financial decision-making are becoming part of the student experience.
+            </p>
+            
+            <p className="mb-6 text-foreground">
+              This shift prepares you for major life choices like buying a car, opening a bank account, applying for scholarships, or managing college expenses.
+            </p>
+            
+            <h3 className="text-xl font-semibold mb-4 text-white">Why This Matters</h3>
+            
+            <p className="mb-6 text-foreground">
+              Money decisions start earlier than most teens realize. Having school support and structured lessons now means you can graduate knowing how to avoid common financial mistakes. You will understand credit, how interest works, and why saving early matters.
+            </p>
+            
+            <p className="mb-6 text-foreground">
+              Financial confidence is just as important as academic confidence. Dallas ISD's initiative helps make sure you get both.
+            </p>
+            
+            <h3 className="text-xl font-semibold mb-4 text-white">How to Take Advantage</h3>
+            
+            <p className="mb-6 text-foreground">
+              Ask your counselor which money-related workshops or elective classes your school offers. If you have room in your schedule, take a finance or economics course. Join any student clubs or after-school programs that offer budgeting, investing, or business challenges.
+            </p>
+            
+            <p className="mb-6 text-foreground">
+              Even if you do not pursue a business major, financial literacy is a life skill. Your future self will thank you for learning early.
+            </p>
+            
+            <h3 className="text-xl font-semibold mb-4 text-white">Final Thought</h3>
+            
+            <p className="mb-6 text-foreground">
+              Money skills are not just for adults. They are for teens who want control, confidence, and options. This Dallas ISD focus gives you a head start.
+            </p>
+            
+            <div className="mt-12 mb-8 mx-auto" style={{ maxWidth: '85%' }}>
+              <div className="bg-white rounded-2xl border-2 p-8 hover:shadow-lg transition-all duration-300" style={{ borderColor: '#fed7aa' }}>
+                <h4 className="text-2xl font-bold text-center mb-6 font-mono" style={{ color: '#6B5B47' }}>
+                  Works Cited
+                </h4>
+                <ul className="space-y-3 text-left" style={{ color: '#6B5B47', listStyleType: 'disc', paddingLeft: '2rem' }}>
+                  <li className="font-mono text-sm leading-relaxed">
+                    Dallas ISD Communications. "Dallas ISD prioritizes financial literacy and life skills." The Hub, April 2025. https://thehub.dallasisd.org/2025/04/22/dallas-isd-prioritizes-financial-literacy-and-life-skills
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        );
         
       default:
         return (
@@ -222,6 +384,24 @@ export function LocalPost() {
           title: "From Classrooms to Cash Flow: Entrepreneurship Opportunities for Texas Teens in DFW",
           date: "January 16, 2025",
           readTime: "7 min read"
+        };
+      case "dfw-top-trader-competition":
+        return {
+          title: "DFW High School Investing Opportunity: Compete Like a Future Wall Street Pro",
+          date: "January 17, 2025",
+          readTime: "5 min read"
+        };
+      case "dfw-international-career-day":
+        return {
+          title: "Get Ahead: DFW International Career Day for High School Students",
+          date: "January 18, 2025",
+          readTime: "5 min read"
+        };
+      case "dallas-isd-financial-literacy":
+        return {
+          title: "Financial Skills for Life: Dallas ISD's Student Money Education Push",
+          date: "January 19, 2025",
+          readTime: "5 min read"
         };
       default:
         return {
