@@ -10,7 +10,6 @@ const careerIncomeBlogs = [
     title: "Career Growth: Maximizing Your Earning Potential",
     excerpt: "Proven strategies to negotiate higher compensation with confidence.",
     category: "Career & Income",
-    date: "2024-01-30",
     readTime: "9 min read",
     categoryColor: "bg-teal-600"  
   },
@@ -19,7 +18,6 @@ const careerIncomeBlogs = [
     title: "Remote Work Mastery: Thriving in the Digital Economy",
     excerpt: "Essential skills and strategies for building a successful remote career in today's job market.",
     category: "Career & Income",
-    date: "2024-01-30",
     readTime: "8 min read",
     categoryColor: "bg-teal-600"  
   },
@@ -28,7 +26,6 @@ const careerIncomeBlogs = [
     title: "Building Multiple Income Streams: Your Path to Financial Security",
     excerpt: "Diversify income sources to reduce risk and accelerate financial independence.",
     category: "Career & Income",
-    date: "2024-01-30",
     readTime: "7 min read",
     categoryColor: "bg-teal-600"  
   },
@@ -37,7 +34,6 @@ const careerIncomeBlogs = [
     title: "Networking for Career Growth: Building Relationships That Pay",
     excerpt: "Transform networking into genuine relationship building that accelerates careers.",
     category: "Career & Income",
-    date: "2024-01-30",
     readTime: "6 min read",
     categoryColor: "bg-teal-600"  
   },
@@ -46,7 +42,6 @@ const careerIncomeBlogs = [
     title: "Career Pivoting: Leverage Skills to Change Paths",
     excerpt: "Leverage transferable skills to transition into new industries successfully.",
     category: "Career & Income",
-    date: "2024-01-30",
     readTime: "8 min read",
     categoryColor: "bg-teal-600"  
   },
@@ -55,7 +50,6 @@ const careerIncomeBlogs = [
     title: "Freelancing Business Fundamentals: Building a Sustainable Solo Career",
     excerpt: "Master the business side of freelancing from pricing to scaling.",
     category: "Career & Income",
-    date: "2024-01-30",
     readTime: "8 min read",
     categoryColor: "bg-teal-600"  
   }
