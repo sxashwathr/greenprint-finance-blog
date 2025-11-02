@@ -30,7 +30,7 @@ const localBlogs = [
     excerpt: "Join the UT Dallas Top Trader Competition to manage a virtual million-dollar portfolio and compete for cash prizes.",
     category: "Investing",
     readTime: "5 min read",
-    categoryColor: "bg-blue-600"
+    categoryColor: "bg-sage-green"
   },
   {
     id: "dfw-international-career-day",
@@ -44,9 +44,9 @@ const localBlogs = [
     id: "dallas-isd-financial-literacy",
     title: "Financial Skills for Life: Dallas ISD's Student Money Education Push",
     excerpt: "Learn about Dallas ISD's new focus on personal finance education and how to take advantage of these resources.",
-    category: "Money Management",
+    category: "Investing",
     readTime: "5 min read",
-    categoryColor: "bg-purple-600"
+    categoryColor: "bg-sage-green"
   }
 ];
 export function LocalTiles() {
