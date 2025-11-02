@@ -1,12 +1,10 @@
 import { BlogTile } from "./BlogTile";
-
 const localBlogs = [
   {
     id: "local-business-spotlight",
     title: "Supporting Local Businesses: A Financial Perspective",
     excerpt: "How investing in your local community can benefit both your finances and neighborhood economy.",
     category: "Entrepreneurship",
-    date: "2024-01-15",
     readTime: "6 min read",
     categoryColor: "bg-emerald-green"
   },
@@ -15,7 +13,6 @@ const localBlogs = [
     title: "Real Money Moves for DFW Teens: Paid Jobs and Finance Programs You Can Use Now",
     excerpt: "Discover paid internship programs and financial literacy resources available for Dallas-Fort Worth teens.",
     category: "Career & Income",
-    date: "2025-01-15",
     readTime: "8 min read",
     categoryColor: "bg-teal-600"
   },
@@ -24,12 +21,34 @@ const localBlogs = [
     title: "From Classrooms to Cash Flow: Entrepreneurship Opportunities for Texas Teens in DFW",
     excerpt: "Learn how DFW teens can access free mentoring, business workshops, and pitch competitions to launch their ventures.",
     category: "Entrepreneurship",
-    date: "2025-01-16",
     readTime: "7 min read",
     categoryColor: "bg-emerald-green"
+  },
+  {
+    id: "dfw-top-trader-competition",
+    title: "DFW High School Investing Opportunity: Compete Like a Future Wall Street Pro",
+    excerpt: "Join the UT Dallas Top Trader Competition to manage a virtual million-dollar portfolio and compete for cash prizes.",
+    category: "Investing",
+    readTime: "5 min read",
+    categoryColor: "bg-blue-600"
+  },
+  {
+    id: "dfw-international-career-day",
+    title: "Get Ahead: DFW International Career Day for High School Students",
+    excerpt: "Meet global professionals and explore international careers in business, finance, and diplomacy at this annual event.",
+    category: "Career & Income",
+    readTime: "5 min read",
+    categoryColor: "bg-teal-600"
+  },
+  {
+    id: "dallas-isd-financial-literacy",
+    title: "Financial Skills for Life: Dallas ISD's Student Money Education Push",
+    excerpt: "Learn about Dallas ISD's new focus on personal finance education and how to take advantage of these resources.",
+    category: "Money Management",
+    readTime: "5 min read",
+    categoryColor: "bg-purple-600"
   }
 ];
-
 export function LocalTiles() {
   return (
     <section className="py-8">
