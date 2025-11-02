@@ -6,7 +6,6 @@ const recentBlogs = [
     title: "Budgeting Basics: Your First Step to Financial Freedom",
     excerpt: "Learn how to create and stick to a budget that actually works for your lifestyle.",
     category: "Budgeting",
-    date: "2024-01-15",
     readTime: "5 min read",
     categoryColor: "bg-forest-green"
   },
@@ -15,7 +14,6 @@ const recentBlogs = [
     title: "Market Volatility Strategies: Staying Calm When Markets Go Crazy",
     excerpt: "Develop strategies to navigate market ups and downs without panic.",
     category: "Investing",
-    date: "2024-01-15",
     readTime: "9 min read",
     categoryColor: "bg-sage-green"
   },
@@ -24,7 +22,6 @@ const recentBlogs = [
     title: "Credit Card Rewards Optimization: Earning Money Without Debt",
     excerpt: "Maximize credit card rewards while maintaining excellent financial habits.",
     category: "Credit & Debt",
-    date: "2024-01-15",
     readTime: "7 min read",
     categoryColor: "bg-green-600"
   },
@@ -33,7 +30,6 @@ const recentBlogs = [
     title: "Networking for Career Growth: Building Relationships That Pay",
     excerpt: "Transform networking into genuine relationship building that accelerates careers.",
     category: "Career & Income",
-    date: "2024-01-15",
     readTime: "8 min read",
     categoryColor: "bg-teal-600"
   },
@@ -42,7 +38,6 @@ const recentBlogs = [
     title: "Subscription Audit Guide: Reclaim Hundreds from Hidden Costs",
     excerpt: "Uncover forgotten subscriptions and learn strategies to optimize recurring expenses.",
     category: "Budgeting",
-    date: "2024-01-15",
     readTime: "8 min read",
     categoryColor: "bg-forest-green"
   },
@@ -51,7 +46,6 @@ const recentBlogs = [
     title: "Investment Portfolio Basics: Building Your Wealth Foundation",
     excerpt: "Learn fundamental portfolio construction and asset allocation principles.",
     category: "Investing",
-    date: "2024-01-15",
     readTime: "8 min read",
     categoryColor: "bg-sage-green"
   }
