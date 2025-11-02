@@ -10,7 +10,6 @@ const creditDebtBlogs = [
     title: "Credit Essentials: Building and Managing Your Score",
     excerpt: "Step-by-step guide to establishing your first credit history responsibly.",
     category: "Credit & Debt",
-    date: "2024-01-25",
     readTime: "10 min read",
     categoryColor: "bg-green-700" 
   },
@@ -19,7 +18,6 @@ const creditDebtBlogs = [
     title: "Debt Payoff Strategies: Finding Your Path to Freedom",
     excerpt: "Explore proven methods to eliminate debt and regain control of your financial future.",
     category: "Credit & Debt",
-    date: "2024-01-25",
     readTime: "10 min read",
     categoryColor: "bg-green-700" 
   },
@@ -28,7 +26,6 @@ const creditDebtBlogs = [
     title: "Credit Score Myths: Separating Fact from Fiction",
     excerpt: "Debunk common credit score misconceptions that could be hurting your financial progress",
     category: "Credit & Debt",
-    date: "2024-01-25",
     readTime: "7 min read",
     categoryColor: "bg-green-700" 
   },
@@ -37,7 +34,6 @@ const creditDebtBlogs = [
     title: "Credit Card Rewards Optimization: Earning Money Without Debt",
     excerpt: "Maximize credit card rewards while maintaining excellent financial habits.",
     category: "Credit & Debt",
-    date: "2024-01-25",
     readTime: "7 min read",
     categoryColor: "bg-green-700" 
   },
@@ -46,7 +42,6 @@ const creditDebtBlogs = [
     title: "Building Business Credit: Separate Your Personal and Business Finances",
     excerpt: "Navigate repayment options and strategies to minimize your loan burden..",
     category: "Credit & Debt",
-    date: "2024-01-25",
     readTime: "9 min read",
     categoryColor: "bg-green-700" 
   }
