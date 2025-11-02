@@ -10,7 +10,6 @@ const entrepreneurshipBlogs = [
     title: "Entrepreneurship Starters: From Idea to Income",
     excerpt: "Profitable business ideas you can launch with minimal investment.",
     category: "Entrepreneurship",
-    date: "2024-01-28",
     readTime: "12 min read",
     categoryColor: "bg-emerald-green"
   },
@@ -19,7 +18,6 @@ const entrepreneurshipBlogs = [
     title: "The Side Hustle Revolution: Building Income Outside the 9-to-5",
     excerpt: "Transform your spare time into profitable income streams that fit around your schedule.",
     category: "Entrepreneurship",
-    date: "2024-01-28",
     readTime: "7 min read",
     categoryColor: "bg-emerald-green"
   },
@@ -28,7 +26,6 @@ const entrepreneurshipBlogs = [
     title: "Scaling Your Business: From Solo Act to Sustainable Growth",
     excerpt: "Learn key strategies and tools needed to grow your business beyond what you can handle alone.",
     category: "Entrepreneurship",
-    date: "2024-01-28",
     readTime: "10 min read",
     categoryColor: "bg-emerald-green"
   },
@@ -37,7 +34,6 @@ const entrepreneurshipBlogs = [
     title: "E-Commerce Business Models: Finding Your Path to Online Success",
     excerpt: "Explore different e-commerce approaches and find the right model for you.",
     category: "Entrepreneurship",
-    date: "2024-01-28",
     readTime: "9 min read",
     categoryColor: "bg-emerald-green"
   },
@@ -46,7 +42,6 @@ const entrepreneurshipBlogs = [
     title: "Business Funding Options: From Bootstrapping to Venture Capital",
     excerpt: "Understand funding sources and choose the right capital strategy.",
     category: "Entrepreneurship",
-    date: "2024-01-28",
     readTime: "9 min read",
     categoryColor: "bg-emerald-green"
   },
@@ -55,7 +50,6 @@ const entrepreneurshipBlogs = [
     title: "Intellectual Property Basics: Protecting Your Business Assets",
     excerpt: "Learn to protect your innovations through trademarks, copyrights, and more.",
     category: "Entrepreneurship",
-    date: "2024-01-28",
     readTime: "8 min read",
     categoryColor: "bg-emerald-green"
   }
