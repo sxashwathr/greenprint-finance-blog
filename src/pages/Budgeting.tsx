@@ -10,7 +10,6 @@ const budgetingBlogs = [
     title: "Budgeting Basics: Your First Step to Financial Freedom",
     excerpt: "Learn how to create and stick to a budget that actually works for your lifestyle.",
     category: "Budgeting",
-    date: "2024-01-20",
     readTime: "7 min read",
     categoryColor: "bg-forest-green"
   },
@@ -19,7 +18,6 @@ const budgetingBlogs = [
     title: "The Psychology of Money: Why We Spend and How to Change It",
     excerpt: "Discover the triggers that drive spending habits and learn useful strategies to overcome them.",
     category: "Budgeting",
-    date: "2024-01-20",
     readTime: "11 min read",
     categoryColor: "bg-forest-green"
   },
@@ -28,7 +26,6 @@ const budgetingBlogs = [
     title: "Emergency Fund Essentials: Your Financial Safety Net",
     excerpt: "Build a financial cushion that protects you from needless expenses and gives you peace of mind.",
     category: "Budgeting",
-    date: "2024-01-20",
     readTime: "8 min read",
     categoryColor: "bg-forest-green"
   },
@@ -37,7 +34,6 @@ const budgetingBlogs = [
     title: "Expense Tracking Mastery: The Simple System That Actually Works",
     excerpt: "A sustainable expense tracking approach that gives you spending control.",
     category: "Budgeting",
-    date: "2024-01-20",
     readTime: "6 min read",
     categoryColor: "bg-forest-green"
   },
@@ -46,7 +42,6 @@ const budgetingBlogs = [
     title: "Subscription Audit Guide: Reclaim Hundreds from Hidden Costs",
     excerpt: "Uncover forgotten subscriptions and learn strategies to optimize recurring expenses.",
     category: "Budgeting",
-    date: "2024-01-20",
     readTime: "5 min read",
     categoryColor: "bg-forest-green"
   },
@@ -55,7 +50,6 @@ const budgetingBlogs = [
     title: "Budgeting with Irregular Income: A Practical Guide",
     excerpt: "Master budgeting strategies for freelancers and anyone with variable income.",
     category: "Budgeting",
-    date: "2024-01-20",
     readTime: "7 min read",
     categoryColor: "bg-forest-green"
   }
