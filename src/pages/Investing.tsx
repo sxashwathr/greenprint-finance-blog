@@ -10,7 +10,6 @@ const investingBlogs = [
     title: "Investing Fundamentals: Building Long-Term Wealth",
     excerpt: "Essential knowledge to start your investing journey with confidence.",
     category: "Investing",
-    date: "2024-01-22",
     readTime: "8 min read",
     categoryColor: "bg-sage-green"
   },
@@ -19,7 +18,6 @@ const investingBlogs = [
     title: "Retirement Planning in Your 20s: The Ultimate Advantage",
     excerpt: "Why starting retirement planning early is the smartest financial decision you'll ever make.",
     category: "Investing",
-    date: "2024-01-22",
     readTime: "6 min read",
     categoryColor: "bg-sage-green"
   },
@@ -28,7 +26,6 @@ const investingBlogs = [
     title: "Dollar-Cost Averaging vs. Lump Sum Investing: Which Strategy Wins?",
     excerpt: "Compare two investment strategies to determine one that works for your financial situation.",
     category: "Investing",
-    date: "2024-01-22",
     readTime: "9 min read",
     categoryColor: "bg-sage-green"
   },
@@ -37,7 +34,6 @@ const investingBlogs = [
     title: "Investment Portfolio Basics: Building Your Wealth Foundation",
     excerpt: "Learn fundamental portfolio construction and asset allocation principles.",
     category: "Investing",
-    date: "2024-01-22",
     readTime: "8 min read",
     categoryColor: "bg-sage-green"
   },
@@ -46,7 +42,6 @@ const investingBlogs = [
     title: "Tax-Advantaged Investing: Maximize Returns While Minimizing Taxes",
     excerpt: "Navigate 401(k)s, IRAs, and other accounts to keep more of your gains.",
     category: "Investing",
-    date: "2024-01-22",
     readTime: "9 min read",
     categoryColor: "bg-sage-green"
   },
@@ -55,7 +50,6 @@ const investingBlogs = [
     title: "Market Volatility Strategies: Staying Calm When Markets Go Crazy",
     excerpt: "Develop strategies to navigate market ups and downs without panic",
     category: "Investing",
-    date: "2024-01-22",
     readTime: "7 min read",
     categoryColor: "bg-sage-green"
   }
